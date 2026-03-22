@@ -1,0 +1,23 @@
+# Custom project directories
+course-material/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.ipynb_checkpoints/
+
+# General
+*.log
+.Trashes
