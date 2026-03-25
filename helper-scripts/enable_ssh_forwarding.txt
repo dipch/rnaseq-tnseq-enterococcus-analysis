@@ -1,0 +1,16 @@
+In Local machine add the following entry to uppmax block in ~/.ssh/config.
+ForwardAgent yes 
+
+In server, if git clone returns Permission denied, then
+
+Check if local ssh agent is holding key
+ssh-add -l
+
+If agent has no identities then add the github key (replace name if needed)
+ssh-add ~/.ssh/id_ed25519
+
+Add the following block at the top of ~/.ssh/config for persistant change to ssh agent.
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519

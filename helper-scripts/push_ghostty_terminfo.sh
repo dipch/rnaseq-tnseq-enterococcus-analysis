@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # When using Ghostty terminal in local machine, if remote machine connected via ssh that don't have Ghostty's terminfo entry, using Nano/Vim produces following error: "Error opening terminal: xterm-ghostty"
-# This script pushes the Ghostty terminal terminfo profile to the remote server.
+# This script pushes the Ghostty terminal terminfo profile to the remote server. Run in local machine.
 
 # Replace uppmax-pelle with user@hostname 
 echo "Sending Ghostty terminfo..."
