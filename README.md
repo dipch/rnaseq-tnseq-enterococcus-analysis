@@ -3,63 +3,70 @@
 ## To Do List
 
 ### GitHub Repository Setup
+
 - [x] Create GitHub repository (`rnaseq-tnseq-enterococcus-analysis`)
-- [x] Initialize with README.md 
+- [x] Initialize with README.md
 - [x] Add `.gitignore` and License file
 - [x] Set up GitHub Wiki
-- [ ] Register repository in Studium repository form
+- [x] Register repository in Studium repository form
 
 ### UPPMAX Setup
-- [x] Enroll in NAISS database (SUPR) Project 
+
+- [x] Enroll in NAISS database (SUPR) Project
 - [x] Apply for UPPMAX account & enable 2FA
-- [x] Connect to UPPMAX via SSH 
-- [x] Set up Git credentials on UPPMAX 
+- [x] Connect to UPPMAX via SSH
+- [x] Set up Git credentials on UPPMAX
 - [x] Clone repository to UPPMAX home directory
-- [ ] Set up working directory structure (see below)
+- [ ] Set up working directory structure
 
 ### Gihub Wiki
+
 > **Deadline: 22 May 2026**
-- [ ] Which paper are you working with
-- [ ] Project Plan
+
+- [x] Which paper are you working with
+- [x] Project Plan
 - [ ] Goal/Hypotheses
 - [ ] Section for each analysis (quality control, assembly, RNA mapping, etc.) with explanations on methods, results and a short discussion.
 - [ ] Any general thoughts, discussions, speculation, etc. about the project and overall results
-- [ ] Daily log of each day of work
+- [x] Daily log of each day of work
 
 ### Prepare Project Plan on Wiki
+
 > **Deadline: 10 April 2026**
-- [ ] Tasks
-  - [ ] Read and Understand the Paper 1 (Zhang et al. 2017) **by 27 Mar 2026**
-  - [ ] Identify type of data (RNA-seq, Whole Genome Sequencing,
-short-reads/long-reads, etc)
-  - [ ] Identify biological source of data (tissue, sample etc)
-  - [ ] Identify how the data was generated (type of libraries, special adapters, potential issues, etc)
-  - [ ] Create a workflow diagram (input → analysis → output for each step and tools to use) (example in manual)
-  - [ ] Try to spot steps that can take a long time
-  - [ ] Introduce a certain degree of flexibility in project plan to account for
-unexpected results or errors
-- [ ] Draft project plan addressing:
-  - [ ] Aim & research questions
-  - [ ] Type of Sample
-  - [ ] Types of analyses to be performed and their order
-  - [ ] Software to be used at each step
-  - [ ] Time bottlenecks (identify longer running analyses)
-  - [ ] Time frame for the project
-  - [ ] Define time checkpoints for finishing certain analysis
-  - [ ] Type of Data 
-  - [ ] Estimated storage needs
-  - [ ] Data organisation strategy (Project Organization)
+
+- [x] Tasks
+  - [x] Read and Understand the Paper 1 (Zhang et al. 2017) **by 27 Mar 2026**
+  - [x] Identify type of data (RNA-seq, Whole Genome Sequencing,
+        short-reads/long-reads, etc)
+  - [x] Identify biological source of data (tissue, sample etc)
+  - [x] Identify how the data was generated (type of libraries, special adapters, potential issues, etc)
+  - [x] Create a workflow diagram (input → analysis → output for each step and tools to use) (example in manual)
+  - [x] Try to spot steps that can take a long time
+  - [x] Introduce a certain degree of flexibility in project plan to account for unexpected results or errors
+- [x] Draft project plan addressing:
+  - [x] Aim & research questions
+  - [x] Type of Sample
+  - [x] Types of analyses to be performed and their order
+  - [x] Software to be used at each step
+  - [x] Time bottlenecks (identify longer running analyses)
+  - [x] Time frame for the project
+  - [x] Define time checkpoints for finishing certain analysis
+  - [x] Type of Data
+  - [x] Estimated storage needs
+  - [x] Data organisation strategy (Project Organization)
 
 ### Organizing working Directory Structure (on UPPMAX)
+
 - [ ] Data and code should be separated
   - [ ] Small data files such as results, figures and text can be included but not big data files
   - [ ] Keep data files with unique and informative names.
   - [ ] keep the raw data with the original names. Use symbolic links that create shortcuts to the original files but that have different names.
   - [ ] Handy to generate folders or file names that start with a number.
   - [ ] Data files especiallly big data files should be compressed. Most tools can handle compressed file and if needed we can uncompress on the file and pipe the output as input
-
+  - [ ] Keep log files of successful
 
 ### Gather Metadata
+
 - [ ] Store metadata in a machine readable format (spreadsheet table).
 - [ ] The data to include will depend on each experiment.
 - [ ] Guidelines
@@ -70,6 +77,7 @@ unexpected results or errors
   - [ ] Save data as `.tsv` or `csv` file format
 
 ### Getting familiar with data
+
 - The read files are already downloaded, trimmed and in some cases subsampled and named according to their SRA accession which can also be found on the paper.
 - [ ] Identify all SRA accession numbers from the paper
 - [ ] Go to [NCBI SRA](http://www.ncbi.nlm.nih.gov/sra) and search for SRA accessions of the samples
