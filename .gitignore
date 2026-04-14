@@ -21,3 +21,5 @@ env/
 # General
 *.log
 .Trashes
+
+.claude
