@@ -46,14 +46,6 @@ fastqc \
     "${RAW_DIR}"/*.fastq.gz "${RAW_DIR}"/*.fq.gz
 echo "[$(date '+%H:%M:%S')] fastqc ended ($(elapsed $T0))"
 
-# fastqc — Nanopore FASTA
-echo "[$(date '+%H:%M:%S')] fastqc nanopore started"
-fastqc \
-    --outdir "${FASTQC_OUTPUT_DIR_RAW}" \
-    --format fasta \
-    --noextract \
-    "${RAW_DIR}"/*.fasta.gz
-echo "[$(date '+%H:%M:%S')] fastqc nanopore ended"
 
 # multiqc
 echo "[$(date '+%H:%M:%S')] multiqc started"
