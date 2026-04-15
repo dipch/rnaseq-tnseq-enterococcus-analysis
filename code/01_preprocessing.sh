@@ -5,7 +5,7 @@
 #SBATCH -t 01:00:00
 #SBATCH -J qc_raw_3
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/logs/01_preprocessing.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/01_preprocessing.%x.%j.out
 
 
 set -euo pipefail
