@@ -54,7 +54,7 @@ canu \
     maxThreads=4 \
     useGrid=true \
     gridOptions="-A uppmax2026-1-61 -p pelle -c 4 -t 12:00:00" \
-    -pacbio-raw \
+    -pacbio \
     "${PACBIO_FILES[@]}"
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] canu launched ($(elapsed $T0))"
