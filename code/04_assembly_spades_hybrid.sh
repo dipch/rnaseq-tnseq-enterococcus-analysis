@@ -61,8 +61,7 @@ T0=$(date +%s)
 spades.py \
     -1 "${ILLUMINA_R1}" \
     -2 "${ILLUMINA_R2}" \
-    --pacbio "${PACBIO_ARGS[@]}" \
-    # from spades documentation: For example, for read length 100bp the default k values are 21, 33, 55
+    "${PACBIO_ARGS[@]}" \
     -k 33 \
     --threads 4 \
     -o "${SPADES_OUT_DIR}"
