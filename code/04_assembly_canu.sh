@@ -31,7 +31,7 @@ if [[ ! -L "${CANU_PACBIO_OUT_DIR}" ]]; then
 fi
 
 module purge
-module load Canu/2.2
+module load canu/2.3-GCCcore-13.3.0-Java-17
 
 PACBIO_FILES=("${RAW_DIR}"/dna_pacbio_*.subreads.fastq.gz)
 if [[ ${#PACBIO_FILES[@]} -eq 0 ]]; then
