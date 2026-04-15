@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 4
-#SBATCH -t 01:00:00   # manual estimate: ~30 min (1 core, paired-end)
+#SBATCH -c 2
+#SBATCH -t 04:00:00
 #SBATCH -J align_polish_canu_pacbio_with_illumina
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05_align_polish_canu_pacbio_with_illumina.%x.%j.out
@@ -48,8 +48,8 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] R1: ${ILLUMINA_R1}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] R2: ${ILLUMINA_R2}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] output BAM: ${SORTED_BAM}"
 T1=$(date +%s)
-bwa mem -t 4 "${ASSEMBLY_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
-    | samtools sort -@ 4 -o "${SORTED_BAM}"
+bwa mem -t 2 "${ASSEMBLY_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
+    | samtools sort -@ 2 -o "${SORTED_BAM}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] alignment + sort complete ($(elapsed $T1))"
 
 # index bam
