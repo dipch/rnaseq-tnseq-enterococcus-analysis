@@ -2,21 +2,20 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 2
-#SBATCH -t 06:00:00
-#SBATCH -J trimming_1
+#SBATCH -t 08:00:00
+#SBATCH -J trimming_2
 #SBATCH --mail-type=ALL
-#SBATCH --output=%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/logs/02_trimming.%x.%j.out
+
 
 
 set -euo pipefail
 
-elapsed() {
-    local secs=$(( $(date +%s) - $1 ))
-    printf '%dh %dm %ds' $(( secs/3600 )) $(( (secs%3600)/60 )) $(( secs%60 ))
-}
 
 
 BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
+
+source "${BASE_DIR}/helper-scripts/calculate_elapsed_time.sh"
 RAW_DIR="${BASE_DIR}/data/raw_data"
 TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
 
@@ -56,5 +55,6 @@ for R1 in "${RAW_DIR}"/rna_*_R1.fastq.gz; do
         SLIDINGWINDOW:4:15 \
         MINLEN:36
     echo "[$(date '+%H:%M:%S')]   ${SAMPLE} done ($(elapsed $T0))"
+    echo "[$(date '+%H:%M:%S')]   trimmed_data disk usage: $(du -sh ${TRIMMED_DIR} | cut -f1)"
 done
 echo "[$(date '+%H:%M:%S')] trimmomatic ended"

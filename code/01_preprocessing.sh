@@ -10,13 +10,10 @@
 
 set -euo pipefail
 
-elapsed() {
-    local secs=$(( $(date +%s) - $1 ))
-    printf '%dh %dm %ds' $(( secs/3600 )) $(( (secs%3600)/60 )) $(( secs%60 ))
-}
-
 
 BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
+
+source "${BASE_DIR}/helper-scripts/calculate_elapsed_time.sh"
 RAW_DIR="${BASE_DIR}/data/raw_data"
 
 FASTQC_OUTPUT_DIR_RAW="${BASE_DIR}/analyses/01_preprocessing/fastqc_raw"
