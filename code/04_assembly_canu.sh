@@ -10,8 +10,8 @@
 
 set -euo pipefail
 
-trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
-trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] script finished (exit code $?)"' EXIT
+trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
+trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] script finished (exit code $?)"' EXIT
 
 BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
 
@@ -22,7 +22,7 @@ CANU_PACBIO_OUT_DIR="${BASE_DIR}/analyses/02_genome_assembly/canu_pacbio"
 NOBACKUP_CANU="/proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio"
 
 # symlink output dir to nobackup
-mkdir -p "${NOBACKUP_CANU}"
+mkdir -p "${BASE_DIR}/analyses/02_genome_assembly" "${NOBACKUP_CANU}"
 if [[ -d "${CANU_PACBIO_OUT_DIR}" && ! -L "${CANU_PACBIO_OUT_DIR}" ]]; then
     rmdir "${CANU_PACBIO_OUT_DIR}" 2>/dev/null || { echo "ERROR: ${CANU_PACBIO_OUT_DIR} exists as a non-empty directory, cannot replace with symlink"; exit 1; }
 fi

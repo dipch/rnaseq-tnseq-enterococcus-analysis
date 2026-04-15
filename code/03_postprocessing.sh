@@ -9,8 +9,8 @@
 
 set -euo pipefail
 
-trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
-trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] script finished (exit code $?)"' EXIT
+trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
+trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] script finished (exit code $?)"' EXIT
 
 BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
 source "${BASE_DIR}/utils/calculate_elapsed_time.sh"
