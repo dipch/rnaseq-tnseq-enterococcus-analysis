@@ -37,3 +37,7 @@ NOBACKUP_CANU_PACBIO="${NOBACKUP_BASE}/canu_pacbio"
 NOBACKUP_CANU_NANOPORE="${NOBACKUP_BASE}/canu_nanopore"
 NOBACKUP_SPADES_HYBRID="${NOBACKUP_BASE}/spades_hybrid"
 
+# polishing alignment
+POLISH_ALIGN_DIR="${ASSEMBLY_DIR}/polishing_pacbio_illumina"
+NOBACKUP_POLISH="${NOBACKUP_BASE}/polishing_pacbio_illumina"
+
