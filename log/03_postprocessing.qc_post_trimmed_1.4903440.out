@@ -1,0 +1,295 @@
+[2026-04-15 13:06:17] fastqc started
+[2026-04-15 13:06:17] [file 1 of 6]   running fastqc on rna_bhi_rep1...
+application/gzip
+application/gzip
+Started analysis of rna_bhi_rep1_R1_paired.fastq.gz
+Started analysis of rna_bhi_rep1_R2_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep1_R2_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep1_R1_paired.fastq.gz
+Analysis complete for rna_bhi_rep1_R2_paired.fastq.gz
+Analysis complete for rna_bhi_rep1_R1_paired.fastq.gz
+[2026-04-15 13:07:32] [file 1 of 6]   rna_bhi_rep1 done (0h 1m 15s)
+[2026-04-15 13:07:32] [file 2 of 6]   running fastqc on rna_bhi_rep2...
+application/gzip
+application/gzip
+Started analysis of rna_bhi_rep2_R1_paired.fastq.gz
+Started analysis of rna_bhi_rep2_R2_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep2_R2_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep2_R1_paired.fastq.gz
+Analysis complete for rna_bhi_rep2_R2_paired.fastq.gz
+Analysis complete for rna_bhi_rep2_R1_paired.fastq.gz
+[2026-04-15 13:08:46] [file 2 of 6]   rna_bhi_rep2 done (0h 1m 14s)
+[2026-04-15 13:08:46] [file 3 of 6]   running fastqc on rna_bhi_rep3...
+application/gzip
+application/gzip
+Started analysis of rna_bhi_rep3_R1_paired.fastq.gz
+Started analysis of rna_bhi_rep3_R2_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 5% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 10% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 15% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 20% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 25% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 30% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 35% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 40% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 45% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 50% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 55% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 60% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 65% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 70% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 75% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 80% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 85% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 90% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep3_R2_paired.fastq.gz
+Approx 95% complete for rna_bhi_rep3_R1_paired.fastq.gz
+Analysis complete for rna_bhi_rep3_R2_paired.fastq.gz
+Analysis complete for rna_bhi_rep3_R1_paired.fastq.gz
+[2026-04-15 13:09:54] [file 3 of 6]   rna_bhi_rep3 done (0h 1m 8s)
+[2026-04-15 13:09:54] [file 4 of 6]   running fastqc on rna_serum_rep1...
+application/gzip
+application/gzip
+Started analysis of rna_serum_rep1_R1_paired.fastq.gz
+Started analysis of rna_serum_rep1_R2_paired.fastq.gz
+Approx 5% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 5% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 10% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 10% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 15% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 15% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 20% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 20% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 25% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 25% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 30% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 30% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 35% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 35% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 40% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 40% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 45% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 45% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 50% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 50% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 55% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 55% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 60% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 60% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 65% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 65% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 70% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 70% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 75% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 75% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 80% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 80% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 85% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 85% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 90% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 90% complete for rna_serum_rep1_R1_paired.fastq.gz
+Approx 95% complete for rna_serum_rep1_R2_paired.fastq.gz
+Approx 95% complete for rna_serum_rep1_R1_paired.fastq.gz
+Analysis complete for rna_serum_rep1_R2_paired.fastq.gz
+Analysis complete for rna_serum_rep1_R1_paired.fastq.gz
+[2026-04-15 13:11:01] [file 4 of 6]   rna_serum_rep1 done (0h 1m 7s)
+[2026-04-15 13:11:01] [file 5 of 6]   running fastqc on rna_serum_rep2...
+application/gzip
+application/gzip
+Started analysis of rna_serum_rep2_R1_paired.fastq.gz
+Started analysis of rna_serum_rep2_R2_paired.fastq.gz
+Approx 5% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 5% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 10% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 10% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 15% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 15% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 20% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 20% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 25% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 25% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 30% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 30% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 35% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 35% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 40% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 40% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 45% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 45% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 50% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 50% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 55% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 55% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 60% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 60% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 65% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 65% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 70% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 70% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 75% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 75% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 80% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 80% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 85% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 85% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 90% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 90% complete for rna_serum_rep2_R1_paired.fastq.gz
+Approx 95% complete for rna_serum_rep2_R2_paired.fastq.gz
+Approx 95% complete for rna_serum_rep2_R1_paired.fastq.gz
+Analysis complete for rna_serum_rep2_R2_paired.fastq.gz
+Analysis complete for rna_serum_rep2_R1_paired.fastq.gz
+[2026-04-15 13:12:16] [file 5 of 6]   rna_serum_rep2 done (0h 1m 15s)
+[2026-04-15 13:12:16] [file 6 of 6]   running fastqc on rna_serum_rep3...
+application/gzip
+application/gzip
+Started analysis of rna_serum_rep3_R1_paired.fastq.gz
+Started analysis of rna_serum_rep3_R2_paired.fastq.gz
+Approx 5% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 5% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 10% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 10% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 15% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 15% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 20% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 20% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 25% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 25% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 30% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 30% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 35% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 35% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 40% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 40% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 45% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 45% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 50% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 50% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 55% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 55% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 60% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 60% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 65% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 65% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 70% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 70% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 75% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 75% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 80% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 80% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 85% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 85% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 90% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 90% complete for rna_serum_rep3_R1_paired.fastq.gz
+Approx 95% complete for rna_serum_rep3_R2_paired.fastq.gz
+Approx 95% complete for rna_serum_rep3_R1_paired.fastq.gz
+Analysis complete for rna_serum_rep3_R2_paired.fastq.gz
+Analysis complete for rna_serum_rep3_R1_paired.fastq.gz
+[2026-04-15 13:13:27] [file 6 of 6]   rna_serum_rep3 done (0h 1m 11s)
+[2026-04-15 13:13:27] fastqc ended
+[2026-04-15 13:13:27] multiqc started
+
+/// MultiQC 🔍 v1.28
+
+     update_config | Report title: trimmed data fastqc reports
+     version_check | MultiQC Version v1.33 now available!
+       file_search | Search path: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/fastqc_trimmed
+
+            fastqc | Found 12 reports
+
+     write_results | Data        : /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/multiqc_trimmed/multiqc_trimmed_data
+     write_results | Report      : /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/multiqc_trimmed/multiqc_trimmed.html
+           multiqc | MultiQC complete
+[2026-04-15 13:13:57] multiqc ended (0h 0m 30s)
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
+[] script finished (exit code 1)

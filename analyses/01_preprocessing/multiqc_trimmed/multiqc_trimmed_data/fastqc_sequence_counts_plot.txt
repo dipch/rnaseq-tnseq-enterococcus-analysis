@@ -1,0 +1,13 @@
+Sample	Unique Reads	Duplicate Reads
+rna_bhi_rep1_R1_paired	2522217.0	11261687.0
+rna_bhi_rep1_R2_paired	2986581.0	10797323.0
+rna_bhi_rep2_R1_paired	2507126.0	11252153.0
+rna_bhi_rep2_R2_paired	2922554.0	10836725.0
+rna_bhi_rep3_R1_paired	2495322.0	9964196.0
+rna_bhi_rep3_R2_paired	2954904.0	9504614.0
+rna_serum_rep1_R1_paired	2311919.0	10790656.0
+rna_serum_rep1_R2_paired	2645239.0	10457336.0
+rna_serum_rep2_R1_paired	2532892.0	12205456.0
+rna_serum_rep2_R2_paired	2899569.0	11838779.0
+rna_serum_rep3_R1_paired	2434388.0	11622959.0
+rna_serum_rep3_R2_paired	2760947.0	11296400.0
