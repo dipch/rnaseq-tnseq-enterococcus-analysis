@@ -7,57 +7,36 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/03_postprocessing.%x.%j.out
 
-set -euo pipefail
-
-trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
-trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] script finished (exit code $?)"' EXIT
-
-BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
-source "${BASE_DIR}/utils/calculate_elapsed_time.sh"
-
-TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
-FASTQC_OUT_DIR_TRIMMED="${BASE_DIR}/analyses/01_preprocessing/fastqc_trimmed"
-MULTIQC_OUT_DIR_TRIMMED="${BASE_DIR}/analyses/01_preprocessing/multiqc_trimmed"
-
-mkdir -p "${FASTQC_OUT_DIR_TRIMMED}" "${MULTIQC_OUT_DIR_TRIMMED}"
-
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+mkdir -p "${FASTQC_TRIMMED_DIR}" "${MULTIQC_TRIMMED_DIR}"
 module purge
 module load FastQC/0.12.1-Java-17 MultiQC/1.28-foss-2024a
-
-rm -rf "${FASTQC_OUT_DIR_TRIMMED:?}"/* "${MULTIQC_OUT_DIR_TRIMMED:?}"/*
-
-
+rm -rf "${FASTQC_TRIMMED_DIR:?}"/* "${MULTIQC_TRIMMED_DIR:?}"/*
 # fastqc on paired reads only (R1 + R2 per sample)
 SAMPLES=("${TRIMMED_DIR}"/*_R1_paired.fastq.gz)
 TOTAL=${#SAMPLES[@]}
 IDX=0
-
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] fastqc started"
-
 for R1 in "${SAMPLES[@]}"; do
     R2="${R1/_R1_paired.fastq.gz/_R2_paired.fastq.gz}"
     SAMPLE=$(basename "${R1}" _R1_paired.fastq.gz)
-    IDX=$(( IDX + 1 ))
-
+    IDX=$((IDX + 1))
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   running fastqc on ${SAMPLE}..."
     T0=$(date +%s)
     fastqc \
-        --outdir "${FASTQC_OUT_DIR_TRIMMED}" \
+        --outdir "${FASTQC_TRIMMED_DIR}" \
         --threads 2 \
         --noextract \
         "${R1}" "${R2}"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed $T0))"
 done
-
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] fastqc ended"
-
-
 # multiqc
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] multiqc started"
 T0=$(date +%s)
 multiqc \
-    "${FASTQC_OUT_DIR_TRIMMED}" \
-    --outdir "${MULTIQC_OUT_DIR_TRIMMED}" \
+    "${FASTQC_TRIMMED_DIR}" \
+    --outdir "${MULTIQC_TRIMMED_DIR}" \
     --filename "multiqc_trimmed" \
     --title "trimmed data fastqc reports" \
     --force
