@@ -1,0 +1,61 @@
+#!/bin/bash
+#SBATCH -A uppmax2026-1-61
+#SBATCH -p pelle
+#SBATCH -c 4
+#SBATCH -t 06:00:00
+#SBATCH -J canu_assembly_pacbio_1
+#SBATCH --mail-type=ALL
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_canu.%x.%j.out
+
+
+set -euo pipefail
+
+trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
+trap 'echo "[$(date +%Y-%m-%d %H:%M:%S)] script finished (exit code $?)"' EXIT
+
+BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
+
+source "${BASE_DIR}/utils/calculate_elapsed_time.sh"
+RAW_DIR="${BASE_DIR}/data/raw_data"
+CANU_PACBIO_OUT_DIR="${BASE_DIR}/analyses/02_genome_assembly/canu_pacbio"
+
+NOBACKUP_CANU="/proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio"
+
+# symlink output dir to nobackup
+mkdir -p "${NOBACKUP_CANU}"
+if [[ -d "${CANU_PACBIO_OUT_DIR}" && ! -L "${CANU_PACBIO_OUT_DIR}" ]]; then
+    rmdir "${CANU_PACBIO_OUT_DIR}" 2>/dev/null || { echo "ERROR: ${CANU_PACBIO_OUT_DIR} exists as a non-empty directory, cannot replace with symlink"; exit 1; }
+fi
+if [[ ! -L "${CANU_PACBIO_OUT_DIR}" ]]; then
+    ln -s "${NOBACKUP_CANU}" "${CANU_PACBIO_OUT_DIR}"
+fi
+
+module purge
+module load Canu/2.2
+
+PACBIO_FILES=("${RAW_DIR}"/dna_pacbio_*.subreads.fastq.gz)
+if [[ ${#PACBIO_FILES[@]} -eq 0 ]]; then
+    echo "ERROR: no PacBio subreads files found in ${RAW_DIR}"
+    exit 1
+fi
+
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] canu assembly started"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] input: ${#PACBIO_FILES[@]} PacBio SMRT cell files"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] output dir: ${CANU_PACBIO_OUT_DIR}"
+T0=$(date +%s)
+
+# Canu submits its own SLURM sub-jobs via gridOptions and returns immediately.
+# Sub-jobs are constrained to 2 cores and 12 h each.
+canu \
+    -p efaecium_e745_pacbio \
+    -d "${CANU_PACBIO_OUT_DIR}" \
+    genomeSize=3.3m \
+    maxThreads=4 \
+    useGrid=true \
+    gridOptions="-A uppmax2026-1-61 -p pelle -c 4 -t 12:00:00" \
+    -pacbio-raw \
+    "${PACBIO_FILES[@]}"
+
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] canu launched ($(elapsed $T0))"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] sub-jobs running independently — monitor with: squeue -u dich3309"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] assembly complete when efaecium_e745_pacbio.contigs.fasta appears in ${CANU_PACBIO_OUT_DIR}"
