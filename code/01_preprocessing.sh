@@ -5,15 +5,17 @@
 #SBATCH -t 01:00:00
 #SBATCH -J qc_raw_3
 #SBATCH --mail-type=ALL
-#SBATCH --output=%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/logs/01_preprocessing.%x.%j.out
 
 
 set -euo pipefail
 
+trap 'echo "[$(date +%H:%M:%S)] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
+trap 'echo "[$(date +%H:%M:%S)] script finished (exit code $?)"' EXIT
 
 BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
 
-source "${BASE_DIR}/helper-scripts/calculate_elapsed_time.sh"
+source "${BASE_DIR}/utils/calculate_elapsed_time.sh"
 RAW_DIR="${BASE_DIR}/data/raw_data"
 
 FASTQC_OUTPUT_DIR_RAW="${BASE_DIR}/analyses/01_preprocessing/fastqc_raw"
