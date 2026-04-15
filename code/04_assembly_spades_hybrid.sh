@@ -2,8 +2,8 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 4
-#SBATCH -t 04:00:00
-#SBATCH -J spades_hybrid_assembly
+#SBATCH -t 08:00:00
+#SBATCH -J spades_hybrid_assembly_2
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_spades_hybrid.%x.%j.out
 

@@ -1,0 +1,10 @@
+[2026-04-15 16:28:31] SPAdes hybrid assembly started
+[2026-04-15 16:28:31] Illumina: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/raw_data/dna_illumina_R1.fq.gz /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/raw_data/dna_illumina_R2.fq.gz
+[2026-04-15 16:28:31] PacBio: 6 files
+[2026-04-15 16:28:31] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/spades_hybrid
+SPAdes genome assembler v4.2.0
+
+Usage: spades.py [options] -o <output_dir>
+spades.py: error: argument --pacbio: expected 1 argument
+[2026-04-15 16:28:32] ERROR: script exited unexpectedly (exit code 0, line 62)
+[2026-04-15 16:28:32] script finished (exit code 0)
