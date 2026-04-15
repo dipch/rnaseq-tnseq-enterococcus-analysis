@@ -24,6 +24,9 @@ NOBACKUP_TRIMMED="/proj/uppmax2026-1-61/nobackup/work/dich3309/trimmed_data"
 
 # symlink
 mkdir -p "${NOBACKUP_TRIMMED}"
+if [[ -d "${TRIMMED_DIR}" && ! -L "${TRIMMED_DIR}" ]]; then
+    rmdir "${TRIMMED_DIR}" 2>/dev/null || { echo "ERROR: ${TRIMMED_DIR} exists as a non-empty directory, cannot replace with symlink"; exit 1; }
+fi
 if [[ ! -L "${TRIMMED_DIR}" ]]; then
     ln -s "${NOBACKUP_TRIMMED}" "${TRIMMED_DIR}"
 fi
