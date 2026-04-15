@@ -3,7 +3,7 @@
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 01:00:00
-#SBATCH -J qc_raw
+#SBATCH -J qc_raw_2
 #SBATCH --mail-type=ALL
 #SBATCH --output=%x.%j.out
 
@@ -33,16 +33,27 @@ if [[ ! -d "${RAW_DIR}" ]] || [[ -z "$(ls "${RAW_DIR}")" ]]; then
     exit 1
 fi
 
+rm -rf "${FASTQC_OUTPUT_DIR_RAW:?}"/* "${MULTIQC_OUTPUT_DIR_RAW:?}"/*
 
-# fastqc
+
+# fastqc — FASTQ  (Illumina + PacBio)
 echo "[$(date '+%H:%M:%S')] fastqc started"
 T0=$(date +%s)
 fastqc \
     --outdir "${FASTQC_OUTPUT_DIR_RAW}" \
     --threads 2 \
     --noextract \
-    "${RAW_DIR}"/*
+    "${RAW_DIR}"/*.fastq.gz "${RAW_DIR}"/*.fq.gz
 echo "[$(date '+%H:%M:%S')] fastqc ended ($(elapsed $T0))"
+
+# fastqc — Nanopore FASTA
+echo "[$(date '+%H:%M:%S')] fastqc nanopore started"
+fastqc \
+    --outdir "${FASTQC_OUTPUT_DIR_RAW}" \
+    --format fasta \
+    --noextract \
+    "${RAW_DIR}"/*.fasta.gz
+echo "[$(date '+%H:%M:%S')] fastqc nanopore ended"
 
 # multiqc
 echo "[$(date '+%H:%M:%S')] multiqc started"
