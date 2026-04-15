@@ -1,0 +1,7 @@
+ln: failed to create symbolic link '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio': No such file or directory
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
+[] ERROR: script exited unexpectedly (exit code 1, line 30)
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
+[] script finished (exit code 1)

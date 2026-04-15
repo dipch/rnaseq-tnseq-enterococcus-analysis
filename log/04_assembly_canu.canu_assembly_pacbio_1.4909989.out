@@ -1,0 +1,129 @@
+[2026-04-15 15:04:41] canu assembly started
+[2026-04-15 15:04:41] input: 6 PacBio SMRT cell files
+[2026-04-15 15:04:41] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio
+-- canu 2.3
+--
+-- CITATIONS
+--
+-- For 'standard' assemblies of PacBio or Nanopore reads:
+--   Koren S, Walenz BP, Berlin K, Miller JR, Phillippy AM.
+--   Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation.
+--   Genome Res. 2017 May;27(5):722-736.
+--   http://doi.org/10.1101/gr.215087.116
+-- 
+-- Read and contig alignments during correction and consensus use:
+--   Šošic M, Šikic M.
+--   Edlib: a C/C ++ library for fast, exact sequence alignment using edit distance.
+--   Bioinformatics. 2017 May 1;33(9):1394-1395.
+--   http://doi.org/10.1093/bioinformatics/btw753
+-- 
+-- Overlaps are generated using:
+--   Berlin K, et al.
+--   Assembling large genomes with single-molecule sequencing and locality-sensitive hashing.
+--   Nat Biotechnol. 2015 Jun;33(6):623-30.
+--   http://doi.org/10.1038/nbt.3238
+-- 
+--   Myers EW, et al.
+--   A Whole-Genome Assembly of Drosophila.
+--   Science. 2000 Mar 24;287(5461):2196-204.
+--   http://doi.org/10.1126/science.287.5461.2196
+-- 
+-- Corrected read consensus sequences are generated using an algorithm derived from FALCON-sense:
+--   Chin CS, et al.
+--   Phased diploid genome assembly with single-molecule real-time sequencing.
+--   Nat Methods. 2016 Dec;13(12):1050-1054.
+--   http://doi.org/10.1038/nmeth.4035
+-- 
+-- Contig consensus sequences are generated using an algorithm derived from pbdagcon:
+--   Chin CS, et al.
+--   Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data.
+--   Nat Methods. 2013 Jun;10(6):563-9
+--   http://doi.org/10.1038/nmeth.2474
+-- 
+-- CONFIGURE CANU
+--
+-- Detected Java(TM) Runtime Environment '17.0.15' (from '/sw/arch/eb/software/Java/17.0.15/bin/java') without -d64 support.
+-- Detected gnuplot version '6.0 patchlevel 1   ' (from 'gnuplot') and image format 'png'.
+
+usage:   canu [-version] [-citation] \
+              [-haplotype | -correct | -trim | -assemble | -trim-assemble] \
+              [-s <assembly-specifications-file>] \
+               -p <assembly-prefix> \
+               -d <assembly-directory> \
+               genomeSize=<number>[g|m|k] \
+              [other-options] \
+              [-haplotype{NAME} illumina.fastq.gz] \
+              [-corrected] \
+              [-trimmed] \
+              [-pacbio |
+               -nanopore |
+               -pacbio-hifi] file1 file2 ...
+
+example: canu -d run1 -p godzilla genomeSize=1g -nanopore-raw reads/*.fasta.gz 
+
+
+  To restrict canu to only a specific stage, use:
+    -haplotype     - generate haplotype-specific reads
+    -correct       - generate corrected reads
+    -trim          - generate trimmed reads
+    -assemble      - generate an assembly
+    -trim-assemble - generate trimmed reads and then assemble them
+
+  The assembly is computed in the -d <assembly-directory>, with output files named
+  using the -p <assembly-prefix>.  This directory is created if needed.  It is not
+  possible to run multiple assemblies in the same directory.
+
+  The genome size should be your best guess of the haploid genome size of what is being
+  assembled.  It is used primarily to estimate coverage in reads, NOT as the desired
+  assembly size.  Fractional values are allowed: '4.7m' equals '4700k' equals '4700000'
+
+  Some common options:
+    useGrid=string
+      - Run under grid control (true), locally (false), or set up for grid control
+        but don't submit any jobs (remote)
+    rawErrorRate=fraction-error
+      - The allowed difference in an overlap between two raw uncorrected reads.  For lower
+        quality reads, use a higher number.  The defaults are 0.300 for PacBio reads and
+        0.500 for Nanopore reads.
+    correctedErrorRate=fraction-error
+      - The allowed difference in an overlap between two corrected reads.  Assemblies of
+        low coverage or data with biological differences will benefit from a slight increase
+        in this.  Defaults are 0.045 for PacBio reads and 0.144 for Nanopore reads.
+    gridOptions=string
+      - Pass string to the command used to submit jobs to the grid.  Can be used to set
+        maximum run time limits.  Should NOT be used to set memory limits; Canu will do
+        that for you.
+    minReadLength=number
+      - Ignore reads shorter than 'number' bases long.  Default: 1000.
+    minOverlapLength=number
+      - Ignore read-to-read overlaps shorter than 'number' bases long.  Default: 500.
+  A full list of options can be printed with '-options'.  All options can be supplied in
+  an optional sepc file with the -s option.
+
+  For TrioCanu, haplotypes are specified with the -haplotype{NAME} option, with any
+  number of haplotype-specific Illumina read files after.  The {NAME} of each haplotype
+  is free text (but only letters and numbers, please).  For example:
+    -haplotypeNANNY nanny/*gz
+    -haplotypeBILLY billy1.fasta.gz billy2.fasta.gz
+
+  Reads can be either FASTA or FASTQ format, uncompressed, or compressed with gz, bz2 or xz.
+
+  Reads are specified by the technology they were generated with, and any processing performed.
+
+  [processing]
+    -corrected
+    -trimmed
+
+  [technology]
+    -pacbio      <files>
+    -nanopore    <files>
+    -pacbio-hifi <files>
+
+Complete documentation at http://canu.readthedocs.org/en/latest/
+
+ERROR:  failed to run samtools using command 'samtools'
+          set samtools=/path/to/samtools to fix, or
+          set bamOutput=false to disable.
+
+[2026-04-15 15:04:42] ERROR: script exited unexpectedly (exit code 0, line 50)
+[2026-04-15 15:04:42] script finished (exit code 0)
