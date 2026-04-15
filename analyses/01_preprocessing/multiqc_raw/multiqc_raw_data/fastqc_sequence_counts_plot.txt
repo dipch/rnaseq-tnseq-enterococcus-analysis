@@ -1,0 +1,21 @@
+Sample	Unique Reads	Duplicate Reads
+dna_illumina_R1	1379842.0	286825.0
+dna_illumina_R2	1401674.0	264993.0
+dna_pacbio_run1_cell1.subreads	12306.0	0.0
+dna_pacbio_run1_cell2.subreads	14823.0	0.0
+dna_pacbio_run1_cell3.subreads	15336.0	0.0
+dna_pacbio_run2_cell1.subreads	24629.0	1.0
+dna_pacbio_run2_cell2.subreads	26440.0	0.0
+dna_pacbio_run2_cell3.subreads	23271.0	0.0
+rna_bhi_rep1_R1	5252941.0	21825943.0
+rna_bhi_rep1_R2	6033153.0	21045731.0
+rna_bhi_rep2_R1	4640998.0	19312342.0
+rna_bhi_rep2_R2	5297478.0	18655862.0
+rna_bhi_rep3_R1	4940054.0	18300123.0
+rna_bhi_rep3_R2	5662407.0	17577770.0
+rna_serum_rep1_R1	4495525.0	21441843.0
+rna_serum_rep1_R2	4979033.0	20958335.0
+rna_serum_rep2_R1	4540086.0	22094294.0
+rna_serum_rep2_R2	5137095.0	21497285.0
+rna_serum_rep3_R1	4698697.0	22910918.0
+rna_serum_rep3_R2	5263476.0	22346139.0

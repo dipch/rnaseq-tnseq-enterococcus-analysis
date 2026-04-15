@@ -3,7 +3,7 @@
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 01:00:00
-#SBATCH -J qc_raw_2
+#SBATCH -J qc_raw_3
 #SBATCH --mail-type=ALL
 #SBATCH --output=%x.%j.out
 

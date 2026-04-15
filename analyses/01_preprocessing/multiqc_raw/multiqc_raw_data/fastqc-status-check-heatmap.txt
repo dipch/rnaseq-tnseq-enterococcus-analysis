@@ -1,0 +1,21 @@
+.	Basic Statistics	Per Base Sequence Quality	Per Tile Sequence Quality	Per Sequence Quality Scores	Per Base Sequence Content	Per Sequence GC Content	Per Base N Content	Sequence Length Distribution	Sequence Duplication Levels	Overrepresented Sequences	Adapter Content
+dna_illumina_R1	1	1	1	1	1	1	1	1	1	1	1
+dna_illumina_R2	1	1	1	1	1	1	1	1	1	1	1
+dna_pacbio_run1_cell1.subreads	1	0.25	0	0.25	0.25	0.25	1	0.5	1	1	0.5
+dna_pacbio_run1_cell2.subreads	1	0.25	0	0.25	0.25	0.25	1	0.5	1	1	0.25
+dna_pacbio_run1_cell3.subreads	1	0.25	0	0.25	0.25	0.5	1	0.5	1	1	0.25
+dna_pacbio_run2_cell1.subreads	1	0.25	0	0.25	1	0.5	1	0.5	1	1	0.25
+dna_pacbio_run2_cell2.subreads	1	0.25	0	0.25	1	0.5	1	0.5	1	1	0.5
+dna_pacbio_run2_cell3.subreads	1	0.25	0	0.25	0.5	0.5	1	0.5	1	1	0.25
+rna_bhi_rep1_R1	1	1	0.5	1	0.5	1	1	1	0.25	0.5	0.25
+rna_bhi_rep1_R2	1	1	1	1	0.25	1	1	1	0.25	0.5	0.25
+rna_bhi_rep2_R1	1	1	0.5	1	0.5	1	1	1	0.25	0.5	0.25
+rna_bhi_rep2_R2	1	1	1	1	0.25	1	1	1	0.25	0.5	0.25
+rna_bhi_rep3_R1	1	1	0.5	1	0.5	1	1	1	0.25	0.5	0.25
+rna_bhi_rep3_R2	1	1	1	1	0.25	1	1	1	0.25	0.5	0.25
+rna_serum_rep1_R1	1	1	0.5	1	0.25	0.25	1	1	0.25	0.25	0.25
+rna_serum_rep1_R2	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25
+rna_serum_rep2_R1	1	1	0.5	1	0.25	0.25	1	1	0.25	0.25	0.25
+rna_serum_rep2_R2	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25
+rna_serum_rep3_R1	1	1	0.5	1	0.25	0.25	1	1	0.25	0.25	0.25
+rna_serum_rep3_R2	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25

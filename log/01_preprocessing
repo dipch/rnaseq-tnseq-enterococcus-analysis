@@ -1,0 +1,440 @@
+[03:34:58] fastqc started
+application/gzip
+Started analysis of dna_pacbio_run1_cell1.subreads.fastq.gz
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+Started analysis of dna_pacbio_run1_cell2.subreads.fastq.gz
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+Approx 5% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 5% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 15% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 10% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 20% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 20% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 25% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 40% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 40% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 55% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 50% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 60% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 60% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 70% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 65% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 70% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 85% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 95% complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Analysis complete for dna_pacbio_run1_cell1.subreads.fastq.gz
+Approx 85% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Approx 90% complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Analysis complete for dna_pacbio_run1_cell2.subreads.fastq.gz
+Started analysis of dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 5% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 10% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Started analysis of dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 15% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 25% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 5% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 10% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 35% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 15% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 20% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 50% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 55% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 25% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 65% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 70% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 75% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 35% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 40% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 90% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 95% complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Analysis complete for dna_pacbio_run1_cell3.subreads.fastq.gz
+Approx 50% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 55% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Started analysis of dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 60% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 5% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 65% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 10% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 70% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 75% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 15% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 20% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 85% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 25% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 90% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 95% complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Analysis complete for dna_pacbio_run2_cell1.subreads.fastq.gz
+Approx 35% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 40% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Started analysis of dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 50% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 55% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 5% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 60% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 10% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 15% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 65% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 20% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 70% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 25% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 75% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 30% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 35% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 85% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 40% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 90% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 45% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 50% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 95% complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Analysis complete for dna_pacbio_run2_cell2.subreads.fastq.gz
+Approx 55% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 60% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 65% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Started analysis of rna_bhi_rep1_R1.fastq.gz
+Approx 70% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 75% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 80% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 85% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 90% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Approx 95% complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Analysis complete for dna_pacbio_run2_cell3.subreads.fastq.gz
+Started analysis of rna_bhi_rep1_R2.fastq.gz
+Approx 5% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 5% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 10% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 10% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 15% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 15% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 20% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 20% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 25% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 25% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 30% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 30% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 35% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 35% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 40% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 40% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 45% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 45% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 50% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 50% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 55% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 55% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 60% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 60% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 65% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 65% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 70% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 70% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 75% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 75% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 80% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 80% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 85% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 85% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 90% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 90% complete for rna_bhi_rep1_R2.fastq.gz
+Approx 95% complete for rna_bhi_rep1_R1.fastq.gz
+Approx 95% complete for rna_bhi_rep1_R2.fastq.gz
+Analysis complete for rna_bhi_rep1_R1.fastq.gz
+Started analysis of rna_bhi_rep2_R1.fastq.gz
+Analysis complete for rna_bhi_rep1_R2.fastq.gz
+Started analysis of rna_bhi_rep2_R2.fastq.gz
+Approx 5% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 5% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 10% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 10% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 15% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 15% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 20% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 20% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 25% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 25% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 30% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 30% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 35% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 35% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 40% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 40% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 45% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 45% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 50% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 50% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 55% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 55% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 60% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 60% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 65% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 65% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 70% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 70% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 75% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 75% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 80% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 80% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 85% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 85% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 90% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 90% complete for rna_bhi_rep2_R2.fastq.gz
+Approx 95% complete for rna_bhi_rep2_R1.fastq.gz
+Approx 95% complete for rna_bhi_rep2_R2.fastq.gz
+Analysis complete for rna_bhi_rep2_R1.fastq.gz
+Started analysis of rna_bhi_rep3_R1.fastq.gz
+Analysis complete for rna_bhi_rep2_R2.fastq.gz
+Started analysis of rna_bhi_rep3_R2.fastq.gz
+Approx 5% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 5% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 10% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 10% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 15% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 15% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 20% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 20% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 25% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 25% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 30% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 30% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 35% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 35% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 40% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 40% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 45% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 45% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 50% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 50% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 55% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 55% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 60% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 60% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 65% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 65% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 70% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 70% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 75% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 75% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 80% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 80% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 85% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 85% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 90% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 90% complete for rna_bhi_rep3_R2.fastq.gz
+Approx 95% complete for rna_bhi_rep3_R1.fastq.gz
+Approx 95% complete for rna_bhi_rep3_R2.fastq.gz
+Analysis complete for rna_bhi_rep3_R1.fastq.gz
+Analysis complete for rna_bhi_rep3_R2.fastq.gz
+Started analysis of rna_serum_rep1_R1.fastq.gz
+Started analysis of rna_serum_rep1_R2.fastq.gz
+Approx 5% complete for rna_serum_rep1_R1.fastq.gz
+Approx 5% complete for rna_serum_rep1_R2.fastq.gz
+Approx 10% complete for rna_serum_rep1_R1.fastq.gz
+Approx 10% complete for rna_serum_rep1_R2.fastq.gz
+Approx 15% complete for rna_serum_rep1_R1.fastq.gz
+Approx 15% complete for rna_serum_rep1_R2.fastq.gz
+Approx 20% complete for rna_serum_rep1_R1.fastq.gz
+Approx 20% complete for rna_serum_rep1_R2.fastq.gz
+Approx 25% complete for rna_serum_rep1_R1.fastq.gz
+Approx 25% complete for rna_serum_rep1_R2.fastq.gz
+Approx 30% complete for rna_serum_rep1_R2.fastq.gz
+Approx 30% complete for rna_serum_rep1_R1.fastq.gz
+Approx 35% complete for rna_serum_rep1_R2.fastq.gz
+Approx 35% complete for rna_serum_rep1_R1.fastq.gz
+Approx 40% complete for rna_serum_rep1_R2.fastq.gz
+Approx 40% complete for rna_serum_rep1_R1.fastq.gz
+Approx 45% complete for rna_serum_rep1_R2.fastq.gz
+Approx 45% complete for rna_serum_rep1_R1.fastq.gz
+Approx 50% complete for rna_serum_rep1_R2.fastq.gz
+Approx 50% complete for rna_serum_rep1_R1.fastq.gz
+Approx 55% complete for rna_serum_rep1_R2.fastq.gz
+Approx 55% complete for rna_serum_rep1_R1.fastq.gz
+Approx 60% complete for rna_serum_rep1_R2.fastq.gz
+Approx 60% complete for rna_serum_rep1_R1.fastq.gz
+Approx 65% complete for rna_serum_rep1_R2.fastq.gz
+Approx 65% complete for rna_serum_rep1_R1.fastq.gz
+Approx 70% complete for rna_serum_rep1_R2.fastq.gz
+Approx 70% complete for rna_serum_rep1_R1.fastq.gz
+Approx 75% complete for rna_serum_rep1_R2.fastq.gz
+Approx 75% complete for rna_serum_rep1_R1.fastq.gz
+Approx 80% complete for rna_serum_rep1_R2.fastq.gz
+Approx 80% complete for rna_serum_rep1_R1.fastq.gz
+Approx 85% complete for rna_serum_rep1_R2.fastq.gz
+Approx 85% complete for rna_serum_rep1_R1.fastq.gz
+Approx 90% complete for rna_serum_rep1_R2.fastq.gz
+Approx 90% complete for rna_serum_rep1_R1.fastq.gz
+Approx 95% complete for rna_serum_rep1_R2.fastq.gz
+Approx 95% complete for rna_serum_rep1_R1.fastq.gz
+Analysis complete for rna_serum_rep1_R2.fastq.gz
+Started analysis of rna_serum_rep2_R1.fastq.gz
+Analysis complete for rna_serum_rep1_R1.fastq.gz
+Started analysis of rna_serum_rep2_R2.fastq.gz
+Approx 5% complete for rna_serum_rep2_R1.fastq.gz
+Approx 5% complete for rna_serum_rep2_R2.fastq.gz
+Approx 10% complete for rna_serum_rep2_R1.fastq.gz
+Approx 10% complete for rna_serum_rep2_R2.fastq.gz
+Approx 15% complete for rna_serum_rep2_R1.fastq.gz
+Approx 15% complete for rna_serum_rep2_R2.fastq.gz
+Approx 20% complete for rna_serum_rep2_R1.fastq.gz
+Approx 20% complete for rna_serum_rep2_R2.fastq.gz
+Approx 25% complete for rna_serum_rep2_R1.fastq.gz
+Approx 25% complete for rna_serum_rep2_R2.fastq.gz
+Approx 30% complete for rna_serum_rep2_R1.fastq.gz
+Approx 30% complete for rna_serum_rep2_R2.fastq.gz
+Approx 35% complete for rna_serum_rep2_R1.fastq.gz
+Approx 35% complete for rna_serum_rep2_R2.fastq.gz
+Approx 40% complete for rna_serum_rep2_R1.fastq.gz
+Approx 40% complete for rna_serum_rep2_R2.fastq.gz
+Approx 45% complete for rna_serum_rep2_R1.fastq.gz
+Approx 45% complete for rna_serum_rep2_R2.fastq.gz
+Approx 50% complete for rna_serum_rep2_R1.fastq.gz
+Approx 50% complete for rna_serum_rep2_R2.fastq.gz
+Approx 55% complete for rna_serum_rep2_R1.fastq.gz
+Approx 55% complete for rna_serum_rep2_R2.fastq.gz
+Approx 60% complete for rna_serum_rep2_R1.fastq.gz
+Approx 60% complete for rna_serum_rep2_R2.fastq.gz
+Approx 65% complete for rna_serum_rep2_R1.fastq.gz
+Approx 65% complete for rna_serum_rep2_R2.fastq.gz
+Approx 70% complete for rna_serum_rep2_R1.fastq.gz
+Approx 70% complete for rna_serum_rep2_R2.fastq.gz
+Approx 75% complete for rna_serum_rep2_R1.fastq.gz
+Approx 75% complete for rna_serum_rep2_R2.fastq.gz
+Approx 80% complete for rna_serum_rep2_R1.fastq.gz
+Approx 80% complete for rna_serum_rep2_R2.fastq.gz
+Approx 85% complete for rna_serum_rep2_R1.fastq.gz
+Approx 85% complete for rna_serum_rep2_R2.fastq.gz
+Approx 90% complete for rna_serum_rep2_R2.fastq.gz
+Approx 90% complete for rna_serum_rep2_R1.fastq.gz
+Approx 95% complete for rna_serum_rep2_R2.fastq.gz
+Approx 95% complete for rna_serum_rep2_R1.fastq.gz
+Analysis complete for rna_serum_rep2_R2.fastq.gz
+Analysis complete for rna_serum_rep2_R1.fastq.gz
+Started analysis of rna_serum_rep3_R1.fastq.gz
+Started analysis of rna_serum_rep3_R2.fastq.gz
+Approx 5% complete for rna_serum_rep3_R1.fastq.gz
+Approx 5% complete for rna_serum_rep3_R2.fastq.gz
+Approx 10% complete for rna_serum_rep3_R1.fastq.gz
+Approx 10% complete for rna_serum_rep3_R2.fastq.gz
+Approx 15% complete for rna_serum_rep3_R1.fastq.gz
+Approx 15% complete for rna_serum_rep3_R2.fastq.gz
+Approx 20% complete for rna_serum_rep3_R2.fastq.gz
+Approx 20% complete for rna_serum_rep3_R1.fastq.gz
+Approx 25% complete for rna_serum_rep3_R2.fastq.gz
+Approx 25% complete for rna_serum_rep3_R1.fastq.gz
+Approx 30% complete for rna_serum_rep3_R2.fastq.gz
+Approx 30% complete for rna_serum_rep3_R1.fastq.gz
+Approx 35% complete for rna_serum_rep3_R2.fastq.gz
+Approx 35% complete for rna_serum_rep3_R1.fastq.gz
+Approx 40% complete for rna_serum_rep3_R2.fastq.gz
+Approx 40% complete for rna_serum_rep3_R1.fastq.gz
+Approx 45% complete for rna_serum_rep3_R2.fastq.gz
+Approx 45% complete for rna_serum_rep3_R1.fastq.gz
+Approx 50% complete for rna_serum_rep3_R2.fastq.gz
+Approx 50% complete for rna_serum_rep3_R1.fastq.gz
+Approx 55% complete for rna_serum_rep3_R2.fastq.gz
+Approx 55% complete for rna_serum_rep3_R1.fastq.gz
+Approx 60% complete for rna_serum_rep3_R2.fastq.gz
+Approx 60% complete for rna_serum_rep3_R1.fastq.gz
+Approx 65% complete for rna_serum_rep3_R2.fastq.gz
+Approx 65% complete for rna_serum_rep3_R1.fastq.gz
+Approx 70% complete for rna_serum_rep3_R2.fastq.gz
+Approx 70% complete for rna_serum_rep3_R1.fastq.gz
+Approx 75% complete for rna_serum_rep3_R2.fastq.gz
+Approx 75% complete for rna_serum_rep3_R1.fastq.gz
+Approx 80% complete for rna_serum_rep3_R2.fastq.gz
+Approx 80% complete for rna_serum_rep3_R1.fastq.gz
+Approx 85% complete for rna_serum_rep3_R2.fastq.gz
+Approx 85% complete for rna_serum_rep3_R1.fastq.gz
+Approx 90% complete for rna_serum_rep3_R2.fastq.gz
+Approx 90% complete for rna_serum_rep3_R1.fastq.gz
+Approx 95% complete for rna_serum_rep3_R2.fastq.gz
+Approx 95% complete for rna_serum_rep3_R1.fastq.gz
+Analysis complete for rna_serum_rep3_R2.fastq.gz
+Started analysis of dna_illumina_R1.fq.gz
+Approx 5% complete for dna_illumina_R1.fq.gz
+Analysis complete for rna_serum_rep3_R1.fastq.gz
+Approx 10% complete for dna_illumina_R1.fq.gz
+Approx 15% complete for dna_illumina_R1.fq.gz
+Approx 20% complete for dna_illumina_R1.fq.gz
+Approx 25% complete for dna_illumina_R1.fq.gz
+Started analysis of dna_illumina_R2.fq.gz
+Approx 30% complete for dna_illumina_R1.fq.gz
+Approx 5% complete for dna_illumina_R2.fq.gz
+Approx 35% complete for dna_illumina_R1.fq.gz
+Approx 10% complete for dna_illumina_R2.fq.gz
+Approx 40% complete for dna_illumina_R1.fq.gz
+Approx 15% complete for dna_illumina_R2.fq.gz
+Approx 45% complete for dna_illumina_R1.fq.gz
+Approx 20% complete for dna_illumina_R2.fq.gz
+Approx 50% complete for dna_illumina_R1.fq.gz
+Approx 25% complete for dna_illumina_R2.fq.gz
+Approx 55% complete for dna_illumina_R1.fq.gz
+Approx 30% complete for dna_illumina_R2.fq.gz
+Approx 60% complete for dna_illumina_R1.fq.gz
+Approx 35% complete for dna_illumina_R2.fq.gz
+Approx 65% complete for dna_illumina_R1.fq.gz
+Approx 40% complete for dna_illumina_R2.fq.gz
+Approx 70% complete for dna_illumina_R1.fq.gz
+Approx 45% complete for dna_illumina_R2.fq.gz
+Approx 75% complete for dna_illumina_R1.fq.gz
+Approx 50% complete for dna_illumina_R2.fq.gz
+Approx 80% complete for dna_illumina_R1.fq.gz
+Approx 55% complete for dna_illumina_R2.fq.gz
+Approx 85% complete for dna_illumina_R1.fq.gz
+Approx 60% complete for dna_illumina_R2.fq.gz
+Approx 90% complete for dna_illumina_R1.fq.gz
+Approx 65% complete for dna_illumina_R2.fq.gz
+Approx 95% complete for dna_illumina_R1.fq.gz
+Approx 70% complete for dna_illumina_R2.fq.gz
+Analysis complete for dna_illumina_R1.fq.gz
+Approx 75% complete for dna_illumina_R2.fq.gz
+Approx 80% complete for dna_illumina_R2.fq.gz
+Approx 85% complete for dna_illumina_R2.fq.gz
+Approx 90% complete for dna_illumina_R2.fq.gz
+Approx 95% complete for dna_illumina_R2.fq.gz
+Analysis complete for dna_illumina_R2.fq.gz
+[03:50:01] fastqc ended (0h 15m 3s)
+[03:50:01] multiqc started
+
+/// MultiQC 🔍 v1.28
+
+     update_config | Report title: raw data fastqc reports
+     version_check | MultiQC Version v1.33 now available!
+       file_search | Search path: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/fastqc_raw
+
+            fastqc | Found 20 reports
+
+     write_results | Data        : /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/multiqc_raw/multiqc_raw_data
+     write_results | Report      : /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/01_preprocessing/multiqc_raw/multiqc_raw.html
+           multiqc | MultiQC complete
+[03:50:41] multiqc ended (0h 0m 40s)
