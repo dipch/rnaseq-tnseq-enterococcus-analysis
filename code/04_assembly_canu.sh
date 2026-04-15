@@ -32,6 +32,7 @@ fi
 
 module purge
 module load canu/2.3-GCCcore-13.3.0-Java-17
+module load SAMtools/1.22.1-GCC-13.3.0
 
 PACBIO_FILES=("${RAW_DIR}"/dna_pacbio_*.subreads.fastq.gz)
 if [[ ${#PACBIO_FILES[@]} -eq 0 ]]; then
