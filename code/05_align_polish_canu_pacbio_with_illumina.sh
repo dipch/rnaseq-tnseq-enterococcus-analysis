@@ -9,8 +9,8 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
 
-# polishing BAM goes to nobackup (large); flagstat results stay in repo tree
-mkdir -p "${POLISH_ALIGN_DIR}" "${NOBACKUP_POLISH}"
+# all outputs go to nobackup (bam, index, flagstat)
+mkdir -p "${NOBACKUP_POLISH}"
 
 module purge
 module load BWA/0.7.19-GCCcore-13.3.0
@@ -21,7 +21,7 @@ ASSEMBLY_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
 ILLUMINA_R1="${RAW_DIR}/dna_illumina_R1.fq.gz"
 ILLUMINA_R2="${RAW_DIR}/dna_illumina_R2.fq.gz"
 SORTED_BAM="${NOBACKUP_POLISH}/efaecium_e745_illumina_sorted.bam"
-FLAGSTAT_TXT="${POLISH_ALIGN_DIR}/flagstat.txt"
+FLAGSTAT_TXT="${NOBACKUP_POLISH}/flagstat.txt"
 
 [[ -f "${ASSEMBLY_FA}" ]] || {
     echo "ERROR: Canu assembly not found: ${ASSEMBLY_FA}"
@@ -36,13 +36,13 @@ FLAGSTAT_TXT="${POLISH_ALIGN_DIR}/flagstat.txt"
     exit 1
 }
 
-# --- step 1: index assembly ---
+# index assembly with bwa
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] indexing Canu PacBio assembly with BWA"
 T0=$(date +%s)
 bwa index "${ASSEMBLY_FA}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] indexing complete ($(elapsed $T0))"
 
-# --- step 2: align + sort (piped; no intermediate SAM) ---
+# align+sort
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] aligning Illumina reads to assembly"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] R1: ${ILLUMINA_R1}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] R2: ${ILLUMINA_R2}"
@@ -52,7 +52,7 @@ bwa mem -t 4 "${ASSEMBLY_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
     | samtools sort -@ 4 -o "${SORTED_BAM}"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] alignment + sort complete ($(elapsed $T1))"
 
-# --- step 3: index BAM ---
+# index bam
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] indexing BAM"
 T2=$(date +%s)
 samtools index "${SORTED_BAM}"
