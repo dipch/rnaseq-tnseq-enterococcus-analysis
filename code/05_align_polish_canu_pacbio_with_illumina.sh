@@ -10,8 +10,9 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
 
-# all outputs go to nobackup (bam, index, flagstat)
-mkdir -p "${NOBACKUP_POLISH}"
+# all outputs go to nobackup (bam, index, flagstat); symlink into analyses/
+mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH}"
+ensure_nobackup_symlink "${POLISH_ALIGN_DIR}" "${NOBACKUP_POLISH}"
 
 module purge
 module load BWA/0.7.19-GCCcore-13.3.0
