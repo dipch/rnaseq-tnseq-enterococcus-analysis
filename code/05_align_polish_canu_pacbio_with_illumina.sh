@@ -1,6 +1,5 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
-#SBATCH --reservation=uppmax2026-1-61_3
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 04:00:00
