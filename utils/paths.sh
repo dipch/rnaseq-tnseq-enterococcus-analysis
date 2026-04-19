@@ -41,3 +41,7 @@ NOBACKUP_SPADES_HYBRID="${NOBACKUP_BASE}/spades_hybrid"
 POLISH_ALIGN_DIR="${ASSEMBLY_DIR}/polishing_pacbio_illumina"
 NOBACKUP_POLISH="${NOBACKUP_BASE}/polishing_pacbio_illumina"
 
+# assembly evaluation
+EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
+QUAST_DIR="${EVAL_DIR}/quast"
+
