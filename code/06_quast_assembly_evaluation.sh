@@ -12,7 +12,7 @@ source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
 mkdir -p "${QUAST_DIR}"
 
 module purge
-module load QUAST/5.2.0-foss-2023b
+module load QUAST/5.3.0-gfbf-2024a
 
 CANU_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
 SPADES_SCAFFOLDS="${SPADES_HYBRID_OUT_DIR}/scaffolds.fasta"
