@@ -1,0 +1,210 @@
+[2026-04-20 00:29:29] running QUAST for canu_pacbio
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 --est-ref-size 3300000 --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio/efaecium_e745_pacbio.contigs.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-20 00:29:34
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio/efaecium_e745_pacbio.contigs.fasta ==> efaecium_e745_pacbio.contigs
+
+2026-04-20 00:29:47
+Running Basic statistics processor...
+  Estimated reference length = 3300000
+  Contig files: 
+    efaecium_e745_pacbio.contigs
+  Calculating N50 and L50...
+    efaecium_e745_pacbio.contigs, N50 = 2775137, L50 = 1, auN = 2456809.2, Total length = 3155801, GC % = 37.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/basic_stats/GC_content_plot.pdf
+  Drawing efaecium_e745_pacbio.contigs GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/basic_stats/efaecium_e745_pacbio.contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-20 00:29:51
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-20 00:29:52
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio/quast.log
+
+Finished: 2026-04-20 00:29:52
+Elapsed time: 0:00:17.191192
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-20 00:29:52] canu_pacbio complete (0h 0m 23s)
+[2026-04-20 00:29:52] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/canu_pacbio
+[2026-04-20 00:29:52] running QUAST for spades_scaffolds
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 --est-ref-size 3300000 --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/spades_hybrid/scaffolds.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-20 00:29:52
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/spades_hybrid/scaffolds.fasta ==> scaffolds
+
+2026-04-20 00:29:52
+Running Basic statistics processor...
+  Estimated reference length = 3300000
+  Contig files: 
+    scaffolds
+  Calculating N50 and L50...
+    scaffolds, N50 = 162800, L50 = 7, auN = 170912.1, Total length = 3128596, GC % = 37.71, # N's per 100 kbp =  6.42
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/GC_content_plot.pdf
+  Drawing scaffolds GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/scaffolds_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 16x)...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/coverage_histogram.pdf
+  Drawing scaffolds coverage histogram (bin size: 16x)...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/basic_stats/scaffolds_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-20 00:29:53
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-20 00:29:53
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds/quast.log
+
+Finished: 2026-04-20 00:29:53
+Elapsed time: 0:00:01.437308
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-20 00:29:53] spades_scaffolds complete (0h 0m 1s)
+[2026-04-20 00:29:53] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_scaffolds
+[2026-04-20 00:29:53] running QUAST for spades_contigs
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 --est-ref-size 3300000 --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/spades_hybrid/contigs.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-20 00:29:54
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/spades_hybrid/contigs.fasta ==> contigs
+
+2026-04-20 00:29:54
+Running Basic statistics processor...
+  Estimated reference length = 3300000
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 162800, L50 = 7, auN = 169706.4, Total length = 3128256, GC % = 37.71, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 16x)...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 16x)...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-20 00:29:55
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-20 00:29:55
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs/quast.log
+
+Finished: 2026-04-20 00:29:55
+Elapsed time: 0:00:01.547965
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-20 00:29:55] spades_contigs complete (0h 0m 2s)
+[2026-04-20 00:29:55] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast/spades_contigs
+[2026-04-20 00:29:55] script finished (exit code 0)
