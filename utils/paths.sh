@@ -14,7 +14,7 @@ source "${BASE_DIR}/utils/symlink_check.sh"
 # data
 RAW_DIR="${BASE_DIR}/data/raw_data"
 TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
-REFERENCE_DIR="${BASE_DIR}/data/reference"
+REFERENCE_DIR="${BASE_DIR}/data/reference_genome"
 
 # nobackup)
 NOBACKUP_BASE="/proj/uppmax2026-1-61/nobackup/work/dich3309"

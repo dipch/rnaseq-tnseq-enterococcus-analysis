@@ -15,7 +15,8 @@ module purge
 module load QUAST/5.3.0-gfbf-2024a
 
 # TODO: set path to reference genome FASTA (e.g. E. faecium Aus0004 from NCBI)
-REFERENCE_FA="${REFERENCE_DIR}/TODO_reference_genome.fasta"
+REFERENCE_FA="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
+REFERENCE_GFF="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff"
 
 CANU_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
 SPADES_SCAFFOLDS="${SPADES_HYBRID_OUT_DIR}/scaffolds.fasta"
@@ -26,6 +27,10 @@ CANU_NANO_FA="${CANU_NANOPORE_OUT_DIR}/efaecium_e745_nanopore.contigs.fasta"
 
 [[ -f "${REFERENCE_FA}" ]] || {
     echo "ERROR: reference genome not found: ${REFERENCE_FA}"
+    exit 1
+}
+[[ -f "${REFERENCE_GFF}" ]] || {
+    echo "ERROR: reference GFF not found: ${REFERENCE_GFF}"
     exit 1
 }
 
@@ -45,6 +50,7 @@ run_quast() {
         --threads 2 \
         --min-contig 500 \
         -r "${REFERENCE_FA}" \
+        --features "${REFERENCE_GFF}" \
         --output-dir "${outdir}" \
         "${fa}"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label} complete ($(elapsed $T))"
