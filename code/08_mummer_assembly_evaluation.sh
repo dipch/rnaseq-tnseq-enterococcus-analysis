@@ -12,7 +12,7 @@ source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 mkdir -p "${MUMMER_DIR}"
 
 module purge
-module load MUMmer/4.0.1-GCCcore-13-3-0
+module load MUMmer/4.0.1-GCCcore-13.3.0
 
 require_file "${REFERENCE_FA}"      "reference genome FASTA"
 require_file "${CANU_PACBIO_FA}"    "Canu PacBio assembly FASTA"

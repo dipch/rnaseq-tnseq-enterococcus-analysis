@@ -1,0 +1,38 @@
+[2026-04-20 19:25:54] running nucmer for canu_pacbio
+[2026-04-20 19:25:57] nucmer canu_pacbio complete (0h 0m 3s)
+[2026-04-20 19:25:57] filtering delta for canu_pacbio
+[2026-04-20 19:25:57] running dnadiff for canu_pacbio
+Filtering alignments
+Extracting alignment coordinates
+Analyzing SNPs
+Extracting alignment breakpoints
+Generating report file
+[2026-04-20 19:25:58] dnadiff canu_pacbio complete (0h 0m 1s)
+[2026-04-20 19:25:58] generating mummerplot for canu_pacbio
+WARNING: deprecated switch x11, postscript, png, use -t,--terminalgnuplot 6.0 patchlevel 1
+Reading delta file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio/canu_pacbio.filter.delta
+Writing plot files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio/canu_pacbio_plot.fplot, /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio/canu_pacbio_plot.rplot
+Writing gnuplot script /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio/canu_pacbio_plot.gp
+Rendering plot /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio/canu_pacbio_plot.png
+[2026-04-20 19:26:00] mummerplot canu_pacbio complete (0h 0m 2s)
+[2026-04-20 19:26:00] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio
+[2026-04-20 19:26:00] running nucmer for spades_scaffolds
+[2026-04-20 19:26:04] nucmer spades_scaffolds complete (0h 0m 4s)
+[2026-04-20 19:26:04] filtering delta for spades_scaffolds
+[2026-04-20 19:26:04] running dnadiff for spades_scaffolds
+Filtering alignments
+Extracting alignment coordinates
+Analyzing SNPs
+Extracting alignment breakpoints
+Generating report file
+[2026-04-20 19:26:05] dnadiff spades_scaffolds complete (0h 0m 1s)
+[2026-04-20 19:26:05] generating mummerplot for spades_scaffolds
+WARNING: deprecated switch x11, postscript, png, use -t,--terminalgnuplot 6.0 patchlevel 1
+Reading delta file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds/spades_scaffolds.filter.delta
+Writing plot files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds/spades_scaffolds_plot.fplot, /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds/spades_scaffolds_plot.rplot
+Writing gnuplot script /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds/spades_scaffolds_plot.gp
+Rendering plot /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds/spades_scaffolds_plot.png
+[2026-04-20 19:26:05] mummerplot spades_scaffolds complete (0h 0m 0s)
+[2026-04-20 19:26:05] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/spades_scaffolds
+[2026-04-20 19:26:05] all MUMmer runs complete (total: 0h 0m 11s)
+[2026-04-20 19:26:05] script finished (exit code 0)
