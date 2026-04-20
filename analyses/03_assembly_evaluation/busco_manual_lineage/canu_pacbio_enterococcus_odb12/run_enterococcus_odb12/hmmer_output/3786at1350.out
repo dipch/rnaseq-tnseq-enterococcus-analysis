@@ -1,0 +1,22 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:124623-125651|-   -            343 3786                 -            342  9.2e-214  706.3   0.5   1   1    3e-216    1e-213  706.2   0.5     1   342     1   342     1   342 1.00 tig00000001_112 # 124623 # 125651 # -1 # ID=1_112;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.429
+tig00000001:100911-101858|-   -            316 3786                 -            342   3.2e-33  112.7   0.1   1   1   1.6e-35   5.5e-33  111.9   0.1     1   313     1   307     1   313 0.83 tig00000001_91 # 100911 # 101858 # -1 # ID=1_91;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.374
+tig00000001:2081442-2082431|+ -            330 3786                 -            342   1.1e-31  107.7   0.0   1   1   4.8e-34   1.7e-31  107.0   0.0     3   323     2   324     1   329 0.82 tig00000001_2021 # 2081442 # 2082431 # 1 # ID=1_2021;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.407
+tig00000001:1839297-1840388|+ -            364 3786                 -            342   9.7e-27   91.4   0.6   1   1   4.8e-29   1.7e-26   90.6   0.6     2   321    11   359    10   362 0.79 tig00000001_1764 # 1839297 # 1840388 # 1 # ID=1_1764;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.358
+tig00000001:108009-109076|-   -            356 3786                 -            342   4.7e-24   82.5   0.0   1   1   1.7e-26   5.9e-24   82.2   0.0     2   318    30   347    29   353 0.84 tig00000001_97 # 108009 # 109076 # -1 # ID=1_97;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.372
+tig00000001:1824629-1826446|+ -            606 3786                 -            342   1.6e-10   38.0   0.1   1   1   9.6e-13   3.3e-10   37.0   0.1     2   124   283   412   282   421 0.77 tig00000001_1750 # 1824629 # 1826446 # 1 # ID=1_1750;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.380
+tig00000001:2444700-2445653|- -            318 3786                 -            342     6e-05   19.7   0.0   1   1   4.2e-07   0.00014   18.5   0.0     1   179     1   161     1   166 0.78 tig00000001_2372 # 2444700 # 2445653 # -1 # ID=1_2372;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.406
+tig00000001:123674-124525|-   -            284 3786                 -            342   0.00064   16.3   0.2   1   1     3e-06     0.001   15.6   0.2    45   127    24   106     3   138 0.82 tig00000001_111 # 123674 # 124525 # -1 # ID=1_111;partial=00;start_type=ATG;rbs_motif=AGGAG/GGAGG;rbs_spacer=11-12bp;gc_cont=0.377
+tig00000001:2258833-2259633|+ -            267 3786                 -            342     0.035   10.6   1.6   1   1   0.00081      0.28    7.7   1.6     2   175    10   175     9   184 0.65 tig00000001_2183 # 2258833 # 2259633 # 1 # ID=1_2183;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.388
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/3786at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/3786at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/3786at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:10:29 2026
+# [ok]

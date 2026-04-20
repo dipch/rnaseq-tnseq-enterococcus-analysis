@@ -1,0 +1,18 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:1734931-1735167|+ -             79 23437                -             77   3.9e-44  146.0   5.8   1   1   2.7e-47   4.3e-44  145.9   5.8     1    77     1    78     1    78 0.98 tig00000001_1664 # 1734931 # 1735167 # 1 # ID=1_1664;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.414
+tig00000001:1240850-1241623|- -            258 23437                -             77       1.7    6.2  16.2   1   4   0.00038       0.6    7.6   0.5    49    75    10    36     4    38 0.84 tig00000001_1163 # 1240850 # 1241623 # -1 # ID=1_1163;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.350
+tig00000001:1240850-1241623|- -            258 23437                -             77       1.7    6.2  16.2   2   4    0.0021       3.3    5.2   1.4    16    72    59   115    48   121 0.78 tig00000001_1163 # 1240850 # 1241623 # -1 # ID=1_1163;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.350
+tig00000001:1240850-1241623|- -            258 23437                -             77       1.7    6.2  16.2   3   4     0.021        32    2.1   0.3     7    24   153   170   145   180 0.70 tig00000001_1163 # 1240850 # 1241623 # -1 # ID=1_1163;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.350
+tig00000001:1240850-1241623|- -            258 23437                -             77       1.7    6.2  16.2   4   4      0.21   3.3e+02   -1.1   0.0    62    74   238   250   212   253 0.53 tig00000001_1163 # 1240850 # 1241623 # -1 # ID=1_1163;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.350
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/23437at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/run_enterococcaceae_odb12/hmmer_output/23437at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/23437at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:14:30 2026
+# [ok]

@@ -1,0 +1,20 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_12_length_96937_cov_75.325559:35957-36673|-   -            239 9790352              -            252   1.1e-73  245.3   0.0   1   1   2.3e-76   1.2e-73  245.2   0.0     2   250     1   234     1   236 0.91 NODE_12_length_96937_cov_75.325559_37 # 35957 # 36673 # -1 # ID=12_37;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.396
+NODE_4_length_193524_cov_77.069373:157063-157692|- -            210 9790352              -            252   4.5e-06   23.8   0.0   1   1   1.2e-08   6.4e-06   23.3   0.0     2    88     1    90     1    92 0.80 NODE_4_length_193524_cov_77.069373_137 # 157063 # 157692 # -1 # ID=4_137;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.387
+NODE_26_length_29482_cov_89.132840:1035-1682|-     -            216 9790352              -            252   0.00021   18.3   0.1   1   1   5.9e-07    0.0003   17.8   0.1     2    86     1    93     1   110 0.69 NODE_26_length_29482_cov_89.132840_2 # 1035 # 1682 # -1 # ID=26_2;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.401
+NODE_2_length_304403_cov_65.784473:114865-115875|- -            337 9790352              -            252   0.00028   17.9   0.1   1   1   9.6e-07   0.00049   17.1   0.1     2   103     3   113     2   132 0.66 NODE_2_length_304403_cov_65.784473_109 # 114865 # 115875 # -1 # ID=2_109;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.403
+NODE_11_length_113754_cov_100.754285:3047-3994|-   -            316 9790352              -            252   0.00046   17.2   0.6   1   2   1.6e-06   0.00081   16.4   0.1     4    66   146   214   144   226 0.71 NODE_11_length_113754_cov_100.754285_2 # 3047 # 3994 # -1 # ID=11_2;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.424
+NODE_11_length_113754_cov_100.754285:3047-3994|-   -            316 9790352              -            252   0.00046   17.2   0.6   2   2       2.6   1.3e+03   -4.0   0.0   100   121   270   291   262   298 0.63 NODE_11_length_113754_cov_100.754285_2 # 3047 # 3994 # -1 # ID=11_2;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.424
+NODE_26_length_29482_cov_89.132840:3697-4686|-     -            330 9790352              -            252    0.0077   13.2   0.0   1   1   2.6e-05     0.013   12.4   0.0     3    90   150   248   148   256 0.71 NODE_26_length_29482_cov_89.132840_6 # 3697 # 4686 # -1 # ID=26_6;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.426
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/bacteria_odb12/hmms/9790352at2.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/spades_scaffolds_auto/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/spades_scaffolds_auto/auto_lineage/run_bacteria_odb12/hmmer_output/9790352at2.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/bacteria_odb12/hmms/9790352at2.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/spades_scaffolds_auto/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:15:10 2026
+# [ok]

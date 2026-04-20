@@ -1,0 +1,21 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:2104888-2106597|+ -            570 9809052              -            295  4.6e-102  338.5   0.3   1   2   1.4e-65   1.5e-62  208.8   0.0     1   164     8   186     8   205 0.91 tig00000001_2044 # 2104888 # 2106597 # 1 # ID=1_2044;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001:2104888-2106597|+ -            570 9809052              -            295  4.6e-102  338.5   0.3   2   2   8.8e-41   9.2e-38  127.4   0.1   171   291   403   543   398   546 0.85 tig00000001_2044 # 2104888 # 2106597 # 1 # ID=1_2044;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001:36829-38769|-     -            647 9809052              -            295   5.6e-16   55.9   0.2   1   2   1.1e-14   1.2e-11   41.7   0.0    25   164   258   410   252   419 0.79 tig00000001_25 # 36829 # 38769 # -1 # ID=1_25;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:36829-38769|-     -            647 9809052              -            295   5.6e-16   55.9   0.2   2   2   1.7e-05     0.018   11.6   0.0   189   285   498   607   494   615 0.74 tig00000001_25 # 36829 # 38769 # -1 # ID=1_25;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:632974-634245|+   -            424 9809052              -            295   2.6e-06   24.2   0.3   1   4      0.22   2.2e+02   -1.9   0.1   143   172     8    37     1    80 0.67 tig00000001_579 # 632974 # 634245 # 1 # ID=1_579;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.384
+tig00000001:632974-634245|+   -            424 9809052              -            295   2.6e-06   24.2   0.3   2   4      0.35   3.6e+02   -2.6   0.1   163   190    60    87    26   103 0.52 tig00000001_579 # 632974 # 634245 # 1 # ID=1_579;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.384
+tig00000001:632974-634245|+   -            424 9809052              -            295   2.6e-06   24.2   0.3   3   4   2.9e-06     0.003   14.1   0.0    31   167   165   314   156   326 0.77 tig00000001_579 # 632974 # 634245 # 1 # ID=1_579;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.384
+tig00000001:632974-634245|+   -            424 9809052              -            295   2.6e-06   24.2   0.3   4   4   0.00043      0.45    7.0   0.0   190   237   365   415   337   422 0.82 tig00000001_579 # 632974 # 634245 # 1 # ID=1_579;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.384
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/bacteria_odb12/hmms/9809052at2.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/auto_lineage/run_bacteria_odb12/hmmer_output/9809052at2.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/bacteria_odb12/hmms/9809052at2.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:11:57 2026
+# [ok]

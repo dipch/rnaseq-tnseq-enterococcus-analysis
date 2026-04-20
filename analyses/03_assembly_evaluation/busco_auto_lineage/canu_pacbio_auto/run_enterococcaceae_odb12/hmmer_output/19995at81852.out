@@ -1,0 +1,21 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:1156067-1156423|+ -            119 19995                -            117     2e-54  180.0   0.1   1   1   4.8e-57   2.2e-54  179.9   0.1     1   114     1   115     1   118 0.96 tig00000001_1086 # 1156067 # 1156423 # 1 # ID=1_1086;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.431
+tig00000001:246472-246870|-   -            133 19995                -            117   6.3e-17   59.1   0.0   1   1   1.6e-19   7.4e-17   58.9   0.0     1   114     1   112     1   115 0.96 tig00000001_265 # 246472 # 246870 # -1 # ID=1_265;partial=00;start_type=TTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.388
+tig00000001:1049425-1049835|+ -            137 19995                -            117   2.8e-16   57.0   0.0   1   1   8.2e-19   3.7e-16   56.6   0.0     1   114     1   112     1   114 0.97 tig00000001_989 # 1049425 # 1049835 # 1 # ID=1_989;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.345
+tig00000001:1049849-1050205|+ -            119 19995                -            117   2.5e-12   44.3   0.0   1   1   7.8e-15   3.5e-12   43.8   0.0     3   115     4   114     2   116 0.93 tig00000001_990 # 1049849 # 1050205 # 1 # ID=1_990;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.378
+tig00000001:2271952-2272392|- -            147 19995                -            117   4.6e-12   43.4   0.0   1   1   1.4e-14   6.3e-12   43.0   0.0     1   114     2   114     2   117 0.94 tig00000001_2196 # 2271952 # 2272392 # -1 # ID=1_2196;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.347
+tig00000001:2719784-2720239|+ -            152 19995                -            117   4.7e-08   30.5   0.1   1   1   4.2e-10   1.9e-07   28.5   0.1    17   112    16   110     1   114 0.77 tig00000001_2633 # 2719784 # 2720239 # 1 # ID=1_2633;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.351
+tig00000001:201644-201868|+   -             75 19995                -            117   0.00014   19.3   0.1   1   2   1.7e-06   0.00076   16.9   0.1     3    47     4    44     2    51 0.80 tig00000001_220 # 201644 # 201868 # 1 # ID=1_220;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.364
+tig00000001:201644-201868|+   -             75 19995                -            117   0.00014   19.3   0.1   2   2      0.11        48    1.4   0.0    93   115    50    72    38    74 0.72 tig00000001_220 # 201644 # 201868 # 1 # ID=1_220;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.364
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19995at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/run_enterococcaceae_odb12/hmmer_output/19995at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19995at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:14:17 2026
+# [ok]

@@ -1,0 +1,17 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:689083-690006|-   -            308 17737                -            306  2.6e-173  572.9   3.7   1   1  2.7e-176  2.9e-173  572.8   3.7     1   306     1   306     1   306 1.00 tig00000001_630 # 689083 # 690006 # -1 # ID=1_630;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.381
+tig00000001:823391-824020|+   -            210 17737                -            306   9.8e-10   35.7   0.9   1   2   5.8e-11   6.1e-08   29.8   0.5    79   224     2   137     1   161 0.83 tig00000001_771 # 823391 # 824020 # 1 # ID=1_771;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.406
+tig00000001:823391-824020|+   -            210 17737                -            306   9.8e-10   35.7   0.9   2   2    0.0024       2.5    4.8   0.0   268   301   162   197   145   201 0.68 tig00000001_771 # 823391 # 824020 # 1 # ID=1_771;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.406
+tig00000001:2233053-2233682|+ -            210 17737                -            306    0.0046   13.8   0.0   1   1   7.7e-06    0.0081   13.0   0.0    78   104     8    34     2    45 0.88 tig00000001_2157 # 2233053 # 2233682 # 1 # ID=1_2157;partial=00;start_type=TTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.411
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/17737at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/run_enterococcaceae_odb12/hmmer_output/17737at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/17737at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Mon Apr 20 03:14:05 2026
+# [ok]
