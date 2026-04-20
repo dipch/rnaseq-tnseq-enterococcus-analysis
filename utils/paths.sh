@@ -1,22 +1,20 @@
 # common preamble/paths for all scripts.
-# source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
-
-BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
 
 set -euo pipefail
 
-trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
-trap 'echo "[$(date "+%Y-%m-%d %H:%M:%S")] script finished (exit code $?)"' EXIT
+BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
+source "${BASE_DIR}/utils/time_check.sh"
+source "${BASE_DIR}/utils/fs_check.sh"
 
-source "${BASE_DIR}/utils/calculate_elapsed_time.sh"
-source "${BASE_DIR}/utils/symlink_check.sh"
+trap 'echo "[$(current_time)] ERROR: script exited unexpectedly (exit code $?, line ${LINENO})"' ERR
+trap 'echo "[$(current_time)] script finished (exit code $?)"' EXIT
 
 # data
 RAW_DIR="${BASE_DIR}/data/raw_data"
 TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
 REFERENCE_DIR="${BASE_DIR}/data/reference_genome"
 
-# nobackup)
+# nobackup
 NOBACKUP_BASE="/proj/uppmax2026-1-61/nobackup/work/dich3309"
 NOBACKUP_TRIMMED="${NOBACKUP_BASE}/trimmed_data"
 
@@ -32,6 +30,12 @@ ASSEMBLY_DIR="${BASE_DIR}/analyses/02_genome_assembly"
 CANU_PACBIO_OUT_DIR="${ASSEMBLY_DIR}/canu_pacbio"
 CANU_NANOPORE_OUT_DIR="${ASSEMBLY_DIR}/canu_nanopore"
 SPADES_HYBRID_OUT_DIR="${ASSEMBLY_DIR}/spades_hybrid"
+
+# assembly output files
+CANU_PACBIO_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
+CANU_NANOPORE_FA="${CANU_NANOPORE_OUT_DIR}/efaecium_e745_nanopore.contigs.fasta"
+SPADES_SCAFFOLDS="${SPADES_HYBRID_OUT_DIR}/scaffolds.fasta"
+SPADES_CONTIGS="${SPADES_HYBRID_OUT_DIR}/contigs.fasta"
 
 NOBACKUP_CANU_PACBIO="${NOBACKUP_BASE}/canu_pacbio"
 NOBACKUP_CANU_NANOPORE="${NOBACKUP_BASE}/canu_nanopore"

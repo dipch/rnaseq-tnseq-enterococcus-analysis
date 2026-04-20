@@ -18,12 +18,12 @@ ADAPTERS="${EBROOTTRIMMOMATIC}/adapters/TruSeq3-PE-2.fa"
 SAMPLES=("${RAW_DIR}"/rna_*_R1.fastq.gz)
 TOTAL=${#SAMPLES[@]}
 IDX=0
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] trimmomatic started"
+echo "[$(current_time)] trimmomatic started"
 for R1 in "${SAMPLES[@]}"; do
     R2="${R1/_R1.fastq.gz/_R2.fastq.gz}"
     SAMPLE=$(basename "${R1}" _R1.fastq.gz)
     IDX=$((IDX + 1))
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   trimming ${SAMPLE}..."
+    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   trimming ${SAMPLE}..."
     T0=$(date +%s)
     # default params for now, will experiment later
     trimmomatic PE \
@@ -35,7 +35,7 @@ for R1 in "${SAMPLES[@]}"; do
         TRAILING:3 \
         SLIDINGWINDOW:4:15 \
         MINLEN:36
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed $T0))"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   trimmed_data disk usage: $(du -shL ${TRIMMED_DIR} | cut -f1)"
+    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed_time $T0))"
+    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   trimmed_data disk usage: $(du -shL ${TRIMMED_DIR} | cut -f1)"
 done
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] trimmomatic ended"
+echo "[$(current_time)] trimmomatic ended"

@@ -18,34 +18,19 @@ module load QUAST/5.3.0-gfbf-2024a
 REFERENCE_FA="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
 REFERENCE_GFF="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff"
 
-CANU_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
-SPADES_SCAFFOLDS="${SPADES_HYBRID_OUT_DIR}/scaffolds.fasta"
-SPADES_CONTIGS="${SPADES_HYBRID_OUT_DIR}/contigs.fasta"
 
-# todo: run nanopore assembly
-CANU_NANO_FA="${CANU_NANOPORE_OUT_DIR}/efaecium_e745_nanopore.contigs.fasta"
-
-[[ -f "${REFERENCE_FA}" ]] || {
-    echo "ERROR: reference genome not found: ${REFERENCE_FA}"
-    exit 1
-}
-[[ -f "${REFERENCE_GFF}" ]] || {
-    echo "ERROR: reference GFF not found: ${REFERENCE_GFF}"
-    exit 1
-}
+require_file "${REFERENCE_FA}" "reference genome FASTA"
+require_file "${REFERENCE_GFF}" "reference GFF"
 
 run_quast() {
     local label="$1"
     local fa="$2"
     local outdir="${QUAST_WITH_REFERENCE_DIR}/${label}_ref"
 
-    if [[ ! -f "${fa}" ]]; then
-        echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label}: file not found: ${fa}"
-        return
-    fi
+    check_file "${fa}" "${label}" || return
 
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] running QUAST for ${label} (with reference)"
-    local T=$(date +%s)
+    echo "[$(current_time)] running QUAST for ${label} (with reference)"
+    local T0=$(date +%s)
     quast.py \
         --threads 2 \
         --min-contig 500 \
@@ -53,11 +38,11 @@ run_quast() {
         --features "${REFERENCE_GFF}" \
         --output-dir "${outdir}" \
         "${fa}"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label} complete ($(elapsed $T))"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] report: ${outdir}"
+    echo "[$(current_time)] ${label} complete ($(elapsed_time $T0))"
+    echo "[$(current_time)] report: ${outdir}"
 }
 
-run_quast "canu_pacbio"       "${CANU_FA}"
+run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
 run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
 run_quast "spades_contigs"    "${SPADES_CONTIGS}"
 # todo

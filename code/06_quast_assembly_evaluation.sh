@@ -14,25 +14,16 @@ mkdir -p "${QUAST_DIR}"
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-CANU_FA="${CANU_PACBIO_OUT_DIR}/efaecium_e745_pacbio.contigs.fasta"
-SPADES_SCAFFOLDS="${SPADES_HYBRID_OUT_DIR}/scaffolds.fasta"
-SPADES_CONTIGS="${SPADES_HYBRID_OUT_DIR}/contigs.fasta"
-
-# todo: run nanopore assembly
-CANU_NANO_FA="${CANU_NANOPORE_OUT_DIR}/efaecium_e745_nanopore.contigs.fasta"
 
 run_quast() {
     local label="$1"
     local fa="$2"
     local outdir="${QUAST_DIR}/${label}"
 
-    if [[ ! -f "${fa}" ]]; then
-        echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label}: file not found: ${fa}"
-        return
-    fi
+    check_file "${fa}" "${label}" || return
 
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] running QUAST for ${label}"
-    local T=$(date +%s)
+    echo "[$(current_time)] running QUAST for ${label}"
+    local T0=$(date +%s)
 
     # --min-config : default value 500
     # --est-ref-size : only need to specify when reference genome file is not used
@@ -42,12 +33,12 @@ run_quast() {
         --est-ref-size 3300000 \
         --output-dir "${outdir}" \
         "${fa}"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label} complete ($(elapsed $T))"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] report: ${outdir}"
+    echo "[$(current_time)] ${label} complete ($(elapsed_time $T0))"
+    echo "[$(current_time)] report: ${outdir}"
 }
 
 
-run_quast "canu_pacbio"       "${CANU_FA}"
+run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
 run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
 
 # no need this

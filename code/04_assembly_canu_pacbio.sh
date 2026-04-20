@@ -15,13 +15,10 @@ module purge
 module load canu/2.3-GCCcore-13.3.0-Java-17
 module load SAMtools/1.22.1-GCC-13.3.0
 PACBIO_FILES=("${RAW_DIR}"/dna_pacbio_*.subreads.fastq.gz)
-if [[ ${#PACBIO_FILES[@]} -eq 0 ]]; then
-    echo "ERROR: no PacBio subreads files found in ${RAW_DIR}"
-    exit 1
-fi
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] canu assembly started"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] input: ${#PACBIO_FILES[@]} PacBio SMRT cell files"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] output dir: ${CANU_PACBIO_OUT_DIR}"
+require_files_in_array PACBIO_FILES "PacBio subreads"
+echo "[$(current_time)] canu assembly started"
+echo "[$(current_time)] input: ${#PACBIO_FILES[@]} PacBio SMRT cell files"
+echo "[$(current_time)] output dir: ${CANU_PACBIO_OUT_DIR}"
 T0=$(date +%s)
 # Canu submits its own SLURM sub-jobs via gridOptions and returns immediately.
 # Sub-jobs are constrained to 2 cores and 12 h each.
@@ -34,6 +31,6 @@ canu \
     gridOptions="-A uppmax2026-1-61 -p pelle -c 4 -t 12:00:00" \
     -pacbio \
     "${PACBIO_FILES[@]}"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] canu launched ($(elapsed $T0))"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] sub-jobs running independently — monitor with: squeue -u dich3309"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] assembly complete when efaecium_e745_pacbio.contigs.fasta appears in ${CANU_PACBIO_OUT_DIR}"
+echo "[$(current_time)] canu launched ($(elapsed_time $T0))"
+echo "[$(current_time)] sub-jobs running independently — monitor with: squeue -u dich3309"
+echo "[$(current_time)] assembly complete when efaecium_e745_pacbio.contigs.fasta appears in ${CANU_PACBIO_OUT_DIR}"

@@ -16,23 +16,23 @@ rm -rf "${FASTQC_TRIMMED_DIR:?}"/* "${MULTIQC_TRIMMED_DIR:?}"/*
 SAMPLES=("${TRIMMED_DIR}"/*_R1_paired.fastq.gz)
 TOTAL=${#SAMPLES[@]}
 IDX=0
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] fastqc started"
+echo "[$(current_time)] fastqc started"
 for R1 in "${SAMPLES[@]}"; do
     R2="${R1/_R1_paired.fastq.gz/_R2_paired.fastq.gz}"
     SAMPLE=$(basename "${R1}" _R1_paired.fastq.gz)
     IDX=$((IDX + 1))
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   running fastqc on ${SAMPLE}..."
+    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   running fastqc on ${SAMPLE}..."
     T0=$(date +%s)
     fastqc \
         --outdir "${FASTQC_TRIMMED_DIR}" \
         --threads 2 \
         --noextract \
         "${R1}" "${R2}"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed $T0))"
+    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed_time $T0))"
 done
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] fastqc ended"
+echo "[$(current_time)] fastqc ended"
 # multiqc
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] multiqc started"
+echo "[$(current_time)] multiqc started"
 T0=$(date +%s)
 multiqc \
     "${FASTQC_TRIMMED_DIR}" \
@@ -40,4 +40,4 @@ multiqc \
     --filename "multiqc_trimmed" \
     --title "trimmed data fastqc reports" \
     --force
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] multiqc ended ($(elapsed $T0))"
+echo "[$(current_time)] multiqc ended ($(elapsed_time $T0))"
