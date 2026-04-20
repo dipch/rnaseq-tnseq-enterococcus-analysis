@@ -14,18 +14,18 @@ mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-require_file "${REFERENCE_FA}" "reference genome FASTA"
-require_file "${REFERENCE_GFF}" "reference GFF"
+require_file "${REFERENCE_FA}"     "reference genome FASTA"
+require_file "${REFERENCE_GFF}"    "reference GFF"
+require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
+require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
 
 run_quast() {
     local label="$1"
     local fa="$2"
     local outdir="${QUAST_WITH_REFERENCE_DIR}/${label}_ref"
 
-    check_file "${fa}" "${label}" || return
-
     echo "[$(current_time)] running QUAST for ${label} (with reference)"
-    local T0=$(date +%s)
+    local T_step=$(date +%s)
     quast.py \
         --threads 2 \
         --min-contig 500 \
@@ -33,7 +33,7 @@ run_quast() {
         --features "${REFERENCE_GFF}" \
         --output-dir "${outdir}" \
         "${fa}"
-    echo "[$(current_time)] ${label} complete ($(elapsed_time $T0))"
+    echo "[$(current_time)] ${label} complete ($(elapsed_time $T_step))"
     echo "[$(current_time)] report: ${outdir}"
 }
 

@@ -46,10 +46,7 @@ echo "[$(current_time)] indexing BAM"
 T_bam=$(date +%s)
 samtools index "${SORTED_BAM}"
 echo "[$(current_time)] BAM index complete ($(elapsed_time $T_bam))"
-
-
 echo "[$(current_time)] running samtools flagstat"
 samtools flagstat "${SORTED_BAM}" | tee "${FLAGSTAT_TXT}"
 echo "[$(current_time)] flagstat saved to ${FLAGSTAT_TXT}"
-
 echo "[$(current_time)] all steps complete (total: $(elapsed_time $T0))"

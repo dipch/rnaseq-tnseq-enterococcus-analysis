@@ -15,6 +15,8 @@ mkdir -p "${BUSCO_DIR_AUTO_LINEAGE}" "${BUSCO_DIR_MANUAL_LINEAGE}"
 module purge
 module load BUSCO/5.8.2-gfbf-2024a
 
+require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
+require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
 
 run_busco() {
     local label="$1"
@@ -22,10 +24,8 @@ run_busco() {
     local lineage="$3"   # lineage name or "auto"
     local out_label="${label}_${lineage}"
 
-    check_file "${fa}" "${label}" || return
-
     echo "[$(current_time)] running BUSCO for ${label} (lineage: ${lineage})"
-    local T0=$(date +%s)
+    local T_step=$(date +%s)
     if [[ "${lineage}" == "auto" ]]; then
         busco \
             --in "${fa}" \
@@ -35,7 +35,7 @@ run_busco() {
             --mode genome \
             --cpu 1 \
             --force
-        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $T0))"
+        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $T_step))"
         echo "[$(current_time)] results: ${BUSCO_DIR_AUTO_LINEAGE}/${out_label}"
     else
         busco \
@@ -46,7 +46,7 @@ run_busco() {
             --mode genome \
             --cpu 1 \
             --force
-        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $T0))"
+        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $T_step))"
         echo "[$(current_time)] results: ${BUSCO_DIR_MANUAL_LINEAGE}/${out_label}"
     fi
 }
