@@ -44,4 +44,5 @@ NOBACKUP_POLISH="${NOBACKUP_BASE}/polishing_pacbio_illumina"
 # assembly evaluation
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
 QUAST_DIR="${EVAL_DIR}/quast"
+QUAST_WITH_REFERENCE_DIR="${EVAL_DIR}/quast_with_reference"
 

@@ -9,7 +9,7 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
 
-mkdir -p "${QUAST_DIR}"
+mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 
 module purge
 module load QUAST/5.3.0-gfbf-2024a
@@ -37,7 +37,7 @@ CANU_NANO_FA="${CANU_NANOPORE_OUT_DIR}/efaecium_e745_nanopore.contigs.fasta"
 run_quast() {
     local label="$1"
     local fa="$2"
-    local outdir="${QUAST_DIR}/${label}_ref"
+    local outdir="${QUAST_WITH_REFERENCE_DIR}/${label}_ref"
 
     if [[ ! -f "${fa}" ]]; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] ${label}: file not found: ${fa}"
