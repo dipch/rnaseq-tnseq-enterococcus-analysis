@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/07_busco_assembly_evaluation.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 
 mkdir -p "${BUSCO_DIR_AUTO_LINEAGE}" "${BUSCO_DIR_MANUAL_LINEAGE}"
@@ -53,9 +53,9 @@ run_busco() {
 
 T0=$(date +%s)
 
-# run with enterococcus_odb12
-run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "enterococcus_odb12"
-run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "enterococcus_odb12"
+# run with manual lineage from config
+run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "${BUSCO_LINEAGE}"
 
 # run with auto lineage detection
 run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "auto"

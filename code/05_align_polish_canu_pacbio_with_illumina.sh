@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05_align_polish_canu_pacbio_with_illumina.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 # all outputs go to nobackup (bam, index, flagstat); symlink into analyses/
 mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH}"
@@ -18,9 +18,7 @@ module load BWA/0.7.19-GCCcore-13.3.0
 module load SAMtools/1.22.1-GCC-13.3.0
 #module load Bowtie2/2.5.4-GCC-13.3.0
 
-ILLUMINA_R1="${RAW_DIR}/dna_illumina_R1.fq.gz"
-ILLUMINA_R2="${RAW_DIR}/dna_illumina_R2.fq.gz"
-SORTED_BAM="${NOBACKUP_POLISH}/efaecium_e745_illumina_sorted.bam"
+SORTED_BAM="${NOBACKUP_POLISH}/${ORGANISM}_illumina_sorted.bam"
 FLAGSTAT_TXT="${NOBACKUP_POLISH}/flagstat.txt"
 
 require_file "${CANU_PACBIO_FA}" "Canu assembly"

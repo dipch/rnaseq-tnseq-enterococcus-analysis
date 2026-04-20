@@ -7,17 +7,12 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/06b_quast_assembly_evaluation_with_reference.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 
 module purge
 module load QUAST/5.3.0-gfbf-2024a
-
-# TODO: set path to reference genome FASTA (e.g. E. faecium Aus0004 from NCBI)
-REFERENCE_FA="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
-REFERENCE_GFF="${REFERENCE_DIR}/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff"
-
 
 require_file "${REFERENCE_FA}" "reference genome FASTA"
 require_file "${REFERENCE_GFF}" "reference GFF"

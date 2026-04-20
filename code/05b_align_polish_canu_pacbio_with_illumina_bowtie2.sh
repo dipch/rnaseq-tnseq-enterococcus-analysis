@@ -9,7 +9,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05b_align_polish_canu_pacbio_with_illumina_bowtie2.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 # all outputs go to nobackup (bam, index, flagstat); symlink into analyses/
 mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH}"

@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/02_trimming.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 # symlink
 mkdir -p "${NOBACKUP_TRIMMED}"
 ensure_nobackup_symlink "${TRIMMED_DIR}" "${NOBACKUP_TRIMMED}"

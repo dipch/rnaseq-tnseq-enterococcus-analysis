@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/01_preprocessing.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 mkdir -p "${FASTQC_RAW_DIR}" "${MULTIQC_RAW_DIR}"
 module purge

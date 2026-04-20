@@ -7,15 +7,13 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_spades_hybrid.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 # symlink output dir to nobackup
 mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_SPADES_HYBRID}"
 ensure_nobackup_symlink "${SPADES_HYBRID_OUT_DIR}" "${NOBACKUP_SPADES_HYBRID}"
 module purge
 module load SPAdes/4.2.0-GCC-13.3.0
-ILLUMINA_R1="${RAW_DIR}/dna_illumina_R1.fq.gz"
-ILLUMINA_R2="${RAW_DIR}/dna_illumina_R2.fq.gz"
-PACBIO_FILES=("${RAW_DIR}"/dna_pacbio_*.subreads.fastq.gz)
+PACBIO_FILES=("${RAW_DIR}"/${PACBIO_GLOB})
 require_file "${ILLUMINA_R1}" "Illumina R1"
 require_file "${ILLUMINA_R2}" "Illumina R2"
 require_files_in_array PACBIO_FILES "PacBio subreads"

@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/03_postprocessing.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 mkdir -p "${FASTQC_TRIMMED_DIR}" "${MULTIQC_TRIMMED_DIR}"
 module purge
 module load FastQC/0.12.1-Java-17 MultiQC/1.28-foss-2024a

@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/06_quast_assembly_evaluation.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 mkdir -p "${QUAST_DIR}"
 
@@ -30,7 +30,7 @@ run_quast() {
     quast.py \
         --threads 2 \
         --min-contig 500 \
-        --est-ref-size 3300000 \
+        --est-ref-size ${GENOME_SIZE_BP} \
         --output-dir "${outdir}" \
         "${fa}"
     echo "[$(current_time)] ${label} complete ($(elapsed_time $T0))"

@@ -7,14 +7,14 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_canu_nanopore.%x.%j.out
 
-source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/paths.sh"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 # symlink output dir to nobackup
 mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_CANU_NANOPORE}"
 ensure_nobackup_symlink "${CANU_NANOPORE_OUT_DIR}" "${NOBACKUP_CANU_NANOPORE}"
 module purge
 module load canu/2.3-GCCcore-13.3.0-Java-17
 module load SAMtools/1.22.1-GCC-13.3.0
-NANOPORE_FILES=("${RAW_DIR}"/dna_nanopore_*.fasta.gz)
+NANOPORE_FILES=("${RAW_DIR}"/${NANOPORE_GLOB})
 require_files_in_array NANOPORE_FILES "Nanopore"
 echo "[$(current_time)] canu assembly started"
 echo "[$(current_time)] input: ${#NANOPORE_FILES[@]} Nanopore files"
@@ -23,9 +23,9 @@ T0=$(date +%s)
 # Canu submits its own SLURM sub-jobs via gridOptions and returns immediately.
 # Sub-jobs are constrained to 4 cores and 12 h each.
 canu \
-    -p efaecium_e745_nanopore \
+    -p "${ORGANISM}_nanopore" \
     -d "${CANU_NANOPORE_OUT_DIR}" \
-    genomeSize=3.3m \
+    genomeSize=${GENOME_SIZE} \
     maxThreads=4 \
     useGrid=true \
     gridOptions="-A uppmax2026-1-61 -p pelle -c 4 -t 12:00:00" \
@@ -33,4 +33,4 @@ canu \
     "${NANOPORE_FILES[@]}"
 echo "[$(current_time)] canu launched ($(elapsed_time $T0))"
 echo "[$(current_time)] sub-jobs running independently — monitor with: squeue -u dich3309"
-echo "[$(current_time)] assembly complete when efaecium_e745_nanopore.contigs.fasta appears in ${CANU_NANOPORE_OUT_DIR}"
+echo "[$(current_time)] assembly complete when ${ORGANISM}_nanopore.contigs.fasta appears in ${CANU_NANOPORE_OUT_DIR}"
