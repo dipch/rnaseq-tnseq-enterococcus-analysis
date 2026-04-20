@@ -1,0 +1,21 @@
+Genomic features of type "ANY" loaded: 3407
+reference chromosomes:
+	NZ_CP014529.1 (total length: 2765010 bp, total length without N's: 2765010 bp, maximal covered length: 2735019 bp)
+	NZ_CP014530.1 (total length: 223688 bp, total length without N's: 223688 bp, maximal covered length: 216302 bp)
+	NZ_CP014531.1 (total length: 32423 bp, total length without N's: 32423 bp, maximal covered length: 32423 bp)
+	NZ_CP014532.1 (total length: 9310 bp, total length without N's: 9310 bp, maximal covered length: 9310 bp)
+	NZ_CP014533.1 (total length: 17254 bp, total length without N's: 17254 bp, maximal covered length: 7746 bp)
+	NZ_CP014534.1 (total length: 55167 bp, total length without N's: 55167 bp, maximal covered length: 44928 bp)
+	NZ_CP014535.1 (total length: 65558 bp, total length without N's: 65558 bp, maximal covered length: 64299 bp)
+
+total genome size: 3168410
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+scaffolds                | 98.157    | 1.003       | 43        | 3336      | 16        | -         | -         |
