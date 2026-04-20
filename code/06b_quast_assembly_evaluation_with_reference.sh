@@ -9,31 +9,32 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
+rm -rf "${QUAST_WITH_REFERENCE_DIR:?}"
 mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-require_file "${REFERENCE_FA}"     "reference genome FASTA"
+require_file "${REFERENCE_FASTA}"     "reference genome FASTA"
 require_file "${REFERENCE_GFF}"    "reference GFF"
 require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
 
 run_quast() {
     local label="$1"
-    local fa="$2"
+    local query_fasta="$2"
     local outdir="${QUAST_WITH_REFERENCE_DIR}/${label}_ref"
 
     echo "[$(current_time)] running QUAST for ${label} (with reference)"
-    local T_step=$(date +%s)
+    local step_start=$(date +%s)
     quast.py \
         --threads 2 \
         --min-contig 500 \
-        -r "${REFERENCE_FA}" \
+        -r "${REFERENCE_FASTA}" \
         --features "${REFERENCE_GFF}" \
         --output-dir "${outdir}" \
-        "${fa}"
-    echo "[$(current_time)] ${label} complete ($(elapsed_time $T_step))"
+        "${query_fasta}"
+    echo "[$(current_time)] ${label} complete ($(elapsed_time $step_start))"
     echo "[$(current_time)] report: ${outdir}"
 }
 

@@ -9,11 +9,11 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
+rm -rf "${FASTQC_RAW_DIR:?}" "${MULTIQC_RAW_DIR:?}"
 mkdir -p "${FASTQC_RAW_DIR}" "${MULTIQC_RAW_DIR}"
 module purge
 module load FastQC/0.12.1-Java-17 MultiQC/1.28-foss-2024a
 require_dir_nonempty "${RAW_DIR}" "raw data directory"
-rm -rf "${FASTQC_RAW_DIR:?}"/* "${MULTIQC_RAW_DIR:?}"/*
 # fastqc — FASTQ (Illumina + PacBio)
 echo "[$(current_time)] fastqc started"
 T0=$(date +%s)

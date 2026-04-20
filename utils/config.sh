@@ -34,7 +34,7 @@ TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
 REFERENCE_DIR="${BASE_DIR}/data/reference_genome"
 
 # reference genome paths relative to REFERENCE_DIR.
-REFERENCE_FA_REL="ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
+REFERENCE_FASTA_REL="ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
 REFERENCE_GFF_REL="ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff"
 
 # nobackup (HPC-specific)
@@ -65,7 +65,7 @@ ILLUMINA_R1="${RAW_DIR}/${ILLUMINA_R1_FILENAME}"
 ILLUMINA_R2="${RAW_DIR}/${ILLUMINA_R2_FILENAME}"
 
 # reference genome
-REFERENCE_FA="${REFERENCE_DIR}/${REFERENCE_FA_REL}"
+REFERENCE_FASTA="${REFERENCE_DIR}/${REFERENCE_FASTA_REL}"
 REFERENCE_GFF="${REFERENCE_DIR}/${REFERENCE_GFF_REL}"
 
 # nobackup assembly dirs

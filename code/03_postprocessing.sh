@@ -8,27 +8,27 @@
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/03_postprocessing.%x.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
+rm -rf "${FASTQC_TRIMMED_DIR:?}" "${MULTIQC_TRIMMED_DIR:?}"
 mkdir -p "${FASTQC_TRIMMED_DIR}" "${MULTIQC_TRIMMED_DIR}"
 module purge
 module load FastQC/0.12.1-Java-17 MultiQC/1.28-foss-2024a
-rm -rf "${FASTQC_TRIMMED_DIR:?}"/* "${MULTIQC_TRIMMED_DIR:?}"/*
 # fastqc on paired reads only (R1 + R2 per sample)
 SAMPLES=("${TRIMMED_DIR}"/*_R1_paired.fastq.gz)
 TOTAL=${#SAMPLES[@]}
-IDX=0
+file_index=0
 echo "[$(current_time)] fastqc started"
 for R1 in "${SAMPLES[@]}"; do
     R2="${R1/_R1_paired.fastq.gz/_R2_paired.fastq.gz}"
     SAMPLE=$(basename "${R1}" _R1_paired.fastq.gz)
-    IDX=$((IDX + 1))
-    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   running fastqc on ${SAMPLE}..."
+    file_index=$((file_index + 1))
+    echo "[$(current_time)] [file ${file_index} of ${TOTAL}]   running fastqc on ${SAMPLE}..."
     T0=$(date +%s)
     fastqc \
         --outdir "${FASTQC_TRIMMED_DIR}" \
         --threads 2 \
         --noextract \
         "${R1}" "${R2}"
-    echo "[$(current_time)] [file ${IDX} of ${TOTAL}]   ${SAMPLE} done ($(elapsed_time $T0))"
+    echo "[$(current_time)] [file ${file_index} of ${TOTAL}]   ${SAMPLE} done ($(elapsed_time $T0))"
 done
 echo "[$(current_time)] fastqc ended"
 # multiqc

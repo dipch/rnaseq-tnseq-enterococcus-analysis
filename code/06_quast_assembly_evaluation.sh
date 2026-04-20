@@ -9,6 +9,7 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
+rm -rf "${QUAST_DIR:?}"
 mkdir -p "${QUAST_DIR}"
 
 module purge
@@ -19,11 +20,11 @@ require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
 
 run_quast() {
     local label="$1"
-    local fa="$2"
+    local query_fasta="$2"
     local outdir="${QUAST_DIR}/${label}"
 
     echo "[$(current_time)] running QUAST for ${label}"
-    local T_step=$(date +%s)
+    local step_start=$(date +%s)
 
     # --min-config : default value 500
     # --est-ref-size : only need to specify when reference genome file is not used
@@ -32,8 +33,8 @@ run_quast() {
         --min-contig 500 \
         --est-ref-size ${GENOME_SIZE_BP} \
         --output-dir "${outdir}" \
-        "${fa}"
-    echo "[$(current_time)] ${label} complete ($(elapsed_time $T_step))"
+        "${query_fasta}"
+    echo "[$(current_time)] ${label} complete ($(elapsed_time $step_start))"
     echo "[$(current_time)] report: ${outdir}"
 }
 

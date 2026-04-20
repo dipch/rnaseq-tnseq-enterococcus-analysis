@@ -18,8 +18,8 @@ require_file "${ILLUMINA_R1}" "Illumina R1"
 require_file "${ILLUMINA_R2}" "Illumina R2"
 require_files_in_array PACBIO_FILES "PacBio subreads"
 PACBIO_ARGS=()
-for f in "${PACBIO_FILES[@]}"; do
-    PACBIO_ARGS+=(--pacbio "${f}")
+for pacbio_file in "${PACBIO_FILES[@]}"; do
+    PACBIO_ARGS+=(--pacbio "${pacbio_file}")
 done
 echo "[$(current_time)] SPAdes hybrid assembly started"
 echo "[$(current_time)] Illumina: ${ILLUMINA_R1} ${ILLUMINA_R2}"

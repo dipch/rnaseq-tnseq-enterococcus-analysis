@@ -25,28 +25,30 @@ require_file "${CANU_PACBIO_FA}" "Canu assembly"
 require_file "${ILLUMINA_R1}" "Illumina R1"
 require_file "${ILLUMINA_R2}" "Illumina R2"
 
+total_start=$(date +%s)
+
 # index assembly with bwa
 echo "[$(current_time)] indexing Canu PacBio assembly with BWA"
-T_index=$(date +%s)
+index_start=$(date +%s)
 bwa index "${CANU_PACBIO_FA}"
-echo "[$(current_time)] indexing complete ($(elapsed_time $T_index))"
+echo "[$(current_time)] indexing complete ($(elapsed_time $index_start))"
 
 # align+sort
 echo "[$(current_time)] aligning Illumina reads to assembly"
 echo "[$(current_time)] R1: ${ILLUMINA_R1}"
 echo "[$(current_time)] R2: ${ILLUMINA_R2}"
 echo "[$(current_time)] output BAM: ${SORTED_BAM}"
-T_align=$(date +%s)
+align_start=$(date +%s)
 bwa mem -t 2 "${CANU_PACBIO_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
     | samtools sort -@ 2 -o "${SORTED_BAM}"
-echo "[$(current_time)] alignment + sort complete ($(elapsed_time $T_align))"
+echo "[$(current_time)] alignment + sort complete ($(elapsed_time $align_start))"
 
 # index bam
 echo "[$(current_time)] indexing BAM"
-T_bam=$(date +%s)
+bam_start=$(date +%s)
 samtools index "${SORTED_BAM}"
-echo "[$(current_time)] BAM index complete ($(elapsed_time $T_bam))"
+echo "[$(current_time)] BAM index complete ($(elapsed_time $bam_start))"
 echo "[$(current_time)] running samtools flagstat"
 samtools flagstat "${SORTED_BAM}" | tee "${FLAGSTAT_TXT}"
 echo "[$(current_time)] flagstat saved to ${FLAGSTAT_TXT}"
-echo "[$(current_time)] all steps complete (total: $(elapsed_time $T0))"
+echo "[$(current_time)] all steps complete (total: $(elapsed_time $total_start))"
