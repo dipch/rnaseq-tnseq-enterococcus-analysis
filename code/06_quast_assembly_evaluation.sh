@@ -49,7 +49,9 @@ run_quast() {
 
 run_quast "canu_pacbio"       "${CANU_FA}"
 run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
-run_quast "spades_contigs"    "${SPADES_CONTIGS}"
+
+# no need this
+# run_quast "spades_contigs"    "${SPADES_CONTIGS}"
 # todo
 # run_quast "canu_nanopore"     "${CANU_NANO_FA}"
 

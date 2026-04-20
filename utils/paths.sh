@@ -45,4 +45,6 @@ NOBACKUP_POLISH="${NOBACKUP_BASE}/polishing_pacbio_illumina"
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
 QUAST_DIR="${EVAL_DIR}/quast"
 QUAST_WITH_REFERENCE_DIR="${EVAL_DIR}/quast_with_reference"
+BUSCO_DIR_AUTO_LINEAGE="${EVAL_DIR}/busco_auto_lineage"
+BUSCO_DIR_MANUAL_LINEAGE="${EVAL_DIR}/busco_manual_lineage"
 
