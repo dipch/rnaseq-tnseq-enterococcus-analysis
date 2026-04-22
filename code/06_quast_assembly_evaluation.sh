@@ -3,7 +3,7 @@
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 02:00:00
-#SBATCH -J quast_assembly_evaluation_canu_pacbio_and_spades
+#SBATCH -J quast_assembly_evaluation_spades_isolate
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/06_quast_assembly_evaluation.%x.%j.out
 
@@ -17,6 +17,9 @@ module load QUAST/5.3.0-gfbf-2024a
 
 require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
+
+#temp
+require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
 
 run_quast() {
     local label="$1"
@@ -38,9 +41,11 @@ run_quast() {
     echo "[$(current_time)] report: ${outdir}"
 }
 
+# temp
+#run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
+#run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
+run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
 
-run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
-run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
 
 # no need this
 # run_quast "spades_contigs"    "${SPADES_CONTIGS}"

@@ -3,7 +3,7 @@
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 02:00:00
-#SBATCH -J quast_assembly_evaluation_with_reference
+#SBATCH -J quast_assembly_evaluation_with_reference_spades_isolate
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/06b_quast_assembly_evaluation_with_reference.%x.%j.out
 
@@ -19,6 +19,8 @@ require_file "${REFERENCE_FASTA}"     "reference genome FASTA"
 require_file "${REFERENCE_GFF}"    "reference GFF"
 require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
+#temp
+require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
 
 run_quast() {
     local label="$1"
@@ -38,8 +40,10 @@ run_quast() {
     echo "[$(current_time)] report: ${outdir}"
 }
 
-run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
-run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
-run_quast "spades_contigs"    "${SPADES_CONTIGS}"
+#temp
+#run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
+#run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
+#run_quast "spades_contigs"    "${SPADES_CONTIGS}"
+run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
 # todo
 # run_quast "canu_nanopore"     "${CANU_NANO_FA}"

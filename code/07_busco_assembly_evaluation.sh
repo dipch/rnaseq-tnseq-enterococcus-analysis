@@ -18,6 +18,7 @@ module load BUSCO/5.8.2-gfbf-2024a
 
 require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
+require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
 
 run_busco() {
     local label="$1"
@@ -55,11 +56,15 @@ run_busco() {
 total_start=$(date +%s)
 
 # run with manual lineage from config
-run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "${BUSCO_LINEAGE}"
-run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "${BUSCO_LINEAGE}"
+#run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "${BUSCO_LINEAGE}"
+#run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "${BUSCO_LINEAGE}"
 
 # run with auto lineage detection
-run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "auto"
-run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "auto"
+#run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"         "auto"
+#run_busco "spades_scaffolds" "${SPADES_SCAFFOLDS}" "auto"
+
+#temp
+run_busco "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "auto"
 
 echo "[$(current_time)] all BUSCO runs complete (total: $(elapsed_time $total_start))"

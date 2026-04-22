@@ -3,7 +3,7 @@
 #SBATCH -p pelle
 #SBATCH -c 1
 #SBATCH -t 02:00:00
-#SBATCH -J mummer_assembly_evaluation
+#SBATCH -J mummer_assembly_evaluation_spades_isolate
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/08_mummer_assembly_evaluation.%x.%j.out
 
@@ -18,6 +18,9 @@ module load MUMmer/4.0.1-GCCcore-13.3.0
 require_file "${REFERENCE_FASTA}"      "reference genome FASTA"
 require_file "${CANU_PACBIO_FA}"    "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}"  "SPAdes scaffolds FASTA"
+
+#temp
+require_file "${SPADES_SCAFFOLDS_ISOLATE}"  "SPAdes scaffolds FASTA (isolate)"
 
 run_nucmer() {
     local label="$1"
@@ -73,15 +76,18 @@ run_filter_and_plot() {
 total_start=$(date +%s)
 
 echo "[$(current_time)]  nucmer alignment"
-run_nucmer "canu_pacbio"      "${CANU_PACBIO_FA}"
-run_nucmer "spades_scaffolds" "${SPADES_SCAFFOLDS}"
+#run_nucmer "canu_pacbio"      "${CANU_PACBIO_FA}"
+#run_nucmer "spades_scaffolds" "${SPADES_SCAFFOLDS}" 
+run_nucmer "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
 
 echo "[$(current_time)]  filter: -r -q "
-run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "rq"
-run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "rq"
+#run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "rq"
+#run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "rq"
+run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
 
 echo "[$(current_time)]  filter: -1 "
-run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "1"
-run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "1"
+#run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "1"
+#run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "1"
+run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"
