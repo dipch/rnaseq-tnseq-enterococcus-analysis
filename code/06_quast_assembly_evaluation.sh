@@ -42,8 +42,8 @@ run_quast() {
 }
 
 # temp
-#run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
-#run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
+run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
+run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
 run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
 
 

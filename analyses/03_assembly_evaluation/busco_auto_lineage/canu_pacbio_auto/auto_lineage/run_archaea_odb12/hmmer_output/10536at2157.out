@@ -15,5 +15,5 @@ tig00000001:2719082-2719357|+ -             92 10536                -           
 # Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa
 # Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/auto_lineage/run_archaea_odb12/hmmer_output/10536at2157.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/archaea_odb12/hmms/10536at2157.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_auto_lineage/canu_pacbio_auto/prodigal_output/predicted_genes/predicted.faa 
 # Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
-# Date:            Mon Apr 20 03:11:34 2026
+# Date:            Wed Apr 22 11:35:51 2026
 # [ok]

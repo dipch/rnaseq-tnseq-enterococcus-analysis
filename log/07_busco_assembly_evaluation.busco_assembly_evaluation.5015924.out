@@ -1,0 +1,17 @@
+AUGUSTUS/3.5.0: A read-only config directory is at $AUGUSTUS_CONFIG_PATH. See 'module help AUGUSTUS/3.5.0' for guidance to create your own writable copy.
+BBMap/39.19: For improved speed, add 'usejni=t' to the command line of BBMap tools which support the use of the compiled jni C code.
+BUSCO/5.8.2: see 'module help BUSCO/5.8.2' for availability of lineage sets
+[2026-04-22 11:28:06] running BUSCO for canu_pacbio (lineage: enterococcus_odb12)
+2026-04-22 11:28:10 INFO:	***** Start a BUSCO v5.8.2 analysis, current time: 04/22/2026 11:28:10 *****
+2026-04-22 11:28:10 INFO:	Configuring BUSCO with /sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/config/config.ini
+2026-04-22 11:28:10 INFO:	Running genome mode
+2026-04-22 11:28:10 INFO:	'Force' option selected; overwriting previous results directory
+2026-04-22 11:28:10 INFO:	Downloading information on latest versions of BUSCO data...
+2026-04-22 11:28:10 INFO:	Input file is /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio/efaecium_e745_pacbio.contigs.fasta
+2026-04-22 11:28:12 INFO:	Running BUSCO using lineage dataset enterococcus_odb12 (prokaryota, 2025-05-14)
+2026-04-22 11:28:12 INFO:	Running 1 job(s) on bbtools, starting at 04/22/2026 11:28:12
+2026-04-22 11:28:12 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-22 11:28:12 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-22 11:28:12 INFO:	NumExpr defaulting to 8 threads.
+[2026-04-22T11:28:12.742] error: *** JOB 5015924 ON p52 CANCELLED AT 2026-04-22T11:28:12 DUE to SIGNAL Terminated ***
+[2026-04-22 11:28:12] script finished (exit code 0)

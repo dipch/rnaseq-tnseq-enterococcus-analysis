@@ -1,0 +1,14 @@
+#                                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                    accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                            ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_30_length_28698_cov_56.930508:16037-16483|+ -            149 20251                -            149   1.4e-80  265.8   0.3   1   1     5e-84   1.6e-80  265.6   0.3     1   146     1   146     1   148 0.99 NODE_30_length_28698_cov_56.930508_20 # 16037 # 16483 # 1 # ID=30_20;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.347
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20251at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_isolate_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_isolate_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/20251at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20251at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_isolate_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 22 11:42:38 2026
+# [ok]

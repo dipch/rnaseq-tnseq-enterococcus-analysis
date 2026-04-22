@@ -1,0 +1,80 @@
+AUGUSTUS/3.5.0: A read-only config directory is at $AUGUSTUS_CONFIG_PATH. See 'module help AUGUSTUS/3.5.0' for guidance to create your own writable copy.
+BBMap/39.19: For improved speed, add 'usejni=t' to the command line of BBMap tools which support the use of the compiled jni C code.
+BUSCO/5.8.2: see 'module help BUSCO/5.8.2' for availability of lineage sets
+[2026-04-22 11:27:39] running BUSCO for canu_pacbio (lineage: enterococcus_odb12)
+2026-04-22 11:27:55 INFO:	***** Start a BUSCO v5.8.2 analysis, current time: 04/22/2026 11:27:55 *****
+2026-04-22 11:27:55 INFO:	Configuring BUSCO with /sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/config/config.ini
+2026-04-22 11:27:55 INFO:	Running genome mode
+2026-04-22 11:27:55 INFO:	Downloading information on latest versions of BUSCO data...
+2026-04-22 11:27:55 INFO:	Input file is /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_pacbio/efaecium_e745_pacbio.contigs.fasta
+2026-04-22 11:27:56 INFO:	Running BUSCO using lineage dataset enterococcus_odb12 (prokaryota, 2025-05-14)
+2026-04-22 11:27:56 INFO:	Running 1 job(s) on bbtools, starting at 04/22/2026 11:27:56
+2026-04-22 11:27:56 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-22 11:27:56 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-22 11:27:56 INFO:	NumExpr defaulting to 8 threads.
+2026-04-22 11:27:57 INFO:	[bbtools]	1 of 1 task(s) completed
+2026-04-22 11:27:57 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2026-04-22 11:27:57 INFO:	Running Prodigal with genetic code 11 in single mode
+2026-04-22 11:27:57 INFO:	Running 1 job(s) on prodigal, starting at 04/22/2026 11:27:57
+2026-04-22 11:27:58 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-22 11:27:58 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-22 11:27:58 INFO:	NumExpr defaulting to 8 threads.
+2026-04-22 11:28:00 INFO:	[prodigal]	1 of 1 task(s) completed
+2026-04-22 11:28:00 INFO:	Genetic code 11 selected as optimal
+2026-04-22 11:28:00 INFO:	***** Run HMMER on gene sequences *****
+2026-04-22 11:28:00 INFO:	Running 983 job(s) on hmmsearch, starting at 04/22/2026 11:28:00
+2026-04-22 11:28:01 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-22 11:28:01 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-22 11:28:01 INFO:	NumExpr defaulting to 8 threads.
+2026-04-22 11:28:04 CRITICAL:	Unhandled exception occurred:
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/busco_tools/Toolset.py", line 196, in run_job
+    job.run()
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/BuscoLogger.py", line 62, in wrapped_func
+    self.retval = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/busco_tools/Toolset.py", line 67, in run
+    with open(self.job_outlogger, "wb") as f_out:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/logs/hmmsearch_out.log'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/BuscoRunner.py", line 175, in run
+    self.runner.run_analysis()
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/BuscoRunner.py", line 627, in run_analysis
+    self.analysis.run_analysis()
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/analysis/GenomeAnalysis.py", line 116, in run_analysis
+    self.run_hmmer(self.prodigal_runner.output_faa)
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/BuscoLogger.py", line 62, in wrapped_func
+    self.retval = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/analysis/BuscoAnalysis.py", line 134, in run_hmmer
+    self.hmmer_runner.run()
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/busco_tools/hmmer.py", line 213, in run
+    self.run_jobs()
+  File "/sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/lib/python3.12/site-packages/busco/busco_tools/Toolset.py", line 185, in run_jobs
+    job_pool.map(
+  File "/sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/logs/hmmsearch_out.log'
+
+
+2026-04-22 11:28:04 ERROR:	[Errno 2] No such file or directory: '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/canu_pacbio_enterococcus_odb12/logs/hmmsearch_out.log'
+2026-04-22 11:28:04 ERROR:	BUSCO analysis failed!
+2026-04-22 11:28:04 ERROR:	Check the logs, read the user guide (https://busco.ezlab.org/busco_userguide.html), and check the BUSCO issue board on https://gitlab.com/ezlab/busco/issues
+
+[2026-04-22 11:28:04] script finished (exit code 0)

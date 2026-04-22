@@ -11,5 +11,5 @@ NODE_8_length_133129_cov_72.724935:70395-71024|-   -            210 18525       
 # Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
 # Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/18525at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/18525at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_manual_lineage/spades_scaffolds_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
 # Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
-# Date:            Mon Apr 20 03:10:55 2026
+# Date:            Wed Apr 22 11:35:09 2026
 # [ok]

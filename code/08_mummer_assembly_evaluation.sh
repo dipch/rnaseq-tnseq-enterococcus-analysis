@@ -65,6 +65,7 @@ run_filter_and_plot() {
     step_start=$(date +%s)
     mummerplot \
         --png \
+	--large
         -R "${REFERENCE_FASTA}" \
         -Q "${query_fasta}" \
         --prefix "${prefix}_plot" \
@@ -76,18 +77,18 @@ run_filter_and_plot() {
 total_start=$(date +%s)
 
 echo "[$(current_time)]  nucmer alignment"
-#run_nucmer "canu_pacbio"      "${CANU_PACBIO_FA}"
-#run_nucmer "spades_scaffolds" "${SPADES_SCAFFOLDS}" 
+run_nucmer "canu_pacbio"      "${CANU_PACBIO_FA}"
+run_nucmer "spades_scaffolds" "${SPADES_SCAFFOLDS}" 
 run_nucmer "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
 
 echo "[$(current_time)]  filter: -r -q "
-#run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "rq"
-#run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "rq"
+run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "rq"
+run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "rq"
 run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
 
 echo "[$(current_time)]  filter: -1 "
-#run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "1"
-#run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "1"
+run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "1"
+run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "1"
 run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"
