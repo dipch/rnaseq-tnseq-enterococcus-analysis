@@ -18,7 +18,7 @@ module load MUMmer/4.0.1-GCCcore-13.3.0
 require_file "${REFERENCE_FASTA}"         "reference genome FASTA"
 #todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
 #todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
-require_file "${PILON_FA}"               "Pilon polished FASTA"
+require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
 
 #temp
 #todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}"  "SPAdes scaffolds FASTA (isolate)"
@@ -80,19 +80,19 @@ total_start=$(date +%s)
 echo "[$(current_time)]  nucmer alignment"
 #todo: uncomment run_nucmer "canu_pacbio"             "${CANU_PACBIO_FA}"
 #todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}"
-run_nucmer "pilon_polish"            "${PILON_FA}"
+run_nucmer "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"
 #todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
 
 echo "[$(current_time)]  filter: -r -q "
 #todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "rq"
 #todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "rq"
-run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "rq"
+run_filter_and_plot "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"         "rq"
 #todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
 
 echo "[$(current_time)]  filter: -1 "
 #todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "1"
 #todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "1"
-run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "1"
+run_filter_and_plot "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"         "1"
 #todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"

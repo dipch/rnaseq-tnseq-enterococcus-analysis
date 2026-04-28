@@ -10,16 +10,16 @@
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 # all outputs go to nobackup (bam, index, flagstat); symlink into analyses/
-mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH}"
-ensure_nobackup_symlink "${POLISH_ALIGN_DIR}" "${NOBACKUP_POLISH}"
+mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH_PACBIO}"
+ensure_nobackup_symlink "${POLISH_PACBIO_ALIGN_DIR}" "${NOBACKUP_POLISH_PACBIO}"
 
 module purge
 module load BWA/0.7.19-GCCcore-13.3.0
 module load SAMtools/1.22.1-GCC-13.3.0
 #module load Bowtie2/2.5.4-GCC-13.3.0
 
-SORTED_BAM="${NOBACKUP_POLISH}/${ORGANISM}_illumina_sorted.bam"
-FLAGSTAT_TXT="${NOBACKUP_POLISH}/flagstat.txt"
+SORTED_BAM="${POLISH_PACBIO_SORTED_BAM}"
+FLAGSTAT_TXT="${NOBACKUP_POLISH_PACBIO}/flagstat.txt"
 
 require_file "${CANU_PACBIO_FA}" "Canu assembly"
 require_file "${ILLUMINA_R1}" "Illumina R1"

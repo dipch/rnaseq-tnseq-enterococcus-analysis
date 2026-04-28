@@ -12,8 +12,8 @@
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 # all outputs go to nobackup (bam, index, flagstat); symlink into analyses/
-mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH}"
-ensure_nobackup_symlink "${POLISH_ALIGN_DIR}" "${NOBACKUP_POLISH}"
+mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_POLISH_PACBIO}"
+ensure_nobackup_symlink "${POLISH_PACBIO_ALIGN_DIR}" "${NOBACKUP_POLISH_PACBIO}"
 
 module purge
 module load Bowtie2/2.5.4-GCC-13.3.0

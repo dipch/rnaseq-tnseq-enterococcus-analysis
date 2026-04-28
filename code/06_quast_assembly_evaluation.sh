@@ -17,7 +17,7 @@ module load QUAST/5.3.0-gfbf-2024a
 
 #todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
 #todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
-require_file "${PILON_FA}"               "Pilon polished FASTA"
+require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
 
 #temp
 #todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
@@ -46,7 +46,7 @@ run_quast() {
 #todo: uncomment run_quast "canu_pacbio"              "${CANU_PACBIO_FA}"
 #todo: uncomment run_quast "spades_scaffolds_pacbio_illumina"         "${SPADES_SCAFFOLDS}"
 #todo: uncomment run_quast "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
-run_quast "pilon_polish"             "${PILON_FA}"
+run_quast "pilon_polish_pacbio_illumina"             "${PILON_PACBIO_FA}"
 
 
 # no need this

@@ -18,7 +18,7 @@ module load BUSCO/5.8.2-gfbf-2024a
 
 #todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
 #todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
-require_file "${PILON_FA}"               "Pilon polished FASTA"
+require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
 #todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
 
 run_busco() {
@@ -59,12 +59,12 @@ total_start=$(date +%s)
 # run with manual lineage from config
 #todo: uncomment run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"  "${BUSCO_LINEAGE}"
 #todo: uncomment run_busco "spades_scaffolds_pacbio_illumina" "${SPADES_SCAFFOLDS}" "${BUSCO_LINEAGE}"
-run_busco "pilon_polish"     "${PILON_FA}"         "${BUSCO_LINEAGE}"
+run_busco "pilon_polish_pacbio_illumina"     "${PILON_PACBIO_FA}"         "${BUSCO_LINEAGE}"
 
 # run with auto lineage detection
 #todo: uncomment run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"  "auto"
 #todo: uncomment run_busco "spades_scaffolds_pacbio_illumina" "${SPADES_SCAFFOLDS}" "auto"
-run_busco "pilon_polish"     "${PILON_FA}"         "auto"
+run_busco "pilon_polish_pacbio_illumina"     "${PILON_PACBIO_FA}"         "auto"
 
 #temp
 #todo: uncomment run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "${BUSCO_LINEAGE}"
