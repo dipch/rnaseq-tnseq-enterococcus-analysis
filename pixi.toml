@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Dip Chowdhury <dipchry@gmail.com>"]
+channels = ["conda-forge"]
+name = "rnaseq-tnseq-enterococcus-analysis"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ncbi-datasets-cli = ">=18.24.0,<19"

@@ -1,0 +1,28 @@
+version: 6
+environments:
+  default:
+    channels:
+    - url: https://conda.anaconda.org/conda-forge/
+    options:
+      pypi-prerelease-mode: if-necessary-or-explicit
+    packages:
+      osx-arm64:
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncbi-datasets-cli-18.24.0-hce30654_0.conda
+packages:
+- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda
+  sha256: c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d
+  md5: e18ad67cf881dcadee8b8d9e2f8e5f73
+  depends:
+  - __unix
+  license: ISC
+  size: 131039
+  timestamp: 1776865545798
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncbi-datasets-cli-18.24.0-hce30654_0.conda
+  sha256: 115987a7e43fed07ffc7d5ae73208265f548a13f772f35faa8bc33a60c9864ae
+  md5: 792ae0088af958590b9a2a568a414818
+  depends:
+  - ca-certificates
+  license: Public Domain
+  size: 33318009
+  timestamp: 1777037355815

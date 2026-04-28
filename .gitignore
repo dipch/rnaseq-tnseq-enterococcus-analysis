@@ -23,4 +23,6 @@ env/
 .Trashes
 
 .claude
-.vscode/
+.vscode/# pixi environments
+.pixi/*
+!.pixi/config.toml
