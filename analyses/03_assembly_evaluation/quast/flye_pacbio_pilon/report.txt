@@ -1,0 +1,31 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    efaecium_e745_flye_pacbio_pilon
+# contigs (>= 0 bp)         11                             
+# contigs (>= 1000 bp)      11                             
+# contigs (>= 5000 bp)      10                             
+# contigs (>= 10000 bp)     10                             
+# contigs (>= 25000 bp)     6                              
+# contigs (>= 50000 bp)     3                              
+Total length (>= 0 bp)      3139688                        
+Total length (>= 1000 bp)   3139688                        
+Total length (>= 5000 bp)   3136046                        
+Total length (>= 10000 bp)  3136046                        
+Total length (>= 25000 bp)  3075641                        
+Total length (>= 50000 bp)  2977407                        
+# contigs                   11                             
+Largest contig              1415042                        
+Total length                3139688                        
+Estimated reference length  3300000                        
+GC (%)                      37.82                          
+N50                         1362979                        
+NG50                        1362979                        
+N90                         199386                         
+NG90                        199386                         
+auN                         1243453.2                      
+auNG                        1183047.0                      
+L50                         2                              
+LG50                        2                              
+L90                         3                              
+LG90                        3                              
+# N's per 100 kbp           0.00                           

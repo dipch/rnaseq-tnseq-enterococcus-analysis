@@ -1,0 +1,20 @@
+#                                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                             accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                     ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon_pilon:636804-637499|-   -            232 28595                -            229    8e-100  330.3   0.3   1   1  1.2e-102  9.1e-100  330.1   0.3     1   228     1   229     1   230 0.98 tig00000001_pilon_pilon_576 # 636804 # 637499 # -1 # ID=1_576;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=11-12bp;gc_cont=0.382
+tig00000001_pilon_pilon:975580-977190|-   -            537 28595                -            229    0.0045   13.8   0.1   1   3   5.8e-06    0.0045   13.8   0.1    68   137    52   125    40   134 0.73 tig00000001_pilon_pilon_918 # 975580 # 977190 # -1 # ID=1_918;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.408
+tig00000001_pilon_pilon:975580-977190|-   -            537 28595                -            229    0.0045   13.8   0.1   2   3      0.89   6.9e+02   -3.2   0.3    99   111   395   409   382   436 0.58 tig00000001_pilon_pilon_918 # 975580 # 977190 # -1 # ID=1_918;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.408
+tig00000001_pilon_pilon:975580-977190|-   -            537 28595                -            229    0.0045   13.8   0.1   3   3       0.6   4.7e+02   -2.6   0.1   178   211   487   520   482   523 0.88 tig00000001_pilon_pilon_918 # 975580 # 977190 # -1 # ID=1_918;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.408
+tig00000001_pilon_pilon:1847145-1848095|- -            317 28595                -            229     0.045   10.5   4.2   1   2   0.00047      0.36    7.6   0.1    96   151     7    61     1    68 0.84 tig00000001_pilon_pilon_1757 # 1847145 # 1848095 # -1 # ID=1_1757;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.441
+tig00000001_pilon_pilon:1847145-1848095|- -            317 28595                -            229     0.045   10.5   4.2   2   2    0.0059       4.6    4.0   0.8   126   182   175   225   150   252 0.82 tig00000001_pilon_pilon_1757 # 1847145 # 1848095 # -1 # ID=1_1757;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.441
+tig00000001_pilon_pilon:1368363-1369325|+ -            321 28595                -            229      0.95    6.2   7.2   1   1   0.00018      0.14    8.9   2.5    97   146    84   132    68   201 0.78 tig00000001_pilon_pilon_1283 # 1368363 # 1369325 # 1 # ID=1_1283;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.394
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28595at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/28595at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28595at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:59:27 2026
+# [ok]

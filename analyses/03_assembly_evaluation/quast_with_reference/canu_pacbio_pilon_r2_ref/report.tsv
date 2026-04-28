@@ -1,0 +1,56 @@
+Assembly	efaecium_e745_canu_pacbio_pilon_r2
+# contigs (>= 0 bp)	10
+# contigs (>= 1000 bp)	10
+# contigs (>= 5000 bp)	10
+# contigs (>= 10000 bp)	9
+# contigs (>= 25000 bp)	4
+# contigs (>= 50000 bp)	2
+Total length (>= 0 bp)	3155923
+Total length (>= 1000 bp)	3155923
+Total length (>= 5000 bp)	3155923
+Total length (>= 10000 bp)	3148881
+Total length (>= 25000 bp)	3062689
+Total length (>= 50000 bp)	2993789
+# contigs	10
+Largest contig	2775212
+Total length	3155923
+Reference length	3168410
+GC (%)	37.79
+Reference GC (%)	37.70
+N50	2775212
+NG50	2775212
+N90	218577
+NG90	218577
+auN	2456847.7
+auNG	2447165.0
+L50	1
+LG50	1
+L90	2
+LG90	2
+# misassemblies	8
+# misassembled contigs	5
+Misassembled contigs length	3063994
+# local misassemblies	0
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	0
+# unaligned contigs	0 + 0 part
+Unaligned length	0
+Genome fraction (%)	98.217
+Duplication ratio	1.013
+# N's per 100 kbp	0.00
+# mismatches per 100 kbp	10.63
+# indels per 100 kbp	8.31
+# genomic features	3328 + 13 part
+Largest alignment	1888356
+Total aligned length	3151924
+NA50	1888356
+NGA50	1888356
+NA90	183840
+NGA90	183840
+auNA	1390316.0
+auNGA	1384836.6
+LA50	1
+LGA50	1
+LA90	3
+LGA90	3

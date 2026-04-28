@@ -1,0 +1,20 @@
+#                                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                             accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                     ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon_pilon:2538694-2539254|- -            187 28698                -            184   5.6e-93  307.2   0.1   1   1   1.2e-95   6.4e-93  307.0   0.1     1   183     1   183     1   184 0.99 tig00000001_pilon_pilon_2441 # 2538694 # 2539254 # -1 # ID=1_2441;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.392
+tig00000001_pilon_pilon:2005326-2006504|+ -            393 28698                -            184   6.6e-06   23.4   0.3   1   1   2.3e-08   1.2e-05   22.6   0.3    38   167   210   345   201   367 0.73 tig00000001_pilon_pilon_1908 # 2005326 # 2006504 # 1 # ID=1_1908;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.368
+tig00000001_pilon_pilon:270731-271678|-   -            316 28698                -            184   3.4e-05   21.1   0.1   1   1   1.1e-07   5.4e-05   20.4   0.1    42   147   176   283   155   303 0.79 tig00000001_pilon_pilon_279 # 270731 # 271678 # -1 # ID=1_279;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.409
+tig00000001_pilon_pilon:256911-257645|+   -            245 28698                -            184   0.00013   19.2   0.0   1   1   3.8e-07    0.0002   18.6   0.0    42   125    43   124    36   170 0.89 tig00000001_pilon_pilon_268 # 256911 # 257645 # 1 # ID=1_268;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.407
+tig00000001_pilon_pilon:431856-433214|-   -            453 28698                -            184    0.0048   14.1   0.0   1   2   0.00015      0.08   10.1   0.0    67   123   287   341   282   350 0.89 tig00000001_pilon_pilon_398 # 431856 # 433214 # -1 # ID=1_398;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.411
+tig00000001_pilon_pilon:431856-433214|-   -            453 28698                -            184    0.0048   14.1   0.0   2   2      0.08        41    1.3   0.0    93   149   391   448   385   452 0.87 tig00000001_pilon_pilon_398 # 431856 # 433214 # -1 # ID=1_398;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.411
+tig00000001_pilon_pilon:1497594-1498433|+ -            280 28698                -            184     0.019   12.1   0.0   1   1   9.2e-05     0.047   10.8   0.0    45   126   116   191   113   203 0.80 tig00000001_pilon_pilon_1430 # 1497594 # 1498433 # 1 # ID=1_1430;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.386
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28698at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/28698at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28698at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r2_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:59:28 2026
+# [ok]

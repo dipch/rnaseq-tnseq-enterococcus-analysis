@@ -1,0 +1,20 @@
+#                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon:1464791-1465225|+ -            145 28954                -            140   8.1e-59  195.4   0.6   1   1   8.7e-62     9e-59  195.3   0.6     1   140     1   142     1   142 0.97 tig00000001_pilon_1394 # 1464791 # 1465225 # 1 # ID=1_1394;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.370
+tig00000001_pilon:381899-382465|+   -            189 28954                -            140   0.00072   17.4   0.2   1   2   1.7e-06    0.0017   16.1   0.0    16    93    35   112    28   129 0.84 tig00000001_pilon_364 # 381899 # 382465 # 1 # ID=1_364;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.409
+tig00000001_pilon:381899-382465|+   -            189 28954                -            140   0.00072   17.4   0.2   2   2      0.68     7e+02   -2.0   0.0   100   116   150   166   147   177 0.85 tig00000001_pilon_364 # 381899 # 382465 # 1 # ID=1_364;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.409
+tig00000001_pilon:839711-842416|+   -            902 28954                -            140       0.1   10.4   4.3   1   4      0.42   4.3e+02   -1.4   0.0    29   103   179   250   160   270 0.64 tig00000001_pilon_781 # 839711 # 842416 # 1 # ID=1_781;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.399
+tig00000001_pilon:839711-842416|+   -            902 28954                -            140       0.1   10.4   4.3   2   4      0.13   1.4e+02    0.2   0.1    41   111   285   358   232   363 0.69 tig00000001_pilon_781 # 839711 # 842416 # 1 # ID=1_781;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.399
+tig00000001_pilon:839711-842416|+   -            902 28954                -            140       0.1   10.4   4.3   3   4   0.00019       0.2    9.4   0.2    22    88   366   432   353   486 0.69 tig00000001_pilon_781 # 839711 # 842416 # 1 # ID=1_781;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.399
+tig00000001_pilon:839711-842416|+   -            902 28954                -            140       0.1   10.4   4.3   4   4      0.99     1e+03   -2.6   0.0    15    68   533   584   517   589 0.71 tig00000001_pilon_781 # 839711 # 842416 # 1 # ID=1_781;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.399
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28954at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/28954at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/28954at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:58:02 2026
+# [ok]

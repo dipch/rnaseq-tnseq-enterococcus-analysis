@@ -1,0 +1,29 @@
+Assembly	efaecium_e745_canu_pacbio_pilon_r2
+# contigs (>= 0 bp)	10
+# contigs (>= 1000 bp)	10
+# contigs (>= 5000 bp)	10
+# contigs (>= 10000 bp)	9
+# contigs (>= 25000 bp)	4
+# contigs (>= 50000 bp)	2
+Total length (>= 0 bp)	3155923
+Total length (>= 1000 bp)	3155923
+Total length (>= 5000 bp)	3155923
+Total length (>= 10000 bp)	3148881
+Total length (>= 25000 bp)	3062689
+Total length (>= 50000 bp)	2993789
+# contigs	10
+Largest contig	2775212
+Total length	3155923
+Estimated reference length	3300000
+GC (%)	37.79
+N50	2775212
+NG50	2775212
+N90	218577
+NG90	218577
+auN	2456847.7
+auNG	2349582.4
+L50	1
+LG50	1
+L90	2
+LG90	2
+# N's per 100 kbp	0.00

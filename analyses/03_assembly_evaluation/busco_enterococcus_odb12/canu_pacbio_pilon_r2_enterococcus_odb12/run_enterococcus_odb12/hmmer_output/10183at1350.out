@@ -1,0 +1,20 @@
+#                                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                             accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                     ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon_pilon:2417138-2417767|- -            210 10183                -            211  1.1e-127  421.6   0.4   1   1  2.7e-130  1.2e-127  421.5   0.4     3   209     2   208     1   209 0.99 tig00000001_pilon_pilon_2321 # 2417138 # 2417767 # -1 # ID=1_2321;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.394
+tig00000001_pilon_pilon:2584626-2585207|- -            194 10183                -            211     5e-07   27.4   0.5   1   1   3.4e-08   1.5e-05   22.6   0.5    48   182    33   183    20   191 0.73 tig00000001_pilon_pilon_2479 # 2584626 # 2585207 # -1 # ID=1_2479;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.400
+tig00000001_pilon_pilon:443686-444657|-   -            324 10183                -            211   4.7e-05   21.0   0.1   1   1   1.6e-07   7.1e-05   20.4   0.1    71   149   173   252   160   300 0.74 tig00000001_pilon_pilon_410 # 443686 # 444657 # -1 # ID=1_410;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.404
+tig00000001_pilon_pilon:2471687-2472199|- -            171 10183                -            211   0.00063   17.3   0.0   1   1   2.1e-06   0.00091   16.8   0.0   112   177   107   170   100   170 0.88 tig00000001_pilon_pilon_2374 # 2471687 # 2472199 # -1 # ID=1_2374;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.417
+tig00000001_pilon_pilon:446627-447445|-   -            273 10183                -            211    0.0069   13.9   0.3   1   1   6.9e-05      0.03   11.8   0.3    55   147   120   213   108   250 0.64 tig00000001_pilon_pilon_412 # 446627 # 447445 # -1 # ID=1_412;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.402
+tig00000001_pilon_pilon:1135351-1136325|+ -            325 10183                -            211     0.019   12.4   0.1   1   1   7.2e-05     0.032   11.7   0.1    74   175   176   276   168   292 0.78 tig00000001_pilon_pilon_1060 # 1135351 # 1136325 # 1 # ID=1_1060;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.406
+tig00000001_pilon_pilon:834316-835827|+   -            504 10183                -            211     0.022   12.3   0.0   1   1   9.1e-05      0.04   11.4   0.0   105   164   265   323   256   327 0.90 tig00000001_pilon_pilon_776 # 834316 # 835827 # 1 # ID=1_776;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.413
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10183at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r2_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r2_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/10183at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10183at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r2_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:56:19 2026
+# [ok]

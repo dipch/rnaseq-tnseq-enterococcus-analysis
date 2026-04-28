@@ -1,0 +1,21 @@
+#                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                    accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#            ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_1_pilon:857194-857733|+   -            180 11095                -            177  1.5e-103  341.5   7.8   1   1    4e-106  1.7e-103  341.3   7.8     1   177     1   178     1   178 0.98 contig_1_pilon_813 # 857194 # 857733 # 1 # ID=1_813;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1_pilon:112295-112840|+   -            182 11095                -            177   1.7e-08   31.9   0.4   1   1   5.8e-11   2.5e-08   31.3   0.4    65   152    64   150    26   156 0.84 contig_1_pilon_113 # 112295 # 112840 # 1 # ID=1_113;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.381
+contig_2_pilon:985708-986337|+   -            210 11095                -            177   0.00043   17.5   0.2   1   1   2.5e-06    0.0011   16.2   0.2    62   127    93   156    27   170 0.78 contig_2_pilon_951 # 985708 # 986337 # 1 # ID=5_951;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.410
+contig_2_pilon:618753-619727|+   -            325 11095                -            177    0.0026   15.0   0.1   1   1   2.1e-05    0.0091   13.2   0.1    80   121   203   244   166   253 0.81 contig_2_pilon_577 # 618753 # 619727 # 1 # ID=5_577;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.406
+contig_1_pilon:813584-814096|+   -            171 11095                -            177    0.0031   14.8   0.3   1   2      0.37   1.6e+02   -0.6   0.0   105   130    28    53    15    61 0.81 contig_1_pilon_770 # 813584 # 814096 # 1 # ID=1_770;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.415
+contig_1_pilon:813584-814096|+   -            171 11095                -            177    0.0031   14.8   0.3   2   2   2.5e-05     0.011   13.0   0.1    94   121   111   138    97   159 0.88 contig_1_pilon_770 # 813584 # 814096 # 1 # ID=1_770;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.415
+contig_2_pilon:1238209-1238928|+ -            240 11095                -            177    0.0091   13.2   0.0   1   1     3e-05     0.013   12.7   0.0    91   126   198   232   175   239 0.79 contig_2_pilon_1192 # 1238209 # 1238928 # 1 # ID=5_1192;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=11-12bp;gc_cont=0.389
+contig_1_pilon:76125-77096|+     -            324 11095                -            177    0.0091   13.2   0.2   1   1   7.2e-05     0.031   11.5   0.2    75   121   200   246   157   252 0.88 contig_1_pilon_80 # 76125 # 77096 # 1 # ID=1_80;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.402
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/11095at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/11095at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/11095at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:55:25 2026
+# [ok]

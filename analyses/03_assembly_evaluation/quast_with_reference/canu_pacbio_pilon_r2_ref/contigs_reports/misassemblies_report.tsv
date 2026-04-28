@@ -1,0 +1,21 @@
+Assembly	efaecium_e745_canu_pacbio_pilon_r2
+# misassemblies	8
+  # contig misassemblies	8
+    # c. relocations	3
+    # c. translocations	3
+    # c. inversions	2
+  # scaffold misassemblies	0
+    # s. relocations	0
+    # s. translocations	0
+    # s. inversions	0
+# misassembled contigs	5
+Misassembled contigs length	3063994
+# local misassemblies	0
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	0
+# mismatches	335
+# indels	262
+    # indels (<= 5 bp)	250
+    # indels (> 5 bp)	12
+Indels length	439

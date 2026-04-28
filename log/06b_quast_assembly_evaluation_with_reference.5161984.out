@@ -1,0 +1,344 @@
+[2026-04-29 00:52:31] running QUAST for canu_pacbio_pilon_r1 (with reference)
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 -r /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna --features /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref /proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio_pilon_r1/efaecium_e745_canu_pacbio_pilon_r1.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-29 00:52:33
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna ==> GCF_001750885.1_ASM175088v1_genomic
+
+Contigs:
+  Pre-processing...
+  /proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio_pilon_r1/efaecium_e745_canu_pacbio_pilon_r1.fasta ==> efaecium_e745_canu_pacbio_pilon_r1
+
+2026-04-29 00:52:37
+Running Basic statistics processor...
+  Reference genome:
+    GCF_001750885.1_ASM175088v1_genomic.fna, length = 3168410, num fragments = 7, GC % = 37.70
+  Contig files: 
+    efaecium_e745_canu_pacbio_pilon_r1
+  Calculating N50 and L50...
+    efaecium_e745_canu_pacbio_pilon_r1, N50 = 2775227, L50 = 1, auN = 2456861.6, Total length = 3155939, GC % = 37.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/basic_stats/GC_content_plot.pdf
+  Drawing efaecium_e745_canu_pacbio_pilon_r1 GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/basic_stats/efaecium_e745_canu_pacbio_pilon_r1_GC_content_plot.pdf
+Done.
+
+2026-04-29 00:52:40
+Running Contig analyzer...
+  efaecium_e745_canu_pacbio_pilon_r1
+  Logging to files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/contigs_report_efaecium_e745_canu_pacbio_pilon_r1.stdout and contigs_report_efaecium_e745_canu_pacbio_pilon_r1.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2026-04-29 00:52:41
+Running NA-NGA calculation...
+  efaecium_e745_canu_pacbio_pilon_r1, Largest alignment = 1888367, NA50 = 1888367, NGA50 = 1888367, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/aligned_stats/NGAx_plot.pdf
+Done.
+
+2026-04-29 00:52:42
+Running Genome analyzer...
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  Loaded 3407 genomic features of type "ANY"
+  efaecium_e745_canu_pacbio_pilon_r1
+  Analysis is finished.
+  Drawing genomic features cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/genome_stats/features_cumulative_plot.pdf
+  Drawing genomic features FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/genome_stats/features_frcurve_plot.pdf
+  Skipping drawing # complete genomic features histogram... (less than 2 columns histogram makes no sense)
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-29 00:52:42
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-29 00:52:43
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref/quast.log
+
+Finished: 2026-04-29 00:52:43
+Elapsed time: 0:00:09.706548
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-29 00:52:43] canu_pacbio_pilon_r1 complete (0h 0m 12s)
+[2026-04-29 00:52:43] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r1_ref
+[2026-04-29 00:52:43] running QUAST for flye_pacbio_pilon (with reference)
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 -r /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna --features /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-29 00:52:45
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna ==> GCF_001750885.1_ASM175088v1_genomic
+
+Contigs:
+  Pre-processing...
+  /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta ==> efaecium_e745_flye_pacbio_pilon
+
+2026-04-29 00:52:48
+Running Basic statistics processor...
+  Reference genome:
+    GCF_001750885.1_ASM175088v1_genomic.fna, length = 3168410, num fragments = 7, GC % = 37.70
+  Contig files: 
+    efaecium_e745_flye_pacbio_pilon
+  Calculating N50 and L50...
+    efaecium_e745_flye_pacbio_pilon, N50 = 1362979, L50 = 2, auN = 1243453.2, Total length = 3139688, GC % = 37.82, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/basic_stats/GC_content_plot.pdf
+  Drawing efaecium_e745_flye_pacbio_pilon GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/basic_stats/efaecium_e745_flye_pacbio_pilon_GC_content_plot.pdf
+Done.
+
+2026-04-29 00:52:49
+Running Contig analyzer...
+  efaecium_e745_flye_pacbio_pilon
+  Logging to files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/contigs_report_efaecium_e745_flye_pacbio_pilon.stdout and contigs_report_efaecium_e745_flye_pacbio_pilon.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2026-04-29 00:52:50
+Running NA-NGA calculation...
+  efaecium_e745_flye_pacbio_pilon, Largest alignment = 1415042, NA50 = 1362979, NGA50 = 1362979, LA50 = 2, LGA50 = 2
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/aligned_stats/NGAx_plot.pdf
+Done.
+
+2026-04-29 00:52:51
+Running Genome analyzer...
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  Loaded 3407 genomic features of type "ANY"
+  efaecium_e745_flye_pacbio_pilon
+  Analysis is finished.
+  Drawing genomic features cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/genome_stats/features_cumulative_plot.pdf
+  Drawing genomic features FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/genome_stats/features_frcurve_plot.pdf
+  Skipping drawing # complete genomic features histogram... (less than 2 columns histogram makes no sense)
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-29 00:52:51
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-29 00:52:52
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref/quast.log
+
+Finished: 2026-04-29 00:52:52
+Elapsed time: 0:00:07.439854
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-29 00:52:52] flye_pacbio_pilon complete (0h 0m 9s)
+[2026-04-29 00:52:52] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/flye_pacbio_pilon_ref
+[2026-04-29 00:52:52] running QUAST for canu_pacbio_pilon_r2 (with reference)
+/sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/bin/quast.py --threads 2 --min-contig 500 -r /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna --features /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff --output-dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref /proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio_pilon_r2/efaecium_e745_canu_pacbio_pilon_r2.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-5.14.0-611.41.1.el9_7.x86_64-x86_64-with-glibc2.34 (linux_64)
+  Python version: 3.12.3
+  CPUs number: 96
+
+Started: 2026-04-29 00:52:53
+
+Logging to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/quast.log
+
+CWD: /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna ==> GCF_001750885.1_ASM175088v1_genomic
+
+Contigs:
+  Pre-processing...
+  /proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio_pilon_r2/efaecium_e745_canu_pacbio_pilon_r2.fasta ==> efaecium_e745_canu_pacbio_pilon_r2
+
+2026-04-29 00:52:57
+Running Basic statistics processor...
+  Reference genome:
+    GCF_001750885.1_ASM175088v1_genomic.fna, length = 3168410, num fragments = 7, GC % = 37.70
+  Contig files: 
+    efaecium_e745_canu_pacbio_pilon_r2
+  Calculating N50 and L50...
+    efaecium_e745_canu_pacbio_pilon_r2, N50 = 2775212, L50 = 1, auN = 2456847.7, Total length = 3155923, GC % = 37.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/basic_stats/GC_content_plot.pdf
+  Drawing efaecium_e745_canu_pacbio_pilon_r2 GC content plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/basic_stats/efaecium_e745_canu_pacbio_pilon_r2_GC_content_plot.pdf
+Done.
+
+2026-04-29 00:52:58
+Running Contig analyzer...
+  efaecium_e745_canu_pacbio_pilon_r2
+  Logging to files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/contigs_report_efaecium_e745_canu_pacbio_pilon_r2.stdout and contigs_report_efaecium_e745_canu_pacbio_pilon_r2.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2026-04-29 00:53:00
+Running NA-NGA calculation...
+  efaecium_e745_canu_pacbio_pilon_r2, Largest alignment = 1888356, NA50 = 1888356, NGA50 = 1888356, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/aligned_stats/NGAx_plot.pdf
+Done.
+
+2026-04-29 00:53:00
+Running Genome analyzer...
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  Loaded 3407 genomic features of type "ANY"
+  efaecium_e745_canu_pacbio_pilon_r2
+  Analysis is finished.
+  Drawing genomic features cumulative plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/genome_stats/features_cumulative_plot.pdf
+  Drawing genomic features FRCurve plot...
+    saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/genome_stats/features_frcurve_plot.pdf
+  Skipping drawing # complete genomic features histogram... (less than 2 columns histogram makes no sense)
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-04-29 00:53:01
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-04-29 00:53:02
+RESULTS:
+  Text versions of total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/report.html
+  PDF version (tables and plots) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/report.pdf
+  Icarus (contig browser) is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/icarus.html
+  Log is saved to /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/quast.log
+
+Finished: 2026-04-29 00:53:02
+Elapsed time: 0:00:08.064100
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+[2026-04-29 00:53:02] canu_pacbio_pilon_r2 complete (0h 0m 10s)
+[2026-04-29 00:53:02] report: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref
+[2026-04-29 00:53:02] all QUAST runs complete (total: 0h 0m 31s)
+[2026-04-29 00:53:02] script finished (exit code 0)

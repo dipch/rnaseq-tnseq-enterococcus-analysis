@@ -1,0 +1,21 @@
+#                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon:632998-634269|+   -            424 19295                -            423  1.7e-259  857.8   1.1   1   1  4.4e-262  1.9e-259  857.7   1.1     1   423     1   423     1   423 1.00 tig00000001_pilon_574 # 632998 # 634269 # 1 # ID=1_574;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.384
+tig00000001_pilon:2104964-2106673|+ -            570 19295                -            423   3.7e-09   33.1   0.1   1   2   6.4e-11   2.8e-08   30.2   0.1   169   334    45   209    31   217 0.86 tig00000001_pilon_2025 # 2104964 # 2106673 # 1 # ID=1_2025;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001_pilon:2104964-2106673|+ -            570 19295                -            423   3.7e-09   33.1   0.1   2   2     0.083        37    0.2   0.0   370   415   428   471   424   478 0.78 tig00000001_pilon_2025 # 2104964 # 2106673 # 1 # ID=1_2025;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001_pilon:290673-291017|+   -            115 19295                -            423    0.0016   14.5   1.0   1   1   4.2e-06    0.0019   14.3   1.0    35   110    29   113    22   114 0.81 tig00000001_pilon_302 # 290673 # 291017 # 1 # ID=1_302;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.374
+tig00000001_pilon:1786855-1788042|+ -            396 19295                -            423    0.0035   13.4   0.1   1   1   1.2e-05    0.0052   12.9   0.1    22   107   193   278   184   300 0.78 tig00000001_pilon_1704 # 1786855 # 1788042 # 1 # ID=1_1704;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001_pilon:570396-571583|+   -            396 19295                -            423    0.0035   13.4   0.1   1   1   1.2e-05    0.0052   12.9   0.1    22   107   193   278   184   300 0.78 tig00000001_pilon_532 # 570396 # 571583 # 1 # ID=1_532;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.398
+tig00000001_pilon:745638-746825|-   -            396 19295                -            423    0.0035   13.4   0.1   1   1   1.2e-05    0.0052   12.9   0.1    22   107   193   278   184   300 0.78 tig00000001_pilon_692 # 745638 # 746825 # -1 # ID=1_692;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.399
+tig00000001_pilon:1320541-1320888|+ -            116 19295                -            423     0.015   11.3   0.8   1   1   3.9e-05     0.017   11.1   0.8    29   101     8    81     2    98 0.88 tig00000001_pilon_1233 # 1320541 # 1320888 # 1 # ID=1_1233;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.391
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19295at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/19295at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19295at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/canu_pacbio_pilon_r1_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:57:33 2026
+# [ok]

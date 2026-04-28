@@ -1,0 +1,20 @@
+#                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                    accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#            ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_1_pilon:612612-613841|+   -            410 22360                -            404  1.4e-237  785.4  23.8   1   1  3.2e-240  1.6e-237  785.2  23.8     1   403     1   402     1   403 0.98 contig_1_pilon_576 # 612612 # 613841 # 1 # ID=1_576;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.396
+contig_1_pilon:110260-110730|+   -            157 22360                -            404   4.2e-21   72.5   0.5   1   1     1e-23   5.1e-21   72.2   0.5   202   287     2    87     1    93 0.92 contig_1_pilon_111 # 110260 # 110730 # 1 # ID=1_111;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=11-12bp;gc_cont=0.410
+contig_1_pilon:1060493-1062673|- -            727 22360                -            404   1.3e-17   61.1   0.2   1   1     5e-20   2.5e-17   60.1   0.2   200   273   646   720   639   724 0.93 contig_1_pilon_1014 # 1060493 # 1062673 # -1 # ID=1_1014;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.413
+contig_2_pilon:295345-297471|+   -            709 22360                -            404     7e-17   58.6   2.5   1   1   2.3e-19   1.2e-16   57.9   2.5   280   372   615   706   570   708 0.79 contig_2_pilon_274 # 295345 # 297471 # 1 # ID=5_274;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.417
+contig_2_pilon:1069012-1069392|+ -            127 22360                -            404   5.8e-13   45.7   0.0   1   1   1.2e-15   5.9e-13   45.7   0.0   205   363     5    78     1   108 0.62 contig_2_pilon_1027 # 1069012 # 1069392 # 1 # ID=5_1027;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.344
+contig_2_pilon:1219481-1221838|+ -            786 22360                -            404   5.2e-07   26.1   1.1   1   2      0.03        15    1.5   0.0   371   398    89   118    85   124 0.74 contig_2_pilon_1169 # 1219481 # 1221838 # 1 # ID=5_1169;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_2_pilon:1219481-1221838|+ -            786 22360                -            404   5.2e-07   26.1   1.1   2   2     1e-08   5.2e-06   22.8   0.3   289   367   636   725   614   737 0.72 contig_2_pilon_1169 # 1219481 # 1221838 # 1 # ID=5_1169;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.404
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/22360at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/22360at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/22360at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_pilon_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:55:57 2026
+# [ok]

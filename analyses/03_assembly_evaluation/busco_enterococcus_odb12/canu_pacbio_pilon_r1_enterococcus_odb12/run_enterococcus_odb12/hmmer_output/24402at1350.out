@@ -1,0 +1,17 @@
+#                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001_pilon:1779146-1779586|+ -            147 24402                -            145   2.2e-77  255.5   7.8   1   1   3.2e-80   2.5e-77  255.4   7.8     1   143     1   143     1   145 0.99 tig00000001_pilon_1698 # 1779146 # 1779586 # 1 # ID=1_1698;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.399
+tig00000001_pilon:2060232-2060525|+ -             98 24402                -            145    0.0012   16.4   0.1   1   1   1.6e-06    0.0013   16.3   0.1    14    55    13    54     4    91 0.81 tig00000001_pilon_1977 # 2060232 # 2060525 # 1 # ID=1_1977;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.316
+tig00000001_pilon:141885-142178|-   -             98 24402                -            145    0.0088   13.6   0.1   1   1   1.2e-05    0.0095   13.5   0.1     5    55     9    54     3    91 0.70 tig00000001_pilon_130 # 141885 # 142178 # -1 # ID=1_130;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.323
+tig00000001_pilon:1431377-1431670|+ -             98 24402                -            145    0.0088   13.6   0.1   1   1   1.2e-05    0.0095   13.5   0.1     5    55     9    54     3    91 0.70 tig00000001_pilon_1360 # 1431377 # 1431670 # 1 # ID=1_1360;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.320
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/24402at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r1_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r1_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/24402at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/24402at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_pilon_r1_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 00:55:02 2026
+# [ok]

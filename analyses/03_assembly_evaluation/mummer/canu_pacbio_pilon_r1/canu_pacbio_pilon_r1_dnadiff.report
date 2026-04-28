@@ -1,0 +1,87 @@
+/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna /crex/proj/uppmax2026-1-61/nobackup/work/dich3309/canu_pacbio_pilon_r1/efaecium_e745_canu_pacbio_pilon_r1.fasta
+NUCMER
+
+                               [REF]                [QRY]
+[Sequences]
+TotalSeqs                          7                   10
+AlignedSeqs              7(100.0000%)         10(100.0000%)
+UnalignedSeqs             0(0.0000%)           0(0.0000%)
+
+[Bases]
+TotalBases                   3168410              3155939
+AlignedBases       3122326(98.5455%)    3155939(100.0000%)
+UnalignedBases        46084(1.4545%)           0(0.0000%)
+
+[Alignments]
+1-to-1                            14                   14
+TotalLength                  3142624              3142840
+AvgLength                224473.1429          224488.5714
+AvgIdentity                  99.9591              99.9591
+
+M-to-M                            25                   25
+TotalLength                  3190098              3190346
+AvgLength                127603.9200          127613.8400
+AvgIdentity                  99.9508              99.9508
+
+[Feature Estimates]
+Breakpoints                       35                   29
+Relocations                        3                    2
+Translocations                     2                    2
+Inversions                         2                    2
+
+Insertions                        14                    6
+InsertionSum                   57465                36107
+InsertionAvg               4104.6429            6017.8333
+
+TandemIns                          0                    0
+TandemInsSum                       0                    0
+TandemInsAvg                  0.0000               0.0000
+
+[SNPs]
+TotalSNPs                         57                   57
+AT                       6(10.5263%)          7(12.2807%)
+AC                       6(10.5263%)           2(3.5088%)
+AG                       7(12.2807%)         10(17.5439%)
+GC                        1(1.7544%)           3(5.2632%)
+GA                      10(17.5439%)          7(12.2807%)
+GT                        4(7.0175%)           1(1.7544%)
+CT                       6(10.5263%)           4(7.0175%)
+CG                        3(5.2632%)           1(1.7544%)
+CA                        2(3.5088%)          6(10.5263%)
+TC                        4(7.0175%)          6(10.5263%)
+TG                        1(1.7544%)           4(7.0175%)
+TA                       7(12.2807%)          6(10.5263%)
+
+TotalGSNPs                         5                    5
+AT                       1(20.0000%)          1(20.0000%)
+AG                        0(0.0000%)          1(20.0000%)
+AC                        0(0.0000%)          1(20.0000%)
+GT                        0(0.0000%)           0(0.0000%)
+GC                        0(0.0000%)           0(0.0000%)
+GA                       1(20.0000%)           0(0.0000%)
+CG                        0(0.0000%)           0(0.0000%)
+CA                       1(20.0000%)           0(0.0000%)
+CT                       1(20.0000%)           0(0.0000%)
+TC                        0(0.0000%)          1(20.0000%)
+TG                        0(0.0000%)           0(0.0000%)
+TA                       1(20.0000%)          1(20.0000%)
+
+TotalIndels                      287                  287
+A.                       13(4.5296%)         87(30.3136%)
+G.                       12(4.1812%)         45(15.6794%)
+C.                        9(3.1359%)         34(11.8467%)
+T.                       17(5.9233%)         70(24.3902%)
+.A                      87(30.3136%)          13(4.5296%)
+.C                      34(11.8467%)           9(3.1359%)
+.G                      45(15.6794%)          12(4.1812%)
+.T                      70(24.3902%)          17(5.9233%)
+
+TotalGIndels                      71                   71
+A.                        7(9.8592%)         23(32.3944%)
+G.                        4(5.6338%)           3(4.2254%)
+C.                        3(4.2254%)           7(9.8592%)
+T.                      10(14.0845%)         14(19.7183%)
+.G                        3(4.2254%)           4(5.6338%)
+.C                        7(9.8592%)           3(4.2254%)
+.A                      23(32.3944%)           7(9.8592%)
+.T                      14(19.7183%)         10(14.0845%)

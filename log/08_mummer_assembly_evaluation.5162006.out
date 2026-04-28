@@ -1,0 +1,56 @@
+[2026-04-29 01:00:32] running nucmer for canu_pacbio_pilon_r1
+[2026-04-29 01:00:35] nucmer canu_pacbio_pilon_r1 complete (0h 0m 3s)
+[2026-04-29 01:00:35] filtering delta for canu_pacbio_pilon_r1 (-1)
+[2026-04-29 01:00:35] running dnadiff for canu_pacbio_pilon_r1
+Filtering alignments
+Extracting alignment coordinates
+Analyzing SNPs
+Extracting alignment breakpoints
+Generating report file
+[2026-04-29 01:00:35] dnadiff canu_pacbio_pilon_r1 complete (0h 0m 0s)
+[2026-04-29 01:00:35] generating mummerplot for canu_pacbio_pilon_r1
+WARNING: deprecated switch x11, postscript, png, use -t,--terminalgnuplot 6.0 patchlevel 1
+Reading delta file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1/canu_pacbio_pilon_r1.filter.delta
+Writing plot files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1/canu_pacbio_pilon_r1_plot.fplot, /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1/canu_pacbio_pilon_r1_plot.rplot
+Writing gnuplot script /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1/canu_pacbio_pilon_r1_plot.gp
+Rendering plot /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1/canu_pacbio_pilon_r1_plot.png
+[2026-04-29 01:00:37] mummerplot canu_pacbio_pilon_r1 complete (0h 0m 2s)
+[2026-04-29 01:00:37] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r1
+[2026-04-29 01:00:37] running nucmer for flye_pacbio_pilon
+[2026-04-29 01:00:40] nucmer flye_pacbio_pilon complete (0h 0m 3s)
+[2026-04-29 01:00:40] filtering delta for flye_pacbio_pilon (-1)
+[2026-04-29 01:00:40] running dnadiff for flye_pacbio_pilon
+Filtering alignments
+Extracting alignment coordinates
+Analyzing SNPs
+Extracting alignment breakpoints
+Generating report file
+[2026-04-29 01:00:40] dnadiff flye_pacbio_pilon complete (0h 0m 0s)
+[2026-04-29 01:00:40] generating mummerplot for flye_pacbio_pilon
+WARNING: deprecated switch x11, postscript, png, use -t,--terminalgnuplot 6.0 patchlevel 1
+Reading delta file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon/flye_pacbio_pilon.filter.delta
+Writing plot files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon/flye_pacbio_pilon_plot.fplot, /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon/flye_pacbio_pilon_plot.rplot
+Writing gnuplot script /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon/flye_pacbio_pilon_plot.gp
+Rendering plot /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon/flye_pacbio_pilon_plot.png
+[2026-04-29 01:00:40] mummerplot flye_pacbio_pilon complete (0h 0m 0s)
+[2026-04-29 01:00:41] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/flye_pacbio_pilon
+[2026-04-29 01:00:41] running nucmer for canu_pacbio_pilon_r2
+[2026-04-29 01:00:43] nucmer canu_pacbio_pilon_r2 complete (0h 0m 2s)
+[2026-04-29 01:00:43] filtering delta for canu_pacbio_pilon_r2 (-1)
+[2026-04-29 01:00:43] running dnadiff for canu_pacbio_pilon_r2
+Filtering alignments
+Extracting alignment coordinates
+Analyzing SNPs
+Extracting alignment breakpoints
+Generating report file
+[2026-04-29 01:00:44] dnadiff canu_pacbio_pilon_r2 complete (0h 0m 1s)
+[2026-04-29 01:00:44] generating mummerplot for canu_pacbio_pilon_r2
+WARNING: deprecated switch x11, postscript, png, use -t,--terminalgnuplot 6.0 patchlevel 1
+Reading delta file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2/canu_pacbio_pilon_r2.filter.delta
+Writing plot files /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2/canu_pacbio_pilon_r2_plot.fplot, /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2/canu_pacbio_pilon_r2_plot.rplot
+Writing gnuplot script /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2/canu_pacbio_pilon_r2_plot.gp
+Rendering plot /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2/canu_pacbio_pilon_r2_plot.png
+[2026-04-29 01:00:44] mummerplot canu_pacbio_pilon_r2 complete (0h 0m 0s)
+[2026-04-29 01:00:44] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/mummer/canu_pacbio_pilon_r2
+[2026-04-29 01:00:44] all MUMmer runs complete (total: 0h 0m 12s)
+[2026-04-29 01:00:44] script finished (exit code 0)

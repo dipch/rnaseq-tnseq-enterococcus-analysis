@@ -1,0 +1,14 @@
+contig_10_pilon	JMP	2118	2117	0
+contig_11_pilon	GAP	11955	10513	-1441	1439	-2880
+contig_11_pilon	DUP	196039	199386	3348
+contig_12_pilon	DUP	1	3700	3700
+contig_12_pilon	DUP	13019	16459	3441
+contig_12_pilon	BRK	16460	17989	1530
+contig_12_pilon	DUP	17990	19196	1207
+contig_2_pilon	JMP	131799	131798	0
+contig_3_pilon	DUP	1	10012	10012
+contig_3_pilon	SEQ	35773	35456	-316	NZ_CP014534.1	NZ_CP014530.1
+contig_4_pilon	BRK	16000	16000	1
+contig_7_pilon	DUP	25599	27176	1578
+contig_8_pilon	JMP	4623	3847	-775
+contig_9_pilon	DUP	1	14445	14445

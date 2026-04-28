@@ -1,0 +1,139 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [NZ_CP014529.1]
+	Loaded [NZ_CP014530.1]
+	Loaded [NZ_CP014531.1]
+	Loaded [NZ_CP014532.1]
+	Loaded [NZ_CP014533.1]
+	Loaded [NZ_CP014534.1]
+	Loaded [NZ_CP014535.1]
+	Total Regions: 7
+	Total Region Length: 3168410
+Analyzing contigs...
+CONTIG: tig00000001_pilon_pilon (2775212bp)
+Best alignment score: 1239959.0 (LEN: 1239959, IDY: 100.00), Total number of alignments: 5
+			Looking for the best set of alignments (out of 5 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 1238548 1242730 | 1891123 1886942 | 4183 4182 | 99.98 | NZ_CP014529.1 tig00000001_pilon_pilon
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 2774714.0, number of alignments: 4, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 2116611 2765010 | 1 648397 | 648400 648397 | 100.0 | NZ_CP014529.1 tig00000001_pilon_pilon
+			  Not a misassembly [linear representation of circular genome] between these two alignments
+			Real Alignment 2: 1 1239963 | 648398 1888356 | 1239963 1239959 | 100.0 | NZ_CP014529.1 tig00000001_pilon_pilon
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 3: 1239964 1241314 | 1889707 1888357 | 1351 1351 | 100.0 | NZ_CP014529.1 tig00000001_pilon_pilon
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 4: 1241315 2126820 | 1889708 2775212 | 885506 885505 | 100.0 | NZ_CP014529.1 tig00000001_pilon_pilon
+
+CONTIG: tig00000002_pilon_pilon (218577bp)
+Best alignment score: 183545.9 (LEN: 183840, IDY: 99.84), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 217116.5, number of alignments: 3, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 10837 between Alignment 1 and 2: 32776 55167 | 16332 38736 | 22392 22405 --> 43608 55167 | 27169 38736 | 11560 11568
+			Real Alignment 1: 196527 223688 | 1 27168 | 27162 27168 | 99.97 | NZ_CP014530.1 tig00000002_pilon_pilon
+			  Extensive misassembly (translocation) between these two alignments
+			Excluding internal overlap of size 3999 between Alignment 2 and 3: 43608 55167 | 27169 38736 | 11560 11568 --> 43608 51169 | 27169 34737 | 7562 7569
+			Real Alignment 2: 43608 51169 | 27169 34737 | 7562 7569 | 97.91 | NZ_CP014534.1 tig00000002_pilon_pilon
+			  Extensive misassembly (translocation) between these two alignments
+			Real Alignment 3: 6445 190281 | 34738 218577 | 183837 183840 | 99.84 | NZ_CP014530.1 tig00000002_pilon_pilon
+
+CONTIG: tig00000003_pilon_pilon (28887bp)
+Best alignment score: 28840.8 (LEN: 28887, IDY: 99.84), Total number of alignments: 1
+		One align captures most of this contig: 13 28903 | 28887 1 | 28891 28887 | 99.84 | NZ_CP014534.1 tig00000003_pilon_pilon
+
+CONTIG: tig00000004_pilon_pilon (14737bp)
+Best alignment score: 12835.3 (LEN: 12918, IDY: 99.36), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 14125.4, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 6031 between Alignment 1 and 2: 41783 49626 | 14737 6888 | 7844 7850 --> 41783 43607 | 14737 12919 | 1825 1819
+			Real Alignment 1: 1 12913 | 12918 1 | 12913 12918 | 99.36 | NZ_CP014530.1 tig00000004_pilon_pilon
+			  Extensive misassembly (translocation) between these two alignments
+			Real Alignment 2: 41783 43607 | 14737 12919 | 1825 1819 | 98.41 | NZ_CP014534.1 tig00000004_pilon_pilon
+
+CONTIG: tig00000005_pilon_pilon (40013bp)
+Best alignment score: 26723.7 (LEN: 26729, IDY: 99.98), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 185254 185696 | 13229 13672 | 443 444 | 98.42 | NZ_CP014530.1 tig00000005_pilon_pilon
+			The best set is below. Score: 39749.4, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 1 13281 | 13284 1 | 13281 13284 | 99.94 | NZ_CP014531.1 tig00000005_pilon_pilon
+			  Extensive misassembly (relocation, inconsistency = -7589 [linear representation of circular genome]) between these two alignments
+			Real Alignment 2: 5693 32423 | 40013 13285 | 26731 26729 | 99.98 | NZ_CP014531.1 tig00000005_pilon_pilon
+
+CONTIG: tig00000006_pilon_pilon (15021bp)
+Best alignment score: 15001.5 (LEN: 15021, IDY: 99.87), Total number of alignments: 1
+		One align captures most of this contig: 33149 48165 | 15021 1 | 15017 15021 | 99.87 | NZ_CP014534.1 tig00000006_pilon_pilon
+
+CONTIG: tig00000007_pilon_pilon (16127bp)
+Best alignment score: 15906.1 (LEN: 16127, IDY: 98.63), Total number of alignments: 1
+		One align captures most of this contig: 740 16703 | 1 16127 | 15964 16127 | 98.63 | NZ_CP014533.1 tig00000007_pilon_pilon
+
+CONTIG: tig00000009_pilon_pilon (24852bp)
+Best alignment score: 24852.0 (LEN: 24852, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 18141 42992 | 1 24852 | 24852 24852 | 100.0 | NZ_CP014535.1 tig00000009_pilon_pilon
+
+CONTIG: tig00000010_pilon_pilon (15455bp)
+Best alignment score: 9293.8 (LEN: 9318, IDY: 99.74), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+		This contig has several significant sets of alignments. [An ambiguously mapped contig]
+		Using only the very best set (option --ambiguity-usage is set to "one").
+			The best set is below. Score: 14920.4, number of alignments: 3, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 1 5872 | 5871 1 | 5872 5871 | 99.95 | NZ_CP014532.1 tig00000010_pilon_pilon
+			  Extensive misassembly (relocation, inconsistency = -9310 [linear representation of circular genome]) between these two alignments
+			Excluding internal overlap of size 1 between Alignment 2 and 3: 9047 9310 | 15455 15189 | 264 267 --> 9047 9309 | 15455 15190 | 263 266
+			Real Alignment 2: 1 9310 | 15189 5872 | 9310 9318 | 99.74 | NZ_CP014532.1 tig00000010_pilon_pilon
+			  Extensive misassembly (relocation, inconsistency = -9309) between these two alignments
+			Real Alignment 3: 9047 9309 | 15455 15190 | 263 266 | 98.13 | NZ_CP014532.1 tig00000010_pilon_pilon
+
+CONTIG: tig00000011_pilon_pilon (7042bp)
+Best alignment score: 6184.8 (LEN: 6191, IDY: 99.90), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 7023.9, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 1 6189 | 6191 1 | 6189 6191 | 99.9 | NZ_CP014532.1 tig00000011_pilon_pilon
+			  Not a misassembly [linear representation of circular genome] between these two alignments
+			Real Alignment 2: 8462 9310 | 7042 6192 | 849 851 | 98.6 | NZ_CP014532.1 tig00000011_pilon_pilon
+
+Analyzing coverage...
+Writing SNPs into /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/minimap_output/efaecium_e745_canu_pacbio_pilon_r2.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_with_reference/canu_pacbio_pilon_r2_ref/contigs_reports/minimap_output/efaecium_e745_canu_pacbio_pilon_r2.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 8
+		Relocations: 3
+		Translocations: 3
+		Inversions: 2
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 5
+	Misassembled Contig Bases: 3063994
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 2
+Total Bases in Ambiguously Mapped Contigs: 2790667
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 3111914
+	Raw Aligned Bases in Assembly: 3151924
+	Total Aligned Bases in Assembly (with "Extras"): 3151924
+
+	SNPs: 335
+	Insertions: 312
+	Deletions: 127
+
