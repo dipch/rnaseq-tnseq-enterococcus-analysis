@@ -24,11 +24,16 @@ echo "[$(current_time)] input: ${#NANOPORE_FILES[@]} Nanopore files"
 echo "[$(current_time)] output dir: ${FLYE_NANOPORE_OUT_DIR}"
 T0=$(date +%s)
 
+NANOPORE_RENAMED="${NOBACKUP_BASE}/nanopore_renamed.fasta"
+echo "[$(current_time)] renaming duplicate read IDs -> ${NANOPORE_RENAMED}"
+zcat "${NANOPORE_FILES[@]}" | awk '/^>/{print ">read_" ++n; next} {print}' > "${NANOPORE_RENAMED}"
+
 flye \
-    --nano-raw "${NANOPORE_FILES[@]}" \
+    --nano-raw "${NANOPORE_RENAMED}" \
     --genome-size "${GENOME_SIZE}" \
     --threads 2 \
     --out-dir "${FLYE_NANOPORE_OUT_DIR}"
 
+rm -f "${NANOPORE_RENAMED}"
 echo "[$(current_time)] Flye finished ($(elapsed_time $T0))"
 echo "[$(current_time)] assembly: ${FLYE_NANOPORE_FA}"
