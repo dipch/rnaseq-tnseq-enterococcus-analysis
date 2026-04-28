@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 2
+#SBATCH -c 4
 #SBATCH -t 06:00:00
 #SBATCH -J canu_assembly_nanopore_1
 #SBATCH --mail-type=ALL
@@ -27,9 +27,9 @@ canu \
     -p "${ORGANISM}_nanopore" \
     -d "${CANU_NANOPORE_OUT_DIR}" \
     genomeSize=${GENOME_SIZE} \
-    maxThreads=2 \
+    maxThreads=4 \
     useGrid=true \
-    gridOptions="-A uppmax2026-1-61 -p pelle -c 2 -t 12:00:00" \
+    gridOptions="-A uppmax2026-1-61 -p pelle -c 4 -t 12:00:00" \
     stopOnLowCoverage=1 \
     -nanopore \
     "${NANOPORE_FILES[@]}"

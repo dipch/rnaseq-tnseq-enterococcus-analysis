@@ -1,0 +1,95 @@
+[2026-04-28 11:57:57] canu assembly started
+[2026-04-28 11:57:57] input: 1 Nanopore files
+[2026-04-28 11:57:57] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_nanopore
+-- canu 2.3
+--
+-- CITATIONS
+--
+-- For 'standard' assemblies of PacBio or Nanopore reads:
+--   Koren S, Walenz BP, Berlin K, Miller JR, Phillippy AM.
+--   Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation.
+--   Genome Res. 2017 May;27(5):722-736.
+--   http://doi.org/10.1101/gr.215087.116
+-- 
+-- Read and contig alignments during correction and consensus use:
+--   Šošic M, Šikic M.
+--   Edlib: a C/C ++ library for fast, exact sequence alignment using edit distance.
+--   Bioinformatics. 2017 May 1;33(9):1394-1395.
+--   http://doi.org/10.1093/bioinformatics/btw753
+-- 
+-- Overlaps are generated using:
+--   Berlin K, et al.
+--   Assembling large genomes with single-molecule sequencing and locality-sensitive hashing.
+--   Nat Biotechnol. 2015 Jun;33(6):623-30.
+--   http://doi.org/10.1038/nbt.3238
+-- 
+--   Myers EW, et al.
+--   A Whole-Genome Assembly of Drosophila.
+--   Science. 2000 Mar 24;287(5461):2196-204.
+--   http://doi.org/10.1126/science.287.5461.2196
+-- 
+-- Corrected read consensus sequences are generated using an algorithm derived from FALCON-sense:
+--   Chin CS, et al.
+--   Phased diploid genome assembly with single-molecule real-time sequencing.
+--   Nat Methods. 2016 Dec;13(12):1050-1054.
+--   http://doi.org/10.1038/nmeth.4035
+-- 
+-- Contig consensus sequences are generated using an algorithm derived from pbdagcon:
+--   Chin CS, et al.
+--   Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data.
+--   Nat Methods. 2013 Jun;10(6):563-9
+--   http://doi.org/10.1038/nmeth.2474
+-- 
+-- CONFIGURE CANU
+--
+-- Detected Java(TM) Runtime Environment '17.0.15' (from '/sw/arch/eb/software/Java/17.0.15/bin/java') without -d64 support.
+-- Detected gnuplot version '6.0 patchlevel 1   ' (from 'gnuplot') and image format 'png'.
+-- Detected samtools version '1.22.1' / htslib version '1.22.1' (from 'samtools').
+--
+-- Detected 2 CPUs and 12 gigabytes of memory on the local machine.
+--
+-- Detected Slurm with 'sinfo' binary in /usr/bin/sinfo.
+-- Detected Slurm with task IDs up to 10000 allowed.
+-- 
+-- Slurm support detected.  Resources available:
+--      6 hosts with  64 cores and  376 GB memory.
+--      1 host  with  96 cores and 2265 GB memory.
+--     72 hosts with  16 cores and  243 GB memory.
+--     80 hosts with  96 cores and  753 GB memory.
+--      1 host  with  96 cores and 3017 GB memory.
+--
+-- Found untrimmed raw Nanopore reads in the input files.
+--
+-- Job limits:
+--      2 CPUs              (maxThreads option).
+--
+-- ERROR  maxThreads=2
+-- ERROR
+-- ERROR  Found 5 machine configurations:
+-- ERROR    class0 - 6 machines with 64 cores with 376 GB memory each.
+-- ERROR    class1 - 1 machines with 96 cores with 2265 GB memory each.
+-- ERROR    class2 - 72 machines with 16 cores with 243 GB memory each.
+-- ERROR    class3 - 80 machines with 96 cores with 753 GB memory each.
+-- ERROR    class4 - 1 machines with 96 cores with 3017 GB memory each.
+-- ERROR
+-- ERROR  Task cor can't run on any available machines.
+-- ERROR  It is requesting:
+-- ERROR    corMemory=0 gigabytes
+-- ERROR    corThreads=4 threads
+-- ERROR
+-- ERROR  No available machine configuration can run this task.
+-- ERROR
+-- ERROR  Possible solutions:
+-- ERROR    Change maxMemory or maxThreads
+-- ERROR    Change corMemory and/or corThreads
+-- ERROR
+
+ABORT:
+ABORT: canu 2.3
+ABORT: Don't panic, but a mostly harmless error occurred and Canu stopped.
+ABORT: Try restarting.  If that doesn't work, ask for help.
+ABORT:
+ABORT:   task cor failed to find a configuration to run on.
+ABORT:
+[2026-04-28 11:58:03] ERROR: script exited unexpectedly (exit code 0, line 27)
+[2026-04-28 11:58:03] script finished (exit code 0)

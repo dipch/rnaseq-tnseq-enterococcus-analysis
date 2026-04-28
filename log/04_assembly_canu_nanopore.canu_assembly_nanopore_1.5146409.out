@@ -1,0 +1,223 @@
+[2026-04-28 12:01:26] canu assembly started
+[2026-04-28 12:01:26] input: 1 Nanopore files
+[2026-04-28 12:01:26] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_nanopore
+-- canu 2.3
+--
+-- CITATIONS
+--
+-- For 'standard' assemblies of PacBio or Nanopore reads:
+--   Koren S, Walenz BP, Berlin K, Miller JR, Phillippy AM.
+--   Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation.
+--   Genome Res. 2017 May;27(5):722-736.
+--   http://doi.org/10.1101/gr.215087.116
+-- 
+-- Read and contig alignments during correction and consensus use:
+--   Šošic M, Šikic M.
+--   Edlib: a C/C ++ library for fast, exact sequence alignment using edit distance.
+--   Bioinformatics. 2017 May 1;33(9):1394-1395.
+--   http://doi.org/10.1093/bioinformatics/btw753
+-- 
+-- Overlaps are generated using:
+--   Berlin K, et al.
+--   Assembling large genomes with single-molecule sequencing and locality-sensitive hashing.
+--   Nat Biotechnol. 2015 Jun;33(6):623-30.
+--   http://doi.org/10.1038/nbt.3238
+-- 
+--   Myers EW, et al.
+--   A Whole-Genome Assembly of Drosophila.
+--   Science. 2000 Mar 24;287(5461):2196-204.
+--   http://doi.org/10.1126/science.287.5461.2196
+-- 
+-- Corrected read consensus sequences are generated using an algorithm derived from FALCON-sense:
+--   Chin CS, et al.
+--   Phased diploid genome assembly with single-molecule real-time sequencing.
+--   Nat Methods. 2016 Dec;13(12):1050-1054.
+--   http://doi.org/10.1038/nmeth.4035
+-- 
+-- Contig consensus sequences are generated using an algorithm derived from pbdagcon:
+--   Chin CS, et al.
+--   Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data.
+--   Nat Methods. 2013 Jun;10(6):563-9
+--   http://doi.org/10.1038/nmeth.2474
+-- 
+-- CONFIGURE CANU
+--
+-- Detected Java(TM) Runtime Environment '17.0.15' (from '/sw/arch/eb/software/Java/17.0.15/bin/java') without -d64 support.
+-- Detected gnuplot version '6.0 patchlevel 1   ' (from 'gnuplot') and image format 'png'.
+-- Detected samtools version '1.22.1' / htslib version '1.22.1' (from 'samtools').
+--
+-- Detected 4 CPUs and 23 gigabytes of memory on the local machine.
+--
+-- Detected Slurm with 'sinfo' binary in /usr/bin/sinfo.
+-- Detected Slurm with task IDs up to 10000 allowed.
+-- 
+-- Slurm support detected.  Resources available:
+--      1 host  with  96 cores and 3017 GB memory.
+--      1 host  with  96 cores and 2265 GB memory.
+--      6 hosts with  64 cores and  376 GB memory.
+--     72 hosts with  16 cores and  243 GB memory.
+--     80 hosts with  96 cores and  753 GB memory.
+--
+-- Found untrimmed raw Nanopore reads in the input files.
+--
+-- Job limits:
+--      4 CPUs              (maxThreads option).
+--
+--                         (tag)Threads
+--                (tag)Memory         |
+--        (tag)             |         |  algorithm
+--        -------  ----------  --------  -----------------------------
+-- Grid:  meryl     12.000 GB    4 CPUs  (k-mer counting)
+-- Grid:  cormhap    6.000 GB    4 CPUs  (overlap detection with mhap)
+-- Grid:  obtovl     4.000 GB    4 CPUs  (overlap detection)
+-- Grid:  utgovl     4.000 GB    4 CPUs  (overlap detection)
+-- Grid:  cor        -.--- GB    4 CPUs  (read correction)
+-- Grid:  ovb        4.000 GB    1 CPU   (overlap store bucketizer)
+-- Grid:  ovs        8.000 GB    1 CPU   (overlap store sorting)
+-- Grid:  red       16.000 GB    4 CPUs  (read error detection)
+-- Grid:  oea        8.000 GB    1 CPU   (overlap error adjustment)
+-- Grid:  bat       16.000 GB    4 CPUs  (contig construction with bogart)
+-- Grid:  cns        -.--- GB    4 CPUs  (consensus)
+--
+-- Generating assembly 'efaecium_e745_nanopore' in '/crex/proj/uppmax2026-1-61/nobackup/work/dich3309/canu_nanopore':
+--   genomeSize:
+--     3300000
+--
+--   Overlap Generation Limits:
+--     corOvlErrorRate 0.3200 ( 32.00%)
+--     obtOvlErrorRate 0.1200 ( 12.00%)
+--     utgOvlErrorRate 0.1200 ( 12.00%)
+--
+--   Overlap Processing Limits:
+--     corErrorRate    0.3000 ( 30.00%)
+--     obtErrorRate    0.1200 ( 12.00%)
+--     utgErrorRate    0.1200 ( 12.00%)
+--     cnsErrorRate    0.2000 ( 20.00%)
+--
+--   Stages to run:
+--     correct raw reads.
+--     trim corrected reads.
+--     assemble corrected and trimmed reads.
+--
+--
+-- BEGIN STORE CREATION
+----------------------------------------
+-- Starting command on Tue Apr 28 12:01:30 2026 with 928446.955 GB free disk space
+
+    cd .
+    ./efaecium_e745_nanopore.seqStore.sh \
+    > ./efaecium_e745_nanopore.seqStore.err 2>&1
+
+-- Finished on Tue Apr 28 12:01:32 2026 (2 seconds) with 928446.899 GB free disk space
+----------------------------------------
+--
+-- In sequence store './efaecium_e745_nanopore.seqStore':
+--   Found 27675 reads.
+--   Found 130672159 bases (39.59 times coverage).
+--    Histogram of raw reads:
+--    
+--    G=130672159                        sum of  ||               length     num
+--    NG         length     index       lengths  ||                range    seqs
+--    ----- ------------ --------- ------------  ||  ------------------- -------
+--    00010        13700       681     13077572  ||       1000-6166        20603|---------------------------------------------------------------
+--    00020        10847      1762     26145243  ||       6167-11333        5567|------------------
+--    00030         9134      3078     39208180  ||      11334-16500        1213|----
+--    00040         7725      4634     52275437  ||      16501-21667         190|-
+--    00050         6510      6479     65340121  ||      21668-26834          48|-
+--    00060         5335      8696     78407406  ||      26835-32001          28|-
+--    00070         4092     11490     91471560  ||      32002-37168           8|-
+--    00080         3263     15127    104539603  ||      37169-42335           6|-
+--    00090         2373     19730    117606564  ||      42336-47502           3|-
+--    00100         1000     27675    130672159  ||      47503-52669           1|-
+--    001.000x               27675    130672159  ||      52670-57836           1|-
+--                                               ||      57837-63003           0|
+--                                               ||      63004-68170           0|
+--                                               ||      68171-73337           1|-
+--                                               ||      73338-78504           0|
+--                                               ||      78505-83671           0|
+--                                               ||      83672-88838           0|
+--                                               ||      88839-94005           0|
+--                                               ||      94006-99172           0|
+--                                               ||      99173-104339          0|
+--                                               ||     104340-109506          0|
+--                                               ||     109507-114673          0|
+--                                               ||     114674-119840          0|
+--                                               ||     119841-125007          0|
+--                                               ||     125008-130174          1|-
+--                                               ||     130175-135341          1|-
+--                                               ||     135342-140508          0|
+--                                               ||     140509-145675          0|
+--                                               ||     145676-150842          0|
+--                                               ||     150843-156009          0|
+--                                               ||     156010-161176          0|
+--                                               ||     161177-166343          1|-
+--                                               ||     166344-171510          0|
+--                                               ||     171511-176677          0|
+--                                               ||     176678-181844          1|-
+--                                               ||     181845-187011          0|
+--                                               ||     187012-192178          0|
+--                                               ||     192179-197345          0|
+--                                               ||     197346-202512          0|
+--                                               ||     202513-207679          2|-
+--    
+--
+-- BEGIN CORRECTION
+----------------------------------------
+-- Starting command on Tue Apr 28 12:01:33 2026 with 928446.899 GB free disk space
+
+    cd correction/0-mercounts
+    ./meryl-configure.sh \
+    > ./meryl-configure.err 2>&1
+
+-- Finished on Tue Apr 28 12:01:33 2026 (lickety-split) with 928446.899 GB free disk space
+----------------------------------------
+--  segments   memory batches
+--  -------- -------- -------
+--        01  0.34 GB       2
+--        02  -.-- GB       -  (segment size too small)
+--        04  -.-- GB       -  (segment size too small)
+--        06  -.-- GB       -  (segment size too small)
+--        08  -.-- GB       -  (segment size too small)
+--        12  -.-- GB       -  (segment size too small)
+--        16  -.-- GB       -  (segment size too small)
+--        20  -.-- GB       -  (segment size too small)
+--        24  -.-- GB       -  (segment size too small)
+--        32  -.-- GB       -  (segment size too small)
+--        40  -.-- GB       -  (segment size too small)
+--        48  -.-- GB       -  (segment size too small)
+--        56  -.-- GB       -  (segment size too small)
+--        64  -.-- GB       -  (segment size too small)
+--        96  -.-- GB       -  (segment size too small)
+--
+--  For 27675 reads with 130672159 bases, limit to 1 batch.
+--  Will count kmers using 01 jobs, each using 2 GB and 4 threads.
+--
+-- Finished stage 'merylConfigure', reset canuIteration.
+--
+-- Running jobs.  First attempt out of 2.
+--
+-- 'meryl-count.jobSubmit-01.sh' -> job 5146419 task 1.
+--
+----------------------------------------
+-- Starting command on Tue Apr 28 12:01:33 2026 with 928446.899 GB free disk space
+
+    cd /crex/proj/uppmax2026-1-61/nobackup/work/dich3309/canu_nanopore
+    sbatch \
+      --depend=afterany:5146419 \
+      --cpus-per-task=1 \
+      --mem-per-cpu=4g \
+      -A uppmax2026-1-61 \
+      -p pelle \
+      -c 4 \
+      -t 12:00:00  \
+      -D `pwd` \
+      -J 'canu_efaecium_e745_nanopore' \
+      -o canu-scripts/canu.01.out  canu-scripts/canu.01.sh
+Submitted batch job 5146420
+
+-- Finished on Tue Apr 28 12:01:33 2026 (lickety-split) with 928443.005 GB free disk space
+----------------------------------------
+[2026-04-28 12:01:33] canu launched (0h 0m 8s)
+[2026-04-28 12:01:34] sub-jobs running independently — monitor with: squeue -u dich3309
+[2026-04-28 12:01:34] assembly complete when efaecium_e745_nanopore.contigs.fasta appears in /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/canu_nanopore
+[2026-04-28 12:01:34] script finished (exit code 0)
