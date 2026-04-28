@@ -9,25 +9,25 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-# rm -rf "${QUAST_WITH_REFERENCE_DIR:?}"   # uncomment to wipe all results and re-run everything
+rm -rf "${QUAST_WITH_REFERENCE_DIR:?}"
 mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-require_file "${EFAECIUM_CLINICAL_E745_FASTA}" "reference genome FASTA"
-require_file "${EFAECIUM_CLINICAL_E745_GFF}"   "reference GFF"
-# require_file "${CANU_PACBIO_FA}"                                  "Canu PacBio assembly FASTA"
-# require_file "${CANU_NANOPORE_FA}"                                "Canu Nanopore assembly FASTA"
-# require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "SPAdes scaffolds (PacBio+Illumina hybrid) FASTA"
-# require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "SPAdes scaffolds (PacBio+Illumina isolate) FASTA"
-# require_file "${SPADES_ILLUMINA_SCAFFOLDS}"                       "SPAdes scaffolds (Illumina-only) FASTA"
-# require_file "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "SPAdes scaffolds (Nanopore+Illumina hybrid) FASTA"
-# require_file "${FLYE_PACBIO_FA}"                                  "Flye PacBio assembly FASTA"
-# require_file "${FLYE_NANOPORE_FA}"                                "Flye Nanopore assembly FASTA"
-require_file "${PILON_CANU_PACBIO_R1_FA}" "Canu PacBio Pilon R1 FASTA"
-require_file "${PILON_FLYE_PACBIO_FA}"    "Flye PacBio Pilon FASTA"
-require_file "${PILON_CANU_PACBIO_R2_FA}" "Canu PacBio Pilon R2 FASTA"
+require_file "${EFAECIUM_CLINICAL_E745_FASTA}"                    "reference genome FASTA"
+require_file "${EFAECIUM_CLINICAL_E745_GFF}"                      "reference GFF"
+require_file "${CANU_PACBIO_FA}"                                  "Canu PacBio assembly FASTA"
+require_file "${CANU_NANOPORE_FA}"                                "Canu Nanopore assembly FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "SPAdes scaffolds (PacBio+Illumina hybrid) FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "SPAdes scaffolds (PacBio+Illumina isolate) FASTA"
+require_file "${SPADES_ILLUMINA_SCAFFOLDS}"                       "SPAdes scaffolds (Illumina-only) FASTA"
+require_file "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "SPAdes scaffolds (Nanopore+Illumina hybrid) FASTA"
+require_file "${FLYE_PACBIO_FA}"                                  "Flye PacBio assembly FASTA"
+require_file "${FLYE_NANOPORE_FA}"                                "Flye Nanopore assembly FASTA"
+require_file "${PILON_CANU_PACBIO_R1_FA}"                         "Canu PacBio Pilon R1 FASTA"
+require_file "${PILON_FLYE_PACBIO_FA}"                            "Flye PacBio Pilon FASTA"
+require_file "${PILON_CANU_PACBIO_R2_FA}"                         "Canu PacBio Pilon R2 FASTA"
 
 run_quast() {
     local label="$1"
@@ -49,16 +49,16 @@ run_quast() {
 
 total_start=$(date +%s)
 
-# run_quast "canu_pacbio"                              "${CANU_PACBIO_FA}"
-# run_quast "canu_nanopore"                            "${CANU_NANOPORE_FA}"
-# run_quast "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"
-# run_quast "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}"
-# run_quast "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"
-# run_quast "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"
-# run_quast "flye_pacbio"                              "${FLYE_PACBIO_FA}"
-# run_quast "flye_nanopore"                            "${FLYE_NANOPORE_FA}"
-run_quast "canu_pacbio_pilon_r1" "${PILON_CANU_PACBIO_R1_FA}"
-run_quast "flye_pacbio_pilon"    "${PILON_FLYE_PACBIO_FA}"
-run_quast "canu_pacbio_pilon_r2" "${PILON_CANU_PACBIO_R2_FA}"
+run_quast "canu_pacbio"                              "${CANU_PACBIO_FA}"
+run_quast "canu_nanopore"                            "${CANU_NANOPORE_FA}"
+run_quast "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"
+run_quast "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}"
+run_quast "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"
+run_quast "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"
+run_quast "flye_pacbio"                              "${FLYE_PACBIO_FA}"
+run_quast "flye_nanopore"                            "${FLYE_NANOPORE_FA}"
+run_quast "canu_pacbio_pilon_r1"                     "${PILON_CANU_PACBIO_R1_FA}"
+run_quast "flye_pacbio_pilon"                        "${PILON_FLYE_PACBIO_FA}"
+run_quast "canu_pacbio_pilon_r2"                     "${PILON_CANU_PACBIO_R2_FA}"
 
 echo "[$(current_time)] all QUAST runs complete (total: $(elapsed_time $total_start))"
