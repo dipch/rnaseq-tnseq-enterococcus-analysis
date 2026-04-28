@@ -1,0 +1,74 @@
+[2026-04-28 19:09:13] Flye Nanopore assembly started
+[2026-04-28 19:09:13] input: 1 Nanopore files
+[2026-04-28 19:09:13] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore
+[2026-04-28 19:09:13] renaming duplicate read IDs -> /proj/uppmax2026-1-61/nobackup/work/dich3309/nanopore_renamed.fasta
+[2026-04-28 19:09:15] INFO: Starting Flye 2.9.6-b1802
+[2026-04-28 19:09:15] INFO: >>>STAGE: configure
+[2026-04-28 19:09:15] INFO: Configuring run
+[2026-04-28 19:09:15] INFO: Total read length: 135270147
+[2026-04-28 19:09:15] INFO: Input genome size: 3300000
+[2026-04-28 19:09:15] INFO: Estimated coverage: 40
+[2026-04-28 19:09:15] INFO: Reads N50/N90: 6295 / 2004
+[2026-04-28 19:09:15] INFO: Minimum overlap set to 2000
+[2026-04-28 19:09:15] INFO: >>>STAGE: assembly
+[2026-04-28 19:09:15] INFO: Assembling disjointigs
+[2026-04-28 19:09:15] INFO: Reading sequences
+[2026-04-28 19:09:16] INFO: Counting k-mers:
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:10:04] INFO: Filling index table (1/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:10:22] INFO: Filling index table (2/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:10:40] INFO: Extending reads
+[2026-04-28 19:10:42] INFO: Overlap-based coverage: 1
+[2026-04-28 19:10:42] INFO: Median overlap divergence: 0.235796
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:11:33] INFO: Assembled 512 disjointigs
+[2026-04-28 19:11:33] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:11:37] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:11:41] INFO: Contained seqs: 47
+[2026-04-28 19:11:41] INFO: >>>STAGE: consensus
+[2026-04-28 19:11:41] INFO: Running Minimap2
+[2026-04-28 19:12:28] INFO: Computing consensus
+[2026-04-28 19:13:00] INFO: Alignment error rate: 0.256245
+[2026-04-28 19:13:00] INFO: >>>STAGE: repeat
+[2026-04-28 19:13:00] INFO: Building and resolving repeat graph
+[2026-04-28 19:13:00] INFO: Parsing disjointigs
+[2026-04-28 19:13:00] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:15:00] INFO: Median overlap divergence: 0.296113
+[2026-04-28 19:15:00] INFO: Parsing reads
+[2026-04-28 19:15:00] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 19:15:30] INFO: Aligned read sequence: 30359901 / 121769212 (0.249323)
+[2026-04-28 19:15:30] INFO: Median overlap divergence: 0.147153
+[2026-04-28 19:15:30] INFO: Mean edge coverage: 3
+[2026-04-28 19:15:30] INFO: Simplifying the graph
+[2026-04-28 19:15:31] INFO: >>>STAGE: contigger
+[2026-04-28 19:15:31] INFO: Generating contigs
+[2026-04-28 19:15:31] INFO: Reading sequences
+[2026-04-28 19:15:31] INFO: Generated 85 contigs
+[2026-04-28 19:15:31] INFO: Added 0 scaffold connections
+[2026-04-28 19:15:31] INFO: >>>STAGE: polishing
+[2026-04-28 19:15:31] INFO: Polishing genome (1/1)
+[2026-04-28 19:15:31] INFO: Running minimap2
+[2026-04-28 19:16:06] INFO: Separating alignment into bubbles
+[2026-04-28 19:16:29] INFO: Alignment error rate: 0.253984
+[2026-04-28 19:16:29] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:06:26] INFO: >>>STAGE: finalize
+[2026-04-28 20:06:26] INFO: Assembly statistics:
+
+	Total length:	3884554
+	Fragments:	84
+	Fragments N50:	85374
+	Largest frg:	393342
+	Scaffolds:	0
+	Mean coverage:	10
+
+[2026-04-28 20:06:26] INFO: Final assembly: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore/assembly.fasta
+[2026-04-28 20:06:26] Flye finished (0h 57m 13s)
+[2026-04-28 20:06:26] assembly: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore/assembly.fasta
+[2026-04-28 20:06:26] script finished (exit code 0)

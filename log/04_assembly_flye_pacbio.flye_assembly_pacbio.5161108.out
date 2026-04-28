@@ -1,0 +1,73 @@
+[2026-04-28 20:15:09] Flye PacBio assembly started
+[2026-04-28 20:15:09] input: 6 PacBio SMRT cell files
+[2026-04-28 20:15:09] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_pacbio
+[2026-04-28 20:15:10] INFO: Starting Flye 2.9.6-b1802
+[2026-04-28 20:15:10] INFO: >>>STAGE: configure
+[2026-04-28 20:15:10] INFO: Configuring run
+[2026-04-28 20:15:18] INFO: Total read length: 541755197
+[2026-04-28 20:15:18] INFO: Input genome size: 3300000
+[2026-04-28 20:15:18] INFO: Estimated coverage: 164
+[2026-04-28 20:15:18] INFO: Reads N50/N90: 6854 / 2688
+[2026-04-28 20:15:18] INFO: Minimum overlap set to 3000
+[2026-04-28 20:15:18] INFO: >>>STAGE: assembly
+[2026-04-28 20:15:18] INFO: Assembling disjointigs
+[2026-04-28 20:15:18] INFO: Reading sequences
+[2026-04-28 20:15:24] INFO: Counting k-mers:
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:16:45] INFO: Filling index table (1/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:18:05] INFO: Filling index table (2/2)
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:19:29] INFO: Extending reads
+[2026-04-28 20:19:35] INFO: Overlap-based coverage: 45
+[2026-04-28 20:19:35] INFO: Median overlap divergence: 0.199187
+0% 50% 60% 70% 100% 
+[2026-04-28 20:21:29] INFO: Assembled 12 disjointigs
+[2026-04-28 20:21:29] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:21:33] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:21:34] INFO: Contained seqs: 1
+[2026-04-28 20:21:35] INFO: >>>STAGE: consensus
+[2026-04-28 20:21:35] INFO: Running Minimap2
+[2026-04-28 20:26:58] INFO: Computing consensus
+[2026-04-28 20:30:27] INFO: Alignment error rate: 0.201193
+[2026-04-28 20:30:27] INFO: >>>STAGE: repeat
+[2026-04-28 20:30:27] INFO: Building and resolving repeat graph
+[2026-04-28 20:30:27] INFO: Parsing disjointigs
+[2026-04-28 20:30:27] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:30:31] INFO: Median overlap divergence: 0.0634879
+[2026-04-28 20:30:31] INFO: Parsing reads
+[2026-04-28 20:30:37] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:31:57] INFO: Aligned read sequence: 318712788 / 475598540 (0.67013)
+[2026-04-28 20:31:57] INFO: Median overlap divergence: 0.116156
+[2026-04-28 20:31:57] INFO: Mean edge coverage: 96
+[2026-04-28 20:31:58] INFO: Simplifying the graph
+[2026-04-28 20:31:58] INFO: >>>STAGE: contigger
+[2026-04-28 20:31:58] INFO: Generating contigs
+[2026-04-28 20:31:58] INFO: Reading sequences
+[2026-04-28 20:32:04] INFO: Generated 12 contigs
+[2026-04-28 20:32:04] INFO: Added 0 scaffold connections
+[2026-04-28 20:32:04] INFO: >>>STAGE: polishing
+[2026-04-28 20:32:04] INFO: Polishing genome (1/1)
+[2026-04-28 20:32:04] INFO: Running minimap2
+[2026-04-28 20:36:05] INFO: Separating alignment into bubbles
+[2026-04-28 20:39:56] INFO: Alignment error rate: 0.150782
+[2026-04-28 20:39:56] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2026-04-28 20:46:48] INFO: >>>STAGE: finalize
+[2026-04-28 20:46:48] INFO: Assembly statistics:
+
+	Total length:	3142598
+	Fragments:	11
+	Fragments N50:	1362975
+	Largest frg:	1415035
+	Scaffolds:	0
+	Mean coverage:	140
+
+[2026-04-28 20:46:48] INFO: Final assembly: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_pacbio/assembly.fasta
+[2026-04-28 20:46:48] Flye finished (0h 31m 39s)
+[2026-04-28 20:46:48] assembly: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_pacbio/assembly.fasta
+[2026-04-28 20:46:48] script finished (exit code 0)
