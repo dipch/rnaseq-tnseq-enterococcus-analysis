@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 1
+#SBATCH -c 2
 #SBATCH -t 06:00:00
 #SBATCH -J spades_hybrid_nanopore_illumina_assembly
 #SBATCH --mail-type=ALL
@@ -36,7 +36,7 @@ spades.py \
     -1 "${ILLUMINA_R1}" \
     -2 "${ILLUMINA_R2}" \
     "${NANOPORE_ARGS[@]}" \
-    --threads 1 \
+    --threads 2 \
     -o "${SPADES_HYBRID_NANOPORE_OUT_DIR}"
 
 echo "[$(current_time)] SPAdes finished ($(elapsed_time $T0))"
