@@ -1,0 +1,58 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     efaecium_e745_nanopore.contigs
+# contigs (>= 0 bp)          44                            
+# contigs (>= 1000 bp)       44                            
+# contigs (>= 5000 bp)       32                            
+# contigs (>= 10000 bp)      14                            
+# contigs (>= 25000 bp)      0                             
+# contigs (>= 50000 bp)      0                             
+Total length (>= 0 bp)       367099                        
+Total length (>= 1000 bp)    367099                        
+Total length (>= 5000 bp)    323235                        
+Total length (>= 10000 bp)   187820                        
+Total length (>= 25000 bp)   0                             
+Total length (>= 50000 bp)   0                             
+# contigs                    44                            
+Largest contig               23096                         
+Total length                 367099                        
+Reference length             3168410                       
+GC (%)                       38.86                         
+Reference GC (%)             37.70                         
+N50                          10074                         
+NG50                         -                             
+N90                          4658                          
+NG90                         -                             
+auN                          10591.0                       
+auNG                         1227.1                        
+L50                          14                            
+LG50                         -                             
+L90                          34                            
+LG90                         -                             
+# misassemblies              2                             
+# misassembled contigs       2                             
+Misassembled contigs length  29384                         
+# local misassemblies        0                             
+# scaffold gap ext. mis.     0                             
+# scaffold gap loc. mis.     0                             
+# unaligned mis. contigs     0                             
+# unaligned contigs          15 + 2 part                   
+Unaligned length             90605                         
+Genome fraction (%)          9.080                         
+Duplication ratio            0.961                         
+# N's per 100 kbp            0.00                          
+# mismatches per 100 kbp     343.71                        
+# indels per 100 kbp         2999.67                       
+# genomic features           254 + 43 part                 
+Largest alignment            23093                         
+Total aligned length         276397                        
+NA50                         8546                          
+NGA50                        -                             
+NA90                         -                             
+NGA90                        -                             
+auNA                         8291.3                        
+auNGA                        960.6                         
+LA50                         16                            
+LGA50                        -                             
+LA90                         -                             
+LGA90                        -                             

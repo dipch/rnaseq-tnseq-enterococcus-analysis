@@ -1,0 +1,46 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1242677	1406315	163638	1	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	99.94		True
+fake: scaffold gap size wrong estimation (local)
+945389	1241251	460926	165064	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	100.0		True
+fake: scaffold gap size wrong estimation (local)
+452138	940355	954176	465960	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	99.99		True
+fake: scaffold gap size wrong estimation (local)
+1	452027	1406312	954288	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	99.99		True
+fake: not a misassembly [linear representation of circular genome]
+2660902	2765010	1510249	1406313	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	99.78		True
+local misassembly
+2518576	2660397	1652082	1510250	NZ_CP014529.1	NODE_1_length_1652082_cov_46.167482	99.29		True
+CONTIG	NODE_1_length_1652082_cov_46.167482	1652082	correct
+1412048	2252794	1	840748	NZ_CP014529.1	NODE_2_length_840748_cov_42.698360	99.99		True
+CONTIG	NODE_2_length_840748_cov_42.698360	840748	correct
+2264766	2480144	1	215377	NZ_CP014529.1	NODE_3_length_245057_cov_46.274867	99.99		True
+fake: scaffold gap size wrong estimation (local)
+2480810	2510393	215478	245057	NZ_CP014529.1	NODE_3_length_245057_cov_46.274867	99.98		True
+CONTIG	NODE_3_length_245057_cov_46.274867	245057	correct
+6445	217475	211024	1	NZ_CP014530.1	NODE_4_length_212759_cov_102.864112	99.76		True
+CONTIG	NODE_4_length_212759_cov_102.864112	212759	correct
+7235	16712	1	9652	NZ_CP014533.1	NODE_5_length_73637_cov_93.923133	97.63		True
+translocation
+13455	49626	9653	45831	NZ_CP014534.1	NODE_5_length_73637_cov_93.923133	99.14		True
+translocation
+6027	10440	45832	50244	NZ_CP014530.1	NODE_5_length_73637_cov_93.923133	99.42		True
+translocation
+1	23396	50245	73637	NZ_CP014534.1	NODE_5_length_73637_cov_93.923133	99.95		True
+CONTIG	NODE_5_length_73637_cov_93.923133	73637	misassembled
+1	29545	29545	1	NZ_CP014535.1	NODE_6_length_62897_cov_74.026034	100.0		True
+fake: not a misassembly [linear representation of circular genome]
+32207	65558	62897	29546	NZ_CP014535.1	NODE_6_length_62897_cov_74.026034	100.0		True
+CONTIG	NODE_6_length_62897_cov_74.026034	62897	correct
+16677	32423	2327	18065	NZ_CP014531.1	NODE_7_length_35882_cov_232.232618	99.38		True
+relocation, inconsistency = -1141 [linear representation of circular genome]
+1	17817	18066	35882	NZ_CP014531.1	NODE_7_length_35882_cov_232.232618	99.99		True
+CONTIG	NODE_7_length_35882_cov_232.232618	35882	misassembled
+3087	9310	1	6232	NZ_CP014532.1	NODE_8_length_9417_cov_147.340953	99.78		True
+indel: indel (> 5bp) [linear representation of circular genome]
+1	3185	6233	9417	NZ_CP014532.1	NODE_8_length_9417_cov_147.340953	100.0		True
+CONTIG	NODE_8_length_9417_cov_147.340953	9417	correct
+1406261	1411492	1	5232	NZ_CP014529.1	NODE_9_length_5232_cov_70.113772	100.0		True
+CONTIG	NODE_9_length_5232_cov_70.113772	5232	correct
+CONTIG	NODE_10_length_3276_cov_241.102763	3276	unaligned
+2264298	2264816	519	1	NZ_CP014529.1	NODE_11_length_519_cov_37.771552	100.0		True
+CONTIG	NODE_11_length_519_cov_37.771552	519	correct
