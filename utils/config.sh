@@ -106,20 +106,10 @@ POLISH_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/align_pacbio_illumina"
 NOBACKUP_POLISH_PACBIO="${NOBACKUP_BASE}/polishing_pacbio_illumina"
 POLISH_PACBIO_SORTED_BAM="${NOBACKUP_POLISH_PACBIO}/${ORGANISM}_illumina_sorted.bam"
 
-# polishing alignment — Nanopore assembly + Illumina reads
-POLISH_NANOPORE_ALIGN_DIR="${ASSEMBLY_DIR}/align_nanopore_illumina"
-NOBACKUP_POLISH_NANOPORE="${NOBACKUP_BASE}/polishing_nanopore_illumina"
-POLISH_NANOPORE_SORTED_BAM="${NOBACKUP_POLISH_NANOPORE}/${ORGANISM}_illumina_sorted.bam"
-
 # pilon polishing — PacBio
 NOBACKUP_PILON_PACBIO="${NOBACKUP_BASE}/pilon_polish_pacbio_illumina"
 PILON_PACBIO_OUT_DIR="${ASSEMBLY_DIR}/pilon_polish_pacbio_illumina"
 PILON_PACBIO_FA="${NOBACKUP_PILON_PACBIO}/${ORGANISM}_pilon_pacbio.fasta"
-
-# pilon polishing — Nanopore
-NOBACKUP_PILON_NANOPORE="${NOBACKUP_BASE}/pilon_polish_nanopore_illumina"
-PILON_NANOPORE_OUT_DIR="${ASSEMBLY_DIR}/pilon_polish_nanopore_illumina"
-PILON_NANOPORE_FA="${NOBACKUP_PILON_NANOPORE}/${ORGANISM}_pilon_nanopore.fasta"
 
 # annotation
 ANNOTATION_DIR="${BASE_DIR}/analyses/04_annotation"
