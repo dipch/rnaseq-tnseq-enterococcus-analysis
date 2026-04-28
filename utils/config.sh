@@ -57,6 +57,8 @@ SPADES_HYBRID_OUT_DIR="${ASSEMBLY_DIR}/spades_hybrid_pacbio_illumina"
 SPADES_HYBRID_ISOLATE_OUT_DIR="${ASSEMBLY_DIR}/spades_hybrid_pacbio_illumina_isolate"
 SPADES_ILLUMINA_OUT_DIR="${ASSEMBLY_DIR}/spades_illumina"
 SPADES_HYBRID_NANOPORE_OUT_DIR="${ASSEMBLY_DIR}/spades_hybrid_nanopore_illumina"
+FLYE_PACBIO_OUT_DIR="${ASSEMBLY_DIR}/flye_pacbio"
+FLYE_NANOPORE_OUT_DIR="${ASSEMBLY_DIR}/flye_nanopore"
 
 # assembly output files
 CANU_PACBIO_FA="${CANU_PACBIO_OUT_DIR}/${ORGANISM}_pacbio.contigs.fasta"
@@ -69,6 +71,8 @@ SPADES_ILLUMINA_SCAFFOLDS="${SPADES_ILLUMINA_OUT_DIR}/scaffolds.fasta"
 SPADES_ILLUMINA_CONTIGS="${SPADES_ILLUMINA_OUT_DIR}/contigs.fasta"
 SPADES_HYBRID_NANOPORE_SCAFFOLDS="${SPADES_HYBRID_NANOPORE_OUT_DIR}/scaffolds.fasta"
 SPADES_HYBRID_NANOPORE_CONTIGS="${SPADES_HYBRID_NANOPORE_OUT_DIR}/contigs.fasta"
+FLYE_PACBIO_FA="${FLYE_PACBIO_OUT_DIR}/assembly.fasta"
+FLYE_NANOPORE_FA="${FLYE_NANOPORE_OUT_DIR}/assembly.fasta"
 
 # input reads
 ILLUMINA_R1="${RAW_DIR}/${ILLUMINA_R1_FILENAME}"
@@ -84,6 +88,8 @@ NOBACKUP_CANU_NANOPORE="${NOBACKUP_BASE}/canu_nanopore"
 NOBACKUP_SPADES_HYBRID="${NOBACKUP_BASE}/spades_hybrid_pacbio_illumina"
 NOBACKUP_SPADES_ILLUMINA="${NOBACKUP_BASE}/spades_illumina"
 NOBACKUP_SPADES_HYBRID_NANOPORE="${NOBACKUP_BASE}/spades_hybrid_nanopore_illumina"
+NOBACKUP_FLYE_PACBIO="${NOBACKUP_BASE}/flye_pacbio"
+NOBACKUP_FLYE_NANOPORE="${NOBACKUP_BASE}/flye_nanopore"
 
 # polishing alignment — PacBio assembly + Illumina reads
 POLISH_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/align_pacbio_illumina"
