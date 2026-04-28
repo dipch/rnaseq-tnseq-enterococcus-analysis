@@ -86,12 +86,12 @@ NOBACKUP_SPADES_ILLUMINA="${NOBACKUP_BASE}/spades_illumina"
 NOBACKUP_SPADES_HYBRID_NANOPORE="${NOBACKUP_BASE}/spades_hybrid_nanopore_illumina"
 
 # polishing alignment — PacBio assembly + Illumina reads
-POLISH_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/polishing_pacbio_illumina"
+POLISH_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/align_pacbio_illumina"
 NOBACKUP_POLISH_PACBIO="${NOBACKUP_BASE}/polishing_pacbio_illumina"
 POLISH_PACBIO_SORTED_BAM="${NOBACKUP_POLISH_PACBIO}/${ORGANISM}_illumina_sorted.bam"
 
 # polishing alignment — Nanopore assembly + Illumina reads
-POLISH_NANOPORE_ALIGN_DIR="${ASSEMBLY_DIR}/polishing_nanopore_illumina"
+POLISH_NANOPORE_ALIGN_DIR="${ASSEMBLY_DIR}/align_nanopore_illumina"
 NOBACKUP_POLISH_NANOPORE="${NOBACKUP_BASE}/polishing_nanopore_illumina"
 POLISH_NANOPORE_SORTED_BAM="${NOBACKUP_POLISH_NANOPORE}/${ORGANISM}_illumina_sorted.bam"
 
