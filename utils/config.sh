@@ -80,6 +80,12 @@ NOBACKUP_SPADES_HYBRID="${NOBACKUP_BASE}/spades_hybrid"
 # polishing alignment
 POLISH_ALIGN_DIR="${ASSEMBLY_DIR}/polishing_pacbio_illumina"
 NOBACKUP_POLISH="${NOBACKUP_BASE}/polishing_pacbio_illumina"
+POLISH_SORTED_BAM="${NOBACKUP_POLISH}/${ORGANISM}_illumina_sorted.bam"
+
+# pilon polishing
+NOBACKUP_PILON="${NOBACKUP_BASE}/pilon_polish_pacbio_illumina"
+PILON_OUT_DIR="${ASSEMBLY_DIR}/pilon_polish_pacbio_illumina"
+PILON_FA="${NOBACKUP_PILON}/${ORGANISM}_pilon.fasta"
 
 # assembly evaluation
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
