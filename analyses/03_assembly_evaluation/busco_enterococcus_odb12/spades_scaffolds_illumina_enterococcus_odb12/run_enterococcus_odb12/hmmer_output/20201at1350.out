@@ -1,0 +1,16 @@
+#                                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                    accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                            ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_19_length_49767_cov_34.796387:23859-24899|+ -            347 20201                -            345  2.3e-154  511.0   1.3   1   1  2.5e-157  2.6e-154  510.9   1.3     1   344     1   344     1   345 0.99 NODE_19_length_49767_cov_34.796387_27 # 23859 # 24899 # 1 # ID=19_27;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.402
+NODE_32_length_28108_cov_33.161872:22840-23871|+ -            344 20201                -            345  6.7e-154  509.5   0.3   1   1  7.4e-157  7.6e-154  509.3   0.3     1   344     1   340     1   341 0.99 NODE_32_length_28108_cov_33.161872_24 # 22840 # 23871 # 1 # ID=32_24;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.399
+NODE_42_length_20562_cov_34.293461:10899-11906|- -            336 20201                -            345   5.4e-73  243.4   0.0   1   1   6.4e-76   6.5e-73  243.2   0.0    12   343    16   333    11   335 0.95 NODE_42_length_20562_cov_34.293461_10 # 10899 # 11906 # -1 # ID=42_10;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.408
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20201at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/spades_scaffolds_illumina_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/spades_scaffolds_illumina_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/20201at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20201at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/spades_scaffolds_illumina_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:12:29 2026
+# [ok]

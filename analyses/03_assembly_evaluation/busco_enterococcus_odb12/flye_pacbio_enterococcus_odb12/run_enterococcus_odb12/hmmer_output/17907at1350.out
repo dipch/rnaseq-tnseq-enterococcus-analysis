@@ -1,0 +1,21 @@
+#                                                                                --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name            accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#    ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_1:602183-602899|+ -            239 17907                -            238  3.7e-142  469.4   4.9   1   1  9.5e-145  4.1e-142  469.3   4.9     1   238     1   238     1   238 1.00 contig_1_566 # 602183 # 602899 # 1 # ID=1_566;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1:169941-170660|+ -            240 17907                -            238   2.7e-60  201.4   2.6   1   1   6.7e-63   2.9e-60  201.3   2.6     3   234     2   237     1   239 0.93 contig_1_148 # 169941 # 170660 # 1 # ID=1_148;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.379
+contig_2:305304-306020|+ -            239 17907                -            238     2e-37  126.6   0.7   1   1   5.5e-40   2.4e-37  126.3   0.7     3   233     2   233     1   237 0.90 contig_2_282 # 305304 # 306020 # 1 # ID=5_282;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.384
+contig_1:856046-856957|+ -            304 17907                -            238   6.4e-09   33.2   2.1   1   1   3.4e-11   1.5e-08   32.0   2.1     3   201    14   245    12   250 0.62 contig_1_812 # 856046 # 856957 # 1 # ID=1_812;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.414
+contig_1:283065-283964|+ -            300 17907                -            238   1.9e-08   31.7   1.9   1   1   1.7e-10   7.5e-08   29.7   1.9    43   200    66   244    13   253 0.67 contig_1_237 # 283065 # 283964 # 1 # ID=1_237;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.410
+contig_1:187381-188238|- -            286 17907                -            238    0.0026   14.9   0.5   1   1   8.6e-06    0.0037   14.4   0.5    55   201    83   243    52   269 0.67 contig_1_160 # 187381 # 188238 # -1 # ID=1_160;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.400
+contig_2:465354-466610|+ -            419 17907                -            238    0.0044   14.1   0.1   1   2       1.3   5.6e+02   -2.6   0.0   170   196   122   148    96   180 0.71 contig_2_441 # 465354 # 466610 # 1 # ID=5_441;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.397
+contig_2:465354-466610|+ -            419 17907                -            238    0.0044   14.1   0.1   2   2   2.8e-05     0.012   12.7   0.1    15    64   364   413   352   416 0.94 contig_2_441 # 465354 # 466610 # 1 # ID=5_441;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.397
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/17907at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/17907at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/17907at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:13:58 2026
+# [ok]

@@ -1,0 +1,21 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_53:16601-16927|+ -            109 19438                -            641   2.6e-14   50.7   0.0   1   1   4.4e-17   2.8e-14   50.6   0.0   553   623    34   103    22   108 0.88 contig_53_27 # 16601 # 16927 # 1 # ID=48_27;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.425
+contig_40:58728-58985|- -             86 19438                -            641   4.9e-09   33.3   0.1   1   1   8.2e-12   5.1e-09   33.2   0.1   477   539    24    85    12    85 0.87 contig_40_63 # 58728 # 58985 # -1 # ID=34_63;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.430
+contig_61:95137-95307|+ -             57 19438                -            641   1.7e-06   24.9   0.0   1   1   2.8e-09   1.8e-06   24.8   0.0    25    56    24    55    16    56 0.93 contig_61_116 # 95137 # 95307 # 1 # ID=57_116;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.374
+contig_32:38418-38924|- -            169 19438                -            641   1.1e-05   22.3   1.3   1   1   2.4e-07   0.00015   18.4   1.3    20   100     3    83     1   159 0.80 contig_32_56 # 38418 # 38924 # -1 # ID=26_56;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.416
+contig_32:75267-75539|- -             91 19438                -            641   1.7e-05   21.6   0.0   1   1   2.9e-08   1.8e-05   21.5   0.0    44   114     7    72     1    80 0.83 contig_32_111 # 75267 # 75539 # -1 # ID=26_111;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.429
+contig_32:75511-75735|- -             75 19438                -            641   4.8e-05   20.1   0.0   1   1   8.6e-08   5.4e-05   19.9   0.0    13    43    43    72    33    74 0.81 contig_32_112 # 75511 # 75735 # -1 # ID=26_112;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.387
+contig_79:8198-8422|+   -             75 19438                -            641   8.7e-05   19.2   0.2   1   1   1.4e-07   8.7e-05   19.2   0.2   165   198     3    36     1    54 0.92 contig_79_12 # 8198 # 8422 # 1 # ID=76_12;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.360
+contig_79:8403-8657|+   -             85 19438                -            641     0.025   11.1   0.9   1   1     4e-05     0.026   11.1   0.9   245   297     3    53     1    72 0.80 contig_79_13 # 8403 # 8657 # 1 # ID=76_13;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.310
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/19438at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/19438at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/19438at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:14:50 2026
+# [ok]

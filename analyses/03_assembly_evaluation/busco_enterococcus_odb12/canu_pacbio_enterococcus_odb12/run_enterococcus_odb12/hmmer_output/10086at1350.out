@@ -1,0 +1,21 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:1350957-1351760|+ -            268 10086                -            267  3.1e-161  532.3  31.3   1   1  8.9e-164  3.5e-161  532.2  31.3     1   267     1   267     1   267 1.00 tig00000001_1271 # 1350957 # 1351760 # 1 # ID=1_1271;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.427
+tig00000002:206408-207181|-   -            258 10086                -            267   2.7e-43  145.7  13.3   1   1   8.3e-46   3.3e-43  145.4  13.3    20   263    20   257     2   257 0.91 tig00000002_204 # 206408 # 207181 # -1 # ID=2_204;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.370
+tig00000001:1548457-1549236|+ -            260 10086                -            267     8e-29   98.2  22.3   1   1   2.4e-31   9.4e-29   98.0  22.3     3   243     2   240     1   254 0.94 tig00000001_1485 # 1548457 # 1549236 # 1 # ID=1_1485;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.414
+tig00000001:928610-929398|+   -            263 10086                -            267   1.5e-28   97.3  15.6   1   1   4.8e-31   1.9e-28   97.0  15.6     2   257     4   256     3   260 0.89 tig00000001_877 # 928610 # 929398 # 1 # ID=1_877;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.378
+tig00000001:1961068-1961721|+ -            218 10086                -            267   2.9e-26   89.9   5.3   1   1   8.6e-29   3.4e-26   89.6   5.3    42   247     2   205     1   216 0.88 tig00000001_1876 # 1961068 # 1961721 # 1 # ID=1_1876;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.359
+tig00000002:193674-194420|-   -            249 10086                -            267     7e-26   88.6  17.9   1   1   2.1e-28   8.3e-26   88.3  17.9     3   239     1   237     1   245 0.86 tig00000002_188 # 193674 # 194420 # -1 # ID=2_188;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.411
+tig00000001:1280889-1281698|+ -            270 10086                -            267   3.1e-22   76.6  24.8   1   1     1e-24   3.9e-22   76.3  24.8     9   239     6   236     3   261 0.84 tig00000001_1204 # 1280889 # 1281698 # 1 # ID=1_1204;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.431
+tig00000001:2281240-2282073|+ -            278 10086                -            267   1.7e-12   44.7  15.5   1   1   5.2e-15     2e-12   44.4  15.5    28   255    34   263     4   275 0.82 tig00000001_2206 # 2281240 # 2282073 # 1 # ID=1_2206;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.412
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10086at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/10086at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10086at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:09:10 2026
+# [ok]

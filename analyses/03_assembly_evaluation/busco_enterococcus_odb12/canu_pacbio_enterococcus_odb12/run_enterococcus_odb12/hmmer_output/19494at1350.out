@@ -1,0 +1,21 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:639766-640533|-   -            256 19494                -            253  4.2e-162  535.1   0.2   1   1  1.1e-164  4.8e-162  534.9   0.2     1   253     1   253     1   253 1.00 tig00000001_585 # 639766 # 640533 # -1 # ID=1_585;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.409
+tig00000007:9094-9882|+       -            263 19494                -            253   3.1e-70  234.1   1.4   1   1   7.9e-73   3.5e-70  233.9   1.4     1   251     1   253     1   255 0.95 tig00000007_17 # 9094 # 9882 # 1 # ID=7_17;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.349
+tig00000005:31034-31987|-     -            318 19494                -            253   8.9e-21   72.0   1.0   1   2   5.7e-08   2.6e-05   21.4   0.2     3    51    16    65    14    83 0.83 tig00000005_42 # 31034 # 31987 # -1 # ID=5_42;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.346
+tig00000005:31034-31987|-     -            318 19494                -            253   8.9e-21   72.0   1.0   2   2   1.3e-16     6e-14   49.7   0.1   110   235   128   256   106   273 0.87 tig00000005_42 # 31034 # 31987 # -1 # ID=5_42;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.346
+tig00000003:11028-11720|-     -            231 19494                -            253   6.1e-14   49.7   0.0   1   1   1.6e-16   7.2e-14   49.4   0.0   109   226    74   191    33   200 0.92 tig00000003_15 # 11028 # 11720 # -1 # ID=3_15;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.332
+tig00000001:1823125-1823823|+ -            233 19494                -            253   7.1e-09   33.1   0.1   1   1   3.1e-11   1.4e-08   32.1   0.1     4   170    50   210    47   215 0.83 tig00000001_1748 # 1823125 # 1823823 # 1 # ID=1_1748;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.433
+tig00000002:216818-217378|-   -            187 19494                -            253   2.1e-08   31.5   0.2   1   1   2.2e-10     1e-07   29.3   0.2    29   172     9   169     2   175 0.71 tig00000002_216 # 216818 # 217378 # -1 # ID=2_216;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.358
+tig00000003:11753-11869|-     -             39 19494                -            253    0.0019   15.3   0.1   1   1   4.3e-06    0.0019   15.3   0.1     2    32     3    33     2    38 0.88 tig00000003_16 # 11753 # 11869 # -1 # ID=3_16;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.291
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/19494at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/19494at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/19494at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/canu_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:09:29 2026
+# [ok]

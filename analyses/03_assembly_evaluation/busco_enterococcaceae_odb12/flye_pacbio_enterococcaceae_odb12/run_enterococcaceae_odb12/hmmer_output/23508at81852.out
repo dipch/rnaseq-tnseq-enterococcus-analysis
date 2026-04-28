@@ -1,0 +1,21 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_2:379794-381077|-   -            428 23508                -            425  6.7e-198  655.0  36.4   1   1    1e-200  7.9e-198  654.8  36.4     2   424     3   423     2   424 0.97 contig_2_357 # 379794 # 381077 # -1 # ID=5_357;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1:747565-748608|+   -            348 23508                -            425   0.00016   17.9   0.3   1   3      0.46   3.5e+02   -3.0   0.0    12    43     3    34     2    55 0.73 contig_1_705 # 747565 # 748608 # 1 # ID=1_705;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-15bp;gc_cont=0.380
+contig_1:747565-748608|+   -            348 23508                -            425   0.00016   17.9   0.3   2   3   2.1e-07   0.00016   17.9   0.3   329   408   115   194   103   206 0.81 contig_1_705 # 747565 # 748608 # 1 # ID=1_705;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-15bp;gc_cont=0.380
+contig_1:747565-748608|+   -            348 23508                -            425   0.00016   17.9   0.3   3   3      0.87   6.6e+02   -3.9   0.1   248   261   221   234   218   238 0.88 contig_1_705 # 747565 # 748608 # 1 # ID=1_705;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-15bp;gc_cont=0.380
+contig_1:1180898-1182166|- -            423 23508                -            425   0.00022   17.4   2.0   1   2      0.06        45   -0.1   0.1   369   420    96   149    88   153 0.75 contig_1_1120 # 1180898 # 1182166 # -1 # ID=1_1120;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1:1180898-1182166|- -            423 23508                -            425   0.00022   17.4   2.0   2   2   4.7e-07   0.00036   16.7   0.2   341   413   202   273   195   283 0.83 contig_1_1120 # 1180898 # 1182166 # -1 # ID=1_1120;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1:540652-541329|+   -            226 23508                -            425     0.012   11.7   0.4   1   2     0.051        39    0.1   0.0     5    41    10    46     6    63 0.83 contig_1_510 # 540652 # 541329 # 1 # ID=1_510;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.431
+contig_1:540652-541329|+   -            226 23508                -            425     0.012   11.7   0.4   2   2   0.00011     0.086    8.9   0.2    14    51   119   156   113   169 0.81 contig_1_510 # 540652 # 541329 # 1 # ID=1_510;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.431
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/23508at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/23508at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/23508at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:19:20 2026
+# [ok]

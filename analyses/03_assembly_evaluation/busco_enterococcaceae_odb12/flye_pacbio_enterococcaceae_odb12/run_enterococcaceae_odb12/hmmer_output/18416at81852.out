@@ -1,0 +1,21 @@
+#                                                                                --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name            accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#    ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_1:856046-856957|+ -            304 18416                -            301  9.6e-171  564.4   2.6   1   1  2.1e-173  1.1e-170  564.3   2.6     2   300     2   300     1   301 0.99 contig_1_812 # 856046 # 856957 # 1 # ID=1_812;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.414
+contig_1:283065-283964|+ -            300 18416                -            301   4.2e-63  211.0   0.4   1   1   9.8e-66     5e-63  210.8   0.4    36   294    35   294    18   299 0.94 contig_1_237 # 283065 # 283964 # 1 # ID=1_237;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.410
+contig_1:187381-188238|- -            286 18416                -            301   3.5e-54  181.7   3.8   1   1   8.4e-57   4.3e-54  181.4   3.8    37   282    37   277    10   284 0.89 contig_1_160 # 187381 # 188238 # -1 # ID=1_160;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.400
+contig_1:169941-170660|+ -            240 18416                -            301   6.2e-08   29.8   0.8   1   1   6.9e-09   3.5e-06   24.1   0.8    14   182     2   147     1   207 0.74 contig_1_148 # 169941 # 170660 # 1 # ID=1_148;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.379
+contig_1:602183-602899|+ -            239 18416                -            301   7.5e-07   26.3   0.8   1   2     0.003       1.5    5.6   0.0    13    62     2    51     1    59 0.85 contig_1_566 # 602183 # 602899 # 1 # ID=1_566;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_1:602183-602899|+ -            239 18416                -            301   7.5e-07   26.3   0.8   2   2   3.1e-07   0.00016   18.6   0.2   122   246    90   202    55   210 0.82 contig_1_566 # 602183 # 602899 # 1 # ID=1_566;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.404
+contig_2:305304-306020|+ -            239 18416                -            301    0.0026   14.7   0.3   1   2   1.6e-05    0.0082   13.0   0.1    84   176    58   140     1   153 0.69 contig_2_282 # 305304 # 306020 # 1 # ID=5_282;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.384
+contig_2:305304-306020|+ -            239 18416                -            301    0.0026   14.7   0.3   2   2       2.1   1.1e+03   -3.8   0.0   216   235   171   190   162   195 0.59 contig_2_282 # 305304 # 306020 # 1 # ID=5_282;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.384
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/18416at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/18416at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/18416at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:19:08 2026
+# [ok]

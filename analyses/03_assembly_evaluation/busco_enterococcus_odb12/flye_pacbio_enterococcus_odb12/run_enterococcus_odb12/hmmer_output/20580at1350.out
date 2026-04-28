@@ -1,0 +1,18 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_2:994280-995095|+   -            272 20580                -            257  5.4e-130  429.7   5.1   1   1  1.1e-132  6.4e-130  429.5   5.1     6   256     9   268     1   269 0.94 contig_2_959 # 994280 # 995095 # 1 # ID=5_959;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.368
+contig_1:791436-792251|+   -            272 20580                -            257     2e-28   96.9   1.2   1   1   5.2e-31   3.2e-28   96.2   1.2    21   254    37   265     7   267 0.83 contig_1_748 # 791436 # 792251 # 1 # ID=1_748;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.381
+contig_1:938566-939402|-   -            279 20580                -            257   8.8e-24   81.6   8.6   1   1   2.8e-26   1.7e-23   80.7   8.6     6   256     9   265     2   266 0.74 contig_1_889 # 938566 # 939402 # -1 # ID=1_889;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.354
+contig_1:1147141-1148643|+ -            501 20580                -            257   1.8e-20   70.8   4.5   1   1   4.8e-23   2.9e-20   70.1   4.5    22   252    47   271    31   276 0.83 contig_1_1090 # 1147141 # 1148643 # 1 # ID=1_1090;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.391
+contig_2:289113-290705|-   -            531 20580                -            257   8.2e-18   62.1   0.6   1   1   2.4e-20   1.5e-17   61.2   0.6    44   241    65   262    10   274 0.85 contig_2_267 # 289113 # 290705 # -1 # ID=5_267;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.426
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20580at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/20580at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/20580at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_pacbio_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:14:13 2026
+# [ok]

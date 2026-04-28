@@ -1,0 +1,16 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_2:49580-50128|+  -            183 18416                -            301   8.5e-20   69.6   0.0   1   1     1e-22   1.7e-19   68.6   0.0    75   232     3   157     1   166 0.84 contig_2_75 # 49580 # 50128 # 1 # ID=12_75;partial=00;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.448
+contig_66:79059-79244|- -             62 18416                -            301   1.1e-09   36.4   0.0   1   1     7e-13   1.2e-09   36.3   0.0     1    59     1    59     1    61 0.80 contig_66_108 # 79059 # 79244 # -1 # ID=62_108;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.392
+contig_60:55126-55419|+ -             98 18416                -            301     0.021   12.5   0.0   1   1   1.6e-05     0.027   12.1   0.0    88   117     2    31     1    40 0.87 contig_60_80 # 55126 # 55419 # 1 # ID=56_80;partial=00;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.412
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/18416at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/18416at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/18416at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/flye_nanopore_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:14:46 2026
+# [ok]

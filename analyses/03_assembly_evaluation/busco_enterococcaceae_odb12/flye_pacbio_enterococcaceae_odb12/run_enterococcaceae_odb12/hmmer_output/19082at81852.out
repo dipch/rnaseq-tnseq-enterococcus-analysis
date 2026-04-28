@@ -1,0 +1,22 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_1:1037958-1040567|- -            870 19082                -            867         0 1801.9  25.8   1   1         0         0 1801.8  25.8     1   867     1   867     1   867 1.00 contig_1_994 # 1037958 # 1040567 # -1 # ID=1_994;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.400
+contig_2:104509-107001|-   -            831 19082                -            867  9.9e-242  802.2  21.7   1   2  3.6e-110  2.2e-107  357.7   7.8     6   407     5   420     1   431 0.86 contig_2_89 # 104509 # 107001 # -1 # ID=5_89;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.403
+contig_2:104509-107001|-   -            831 19082                -            867  9.9e-242  802.2  21.7   2   2  6.1e-138  3.7e-135  449.6   6.6   478   860   431   817   419   823 0.93 contig_2_89 # 104509 # 107001 # -1 # ID=5_89;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.403
+contig_1:449459-451693|-   -            745 19082                -            867  8.5e-215  713.1  16.5   1   2  9.4e-105  5.7e-102  339.8   5.4   162   402   102   341    89   352 0.96 contig_1_432 # 449459 # 451693 # -1 # ID=1_432;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.401
+contig_1:449459-451693|-   -            745 19082                -            867  8.5e-215  713.1  16.5   2   2  1.7e-116    1e-113  378.6   3.7   482   836   359   704   341   720 0.91 contig_1_432 # 449459 # 451693 # -1 # ID=1_432;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.401
+contig_1:1113418-1114668|- -            417 19082                -            867   5.6e-09   32.1   0.5   1   2   6.2e-06    0.0038   12.8   0.0   560   625    62   135    54   139 0.72 contig_1_1063 # 1113418 # 1114668 # -1 # ID=1_1063;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.396
+contig_1:1113418-1114668|- -            417 19082                -            867   5.6e-09   32.1   0.5   2   2   2.7e-07   0.00016   17.3   0.2   741   831   280   375   249   402 0.75 contig_1_1063 # 1113418 # 1114668 # -1 # ID=1_1063;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.396
+contig_1:246542-247828|-   -            429 19082                -            867    0.0018   13.9   0.2   1   2     0.003       1.8    3.9   0.0   598   623    36    61    14    66 0.87 contig_1_208 # 246542 # 247828 # -1 # ID=1_208;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.445
+contig_1:246542-247828|-   -            429 19082                -            867    0.0018   13.9   0.2   2   2   0.00021      0.12    7.8   0.1   262   348    81   155    74   190 0.73 contig_1_208 # 246542 # 247828 # -1 # ID=1_208;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.445
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19082at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/19082at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19082at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:19:10 2026
+# [ok]

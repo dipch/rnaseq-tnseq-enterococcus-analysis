@@ -1,0 +1,21 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+contig_2:639500-639856|+   -            119 19995                -            117   1.9e-54  180.0   0.1   1   1   4.8e-57   2.1e-54  179.9   0.1     1   114     1   115     1   118 0.96 contig_2_595 # 639500 # 639856 # 1 # ID=5_595;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.431
+contig_1:273902-274300|+   -            133 19995                -            117   6.1e-17   59.1   0.0   1   1   1.6e-19   7.2e-17   58.9   0.0     1   114     1   112     1   115 0.96 contig_1_228 # 273902 # 274300 # 1 # ID=1_228;partial=00;start_type=TTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.383
+contig_2:532857-533267|+   -            137 19995                -            117   2.8e-16   57.0   0.0   1   1   8.2e-19   3.5e-16   56.6   0.0     1   114     1   112     1   114 0.97 contig_2_499 # 532857 # 533267 # 1 # ID=5_499;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.345
+contig_2:533281-533637|+   -            119 19995                -            117   2.4e-12   44.3   0.0   1   1   7.8e-15   3.4e-12   43.8   0.0     3   115     4   114     2   116 0.93 contig_2_500 # 533281 # 533637 # 1 # ID=5_500;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.378
+contig_1:1013320-1013760|+ -            147 19995                -            117   4.4e-12   43.4   0.0   1   1   1.4e-14   6.1e-12   43.0   0.0     1   114     2   114     2   117 0.94 contig_1_970 # 1013320 # 1013760 # 1 # ID=1_970;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.347
+contig_1:565469-565924|-   -            152 19995                -            117   4.6e-08   30.5   0.1   1   1   4.2e-10   1.8e-07   28.5   0.1    17   112    16   110     1   114 0.77 contig_1_535 # 565469 # 565924 # -1 # ID=1_535;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.351
+contig_1:318905-319129|-   -             75 19995                -            117   0.00014   19.3   0.1   1   2   1.7e-06   0.00073   16.9   0.1     3    47     4    44     2    51 0.80 contig_1_273 # 318905 # 319129 # -1 # ID=1_273;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.364
+contig_1:318905-319129|-   -             75 19995                -            117   0.00014   19.3   0.1   2   2      0.11        47    1.4   0.0    93   115    50    72    38    74 0.72 contig_1_273 # 318905 # 319129 # -1 # ID=1_273;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.364
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19995at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/19995at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19995at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/flye_pacbio_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Tue Apr 28 22:19:13 2026
+# [ok]

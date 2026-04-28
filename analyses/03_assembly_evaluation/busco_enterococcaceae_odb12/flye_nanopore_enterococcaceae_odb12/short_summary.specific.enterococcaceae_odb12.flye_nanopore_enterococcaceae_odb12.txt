@@ -1,0 +1,31 @@
+# BUSCO version is: 5.8.2 
+# The lineage dataset is: enterococcaceae_odb12 (Creation date: 2025-05-14, number of genomes: 19, number of BUSCOs: 714)
+# Summarized benchmarking in BUSCO notation for file /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore/assembly.fasta
+# BUSCO was run in mode: prok_genome_prod
+# Gene predictor used: prodigal
+
+	***** Results: *****
+
+	C:0.0%[S:0.0%,D:0.0%],F:0.0%,M:100.0%,n:714	   
+	0	Complete BUSCOs (C)			   
+	0	Complete and single-copy BUSCOs (S)	   
+	0	Complete and duplicated BUSCOs (D)	   
+	0	Fragmented BUSCOs (F)			   
+	714	Missing BUSCOs (M)			   
+	714	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	84	Number of scaffolds
+	84	Number of contigs
+	3884554	Total length
+	0.000%	Percent gaps
+	85 KB	Scaffold N50
+	85 KB	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	prodigal: 2.6.3
+	python: sys.version_info(major=3, minor=12, micro=3, releaselevel='final', serial=0)
+	busco: 5.8.2
