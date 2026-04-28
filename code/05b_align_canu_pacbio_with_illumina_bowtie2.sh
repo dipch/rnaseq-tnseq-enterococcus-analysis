@@ -5,9 +5,9 @@
 #SBATCH -p pelle
 #SBATCH -c 2
 #SBATCH -t 04:00:00
-#SBATCH -J align_polish_canu_pacbio_with_illumina_bowtie2
+#SBATCH -J align_canu_pacbio_with_illumina_bowtie2
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05b_align_polish_canu_pacbio_with_illumina_bowtie2.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05b_align_canu_pacbio_with_illumina_bowtie2.%x.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
