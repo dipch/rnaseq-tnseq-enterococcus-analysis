@@ -2,24 +2,27 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 1
-#SBATCH -t 02:00:00
+#SBATCH -t 06:00:00
 #SBATCH -J busco_assembly_evaluation
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/07_busco_assembly_evaluation.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/07_busco_assembly_evaluation.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-
-#todo: uncomment rm -rf "${BUSCO_DIR_AUTO_LINEAGE:?}" "${BUSCO_DIR_MANUAL_LINEAGE:?}"
+rm -rf "${BUSCO_DIR_AUTO_LINEAGE:?}" "${BUSCO_DIR_MANUAL_LINEAGE:?}"
 mkdir -p "${BUSCO_DIR_AUTO_LINEAGE}" "${BUSCO_DIR_MANUAL_LINEAGE}"
 
 module purge
 module load BUSCO/5.8.2-gfbf-2024a
 
-#todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
-#todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
-require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
-#todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
+require_file "${CANU_PACBIO_FA}"                                  "Canu PacBio assembly FASTA"
+require_file "${CANU_NANOPORE_FA}"                                "Canu Nanopore assembly FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "SPAdes scaffolds (PacBio+Illumina hybrid) FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "SPAdes scaffolds (PacBio+Illumina isolate) FASTA"
+require_file "${SPADES_ILLUMINA_SCAFFOLDS}"                       "SPAdes scaffolds (Illumina-only) FASTA"
+require_file "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "SPAdes scaffolds (Nanopore+Illumina hybrid) FASTA"
+require_file "${FLYE_PACBIO_FA}"                                  "Flye PacBio assembly FASTA"
+require_file "${FLYE_NANOPORE_FA}"                                "Flye Nanopore assembly FASTA"
 
 run_busco() {
     local label="$1"
@@ -56,18 +59,24 @@ run_busco() {
 
 total_start=$(date +%s)
 
-# run with manual lineage from config
-#todo: uncomment run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"  "${BUSCO_LINEAGE}"
-#todo: uncomment run_busco "spades_scaffolds_pacbio_illumina" "${SPADES_SCAFFOLDS}" "${BUSCO_LINEAGE}"
-run_busco "pilon_polish_pacbio_illumina"     "${PILON_PACBIO_FA}"         "${BUSCO_LINEAGE}"
+echo "[$(current_time)] running BUSCO with manual lineage (${BUSCO_LINEAGE})"
+run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "${BUSCO_LINEAGE}"
+run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "${BUSCO_LINEAGE}"
+run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "${BUSCO_LINEAGE}"
+run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "${BUSCO_LINEAGE}"
+run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "${BUSCO_LINEAGE}"
 
-# run with auto lineage detection
-#todo: uncomment run_busco "canu_pacbio"      "${CANU_PACBIO_FA}"  "auto"
-#todo: uncomment run_busco "spades_scaffolds_pacbio_illumina" "${SPADES_SCAFFOLDS}" "auto"
-run_busco "pilon_polish_pacbio_illumina"     "${PILON_PACBIO_FA}"         "auto"
-
-#temp
-#todo: uncomment run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "${BUSCO_LINEAGE}"
-#todo: uncomment run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "auto"
+echo "[$(current_time)] running BUSCO with auto lineage detection"
+run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "auto"
+run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "auto"
+run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "auto"
+run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "auto"
+run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "auto"
+run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "auto"
+run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "auto"
+run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "auto"
 
 echo "[$(current_time)] all BUSCO runs complete (total: $(elapsed_time $total_start))"

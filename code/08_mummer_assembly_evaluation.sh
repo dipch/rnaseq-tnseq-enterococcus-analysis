@@ -2,31 +2,36 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 1
-#SBATCH -t 02:00:00
-#SBATCH -J mummer_assembly_evaluation_spades_isolate
+#SBATCH -t 06:00:00
+#SBATCH -J mummer_assembly_evaluation
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/08_mummer_assembly_evaluation.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/08_mummer_assembly_evaluation.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-#todo: uncomment rm -rf "${MUMMER_DIR:?}"
-mkdir -p "${MUMMER_DIR}/nucmer" "${MUMMER_DIR}/filter_rq" "${MUMMER_DIR}/filter_1"
+rm -rf "${MUMMER_DIR:?}"
+mkdir -p "${MUMMER_DIR}"
 
 module purge
 module load MUMmer/4.0.1-GCCcore-13.3.0
 
-require_file "${EFAECIUM_CLINICAL_E745_FASTA}"         "reference genome FASTA"
-#todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
-#todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
-require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
+require_file "${EFAECIUM_CLINICAL_E745_FASTA}"                    "reference genome FASTA"
+require_file "${CANU_PACBIO_FA}"                                  "Canu PacBio assembly FASTA"
+require_file "${CANU_NANOPORE_FA}"                                "Canu Nanopore assembly FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "SPAdes scaffolds (PacBio+Illumina hybrid) FASTA"
+require_file "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "SPAdes scaffolds (PacBio+Illumina isolate) FASTA"
+require_file "${SPADES_ILLUMINA_SCAFFOLDS}"                       "SPAdes scaffolds (Illumina-only) FASTA"
+require_file "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "SPAdes scaffolds (Nanopore+Illumina hybrid) FASTA"
+require_file "${FLYE_PACBIO_FA}"                                  "Flye PacBio assembly FASTA"
+require_file "${FLYE_NANOPORE_FA}"                                "Flye Nanopore assembly FASTA"
 
-#temp
-#todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}"  "SPAdes scaffolds FASTA (isolate)"
-
-run_nucmer() {
+run_mummer() {
     local label="$1"
     local query_fasta="$2"
-    local prefix="${MUMMER_DIR}/nucmer/${label}"
+    local outdir="${MUMMER_DIR}/${label}"
+
+    mkdir -p "${outdir}"
+    local prefix="${outdir}/${label}"
 
     echo "[$(current_time)] running nucmer for ${label}"
     local step_start=$(date +%s)
@@ -36,37 +41,22 @@ run_nucmer() {
         "${EFAECIUM_CLINICAL_E745_FASTA}" \
         "${query_fasta}"
     echo "[$(current_time)] nucmer ${label} complete ($(elapsed_time $step_start))"
-}
 
-run_filter_and_plot() {
-    local label="$1"
-    local query_fasta="$2"
-    local filter_mode="$3"   # "rq" or "1"
-    local delta="${MUMMER_DIR}/nucmer/${label}.delta"
-    local outdir="${MUMMER_DIR}/filter_${filter_mode}/${label}"
+    echo "[$(current_time)] filtering delta for ${label} (-1)"
+    delta-filter -1 "${prefix}.delta" > "${prefix}.filter.delta"
 
-    mkdir -p "${outdir}"
-    local prefix="${outdir}/${label}"
-
-    echo "[$(current_time)] filtering delta for ${label} (filter: ${filter_mode})"
-    if [[ "${filter_mode}" == "1" ]]; then
-        delta-filter -1 "${delta}" > "${prefix}.filter.delta"
-    else
-        delta-filter -r -q "${delta}" > "${prefix}.filter.delta"
-    fi
-
-    echo "[$(current_time)] running dnadiff for ${label} (filter: ${filter_mode})"
-    local step_start=$(date +%s)
+    echo "[$(current_time)] running dnadiff for ${label}"
+    step_start=$(date +%s)
     dnadiff \
         -p "${prefix}_dnadiff" \
-        -d "${delta}"
+        -d "${prefix}.delta"
     echo "[$(current_time)] dnadiff ${label} complete ($(elapsed_time $step_start))"
 
-    echo "[$(current_time)] generating mummerplot for ${label} (filter: ${filter_mode})"
+    echo "[$(current_time)] generating mummerplot for ${label}"
     step_start=$(date +%s)
     mummerplot \
         --png \
-	--large
+        --large \
         -R "${EFAECIUM_CLINICAL_E745_FASTA}" \
         -Q "${query_fasta}" \
         --prefix "${prefix}_plot" \
@@ -77,22 +67,13 @@ run_filter_and_plot() {
 
 total_start=$(date +%s)
 
-echo "[$(current_time)]  nucmer alignment"
-#todo: uncomment run_nucmer "canu_pacbio"             "${CANU_PACBIO_FA}"
-#todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}"
-run_nucmer "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"
-#todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
-
-echo "[$(current_time)]  filter: -r -q "
-#todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "rq"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "rq"
-run_filter_and_plot "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"         "rq"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
-
-echo "[$(current_time)]  filter: -1 "
-#todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "1"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "1"
-run_filter_and_plot "pilon_polish_pacbio_illumina"            "${PILON_PACBIO_FA}"         "1"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
+run_mummer "canu_pacbio"                              "${CANU_PACBIO_FA}"
+run_mummer "canu_nanopore"                            "${CANU_NANOPORE_FA}"
+run_mummer "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"
+run_mummer "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}"
+run_mummer "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"
+run_mummer "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"
+run_mummer "flye_pacbio"                              "${FLYE_PACBIO_FA}"
+run_mummer "flye_nanopore"                            "${FLYE_NANOPORE_FA}"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"
