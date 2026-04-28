@@ -101,15 +101,29 @@ NOBACKUP_SPADES_HYBRID_NANOPORE="${NOBACKUP_BASE}/spades_hybrid_nanopore_illumin
 NOBACKUP_FLYE_PACBIO="${NOBACKUP_BASE}/flye_pacbio"
 NOBACKUP_FLYE_NANOPORE="${NOBACKUP_BASE}/flye_nanopore"
 
-# polishing alignment — PacBio assembly + Illumina reads
-POLISH_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/align_pacbio_illumina"
-NOBACKUP_POLISH_PACBIO="${NOBACKUP_BASE}/polishing_pacbio_illumina"
-POLISH_PACBIO_SORTED_BAM="${NOBACKUP_POLISH_PACBIO}/${ORGANISM}_illumina_sorted.bam"
+# polishing — Canu PacBio round 1
+CANU_PACBIO_ALIGN_R1_DIR="${ASSEMBLY_DIR}/canu_pacbio_align_r1"
+NOBACKUP_CANU_PACBIO_ALIGN_R1="${NOBACKUP_BASE}/canu_pacbio_align_r1"
+CANU_PACBIO_SORTED_BAM_R1="${NOBACKUP_CANU_PACBIO_ALIGN_R1}/${ORGANISM}_illumina_sorted.bam"
+NOBACKUP_PILON_CANU_PACBIO_R1="${NOBACKUP_BASE}/canu_pacbio_pilon_r1"
+PILON_CANU_PACBIO_R1_DIR="${ASSEMBLY_DIR}/canu_pacbio_pilon_r1"
+PILON_CANU_PACBIO_R1_FA="${NOBACKUP_PILON_CANU_PACBIO_R1}/${ORGANISM}_canu_pacbio_pilon_r1.fasta"
 
-# pilon polishing — PacBio
-NOBACKUP_PILON_PACBIO="${NOBACKUP_BASE}/pilon_polish_pacbio_illumina"
-PILON_PACBIO_OUT_DIR="${ASSEMBLY_DIR}/pilon_polish_pacbio_illumina"
-PILON_PACBIO_FA="${NOBACKUP_PILON_PACBIO}/${ORGANISM}_pilon_pacbio.fasta"
+# polishing — Flye PacBio
+FLYE_PACBIO_ALIGN_DIR="${ASSEMBLY_DIR}/flye_pacbio_align"
+NOBACKUP_FLYE_PACBIO_ALIGN="${NOBACKUP_BASE}/flye_pacbio_align"
+FLYE_PACBIO_SORTED_BAM="${NOBACKUP_FLYE_PACBIO_ALIGN}/${ORGANISM}_illumina_sorted.bam"
+NOBACKUP_PILON_FLYE_PACBIO="${NOBACKUP_BASE}/flye_pacbio_pilon"
+PILON_FLYE_PACBIO_DIR="${ASSEMBLY_DIR}/flye_pacbio_pilon"
+PILON_FLYE_PACBIO_FA="${NOBACKUP_PILON_FLYE_PACBIO}/${ORGANISM}_flye_pacbio_pilon.fasta"
+
+# polishing — Canu PacBio round 2 (input: Pilon R1 output)
+CANU_PACBIO_ALIGN_R2_DIR="${ASSEMBLY_DIR}/canu_pacbio_align_r2"
+NOBACKUP_CANU_PACBIO_ALIGN_R2="${NOBACKUP_BASE}/canu_pacbio_align_r2"
+CANU_PACBIO_SORTED_BAM_R2="${NOBACKUP_CANU_PACBIO_ALIGN_R2}/${ORGANISM}_illumina_sorted.bam"
+NOBACKUP_PILON_CANU_PACBIO_R2="${NOBACKUP_BASE}/canu_pacbio_pilon_r2"
+PILON_CANU_PACBIO_R2_DIR="${ASSEMBLY_DIR}/canu_pacbio_pilon_r2"
+PILON_CANU_PACBIO_R2_FA="${NOBACKUP_PILON_CANU_PACBIO_R2}/${ORGANISM}_canu_pacbio_pilon_r2.fasta"
 
 # annotation
 ANNOTATION_DIR="${BASE_DIR}/analyses/04_annotation"
