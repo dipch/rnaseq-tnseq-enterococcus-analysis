@@ -9,8 +9,8 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-rm -rf "${BUSCO_DIR_AUTO_LINEAGE:?}" "${BUSCO_DIR_MANUAL_LINEAGE:?}"
-mkdir -p "${BUSCO_DIR_AUTO_LINEAGE}" "${BUSCO_DIR_MANUAL_LINEAGE}"
+rm -rf "${BUSCO_DIR_ENTEROCOCCUS:?}" "${BUSCO_DIR_ENTEROCOCCACEAE:?}"
+mkdir -p "${BUSCO_DIR_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
 
 module purge
 module load BUSCO/5.8.2-gfbf-2024a
@@ -27,56 +27,44 @@ require_file "${FLYE_NANOPORE_FA}"                                "Flye Nanopore
 run_busco() {
     local label="$1"
     local query_fasta="$2"
-    local lineage="$3"   # lineage name or "auto"
+    local lineage="$3"
+    local outdir="$4"
     local out_label="${label}_${lineage}"
 
     echo "[$(current_time)] running BUSCO for ${label} (lineage: ${lineage})"
     local step_start=$(date +%s)
-    if [[ "${lineage}" == "auto" ]]; then
-        busco \
-            --in "${query_fasta}" \
-            --out "${out_label}" \
-            --out_path "${BUSCO_DIR_AUTO_LINEAGE}" \
-            --auto-lineage-prok \
-            --mode genome \
-            --cpu 1 \
-            --force
-        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $step_start))"
-        echo "[$(current_time)] results: ${BUSCO_DIR_AUTO_LINEAGE}/${out_label}"
-    else
-        busco \
-            --in "${query_fasta}" \
-            --out "${out_label}" \
-            --out_path "${BUSCO_DIR_MANUAL_LINEAGE}" \
-            --lineage_dataset "${lineage}" \
-            --mode genome \
-            --cpu 1 \
-            --force
-        echo "[$(current_time)] ${out_label} complete ($(elapsed_time $step_start))"
-        echo "[$(current_time)] results: ${BUSCO_DIR_MANUAL_LINEAGE}/${out_label}"
-    fi
+    busco \
+        --in "${query_fasta}" \
+        --out "${out_label}" \
+        --out_path "${outdir}" \
+        --lineage_dataset "${lineage}" \
+        --mode genome \
+        --cpu 1 \
+        --force
+    echo "[$(current_time)] ${out_label} complete ($(elapsed_time $step_start))"
+    echo "[$(current_time)] results: ${outdir}/${out_label}"
 }
 
 total_start=$(date +%s)
 
-echo "[$(current_time)] running BUSCO with manual lineage (${BUSCO_LINEAGE})"
-run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "${BUSCO_LINEAGE}"
-run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "${BUSCO_LINEAGE}"
-run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "${BUSCO_LINEAGE}"
-run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "${BUSCO_LINEAGE}"
-run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "${BUSCO_LINEAGE}"
-run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "${BUSCO_LINEAGE}"
-run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "${BUSCO_LINEAGE}"
-run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "${BUSCO_LINEAGE}"
+echo "[$(current_time)] running BUSCO with lineage ${BUSCO_LINEAGE_ENTEROCOCCUS}"
+run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
+run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "${BUSCO_LINEAGE_ENTEROCOCCUS}" "${BUSCO_DIR_ENTEROCOCCUS}"
 
-echo "[$(current_time)] running BUSCO with auto lineage detection"
-run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "auto"
-run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "auto"
-run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "auto"
-run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "auto"
-run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "auto"
-run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "auto"
-run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "auto"
-run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "auto"
+echo "[$(current_time)] running BUSCO with lineage ${BUSCO_LINEAGE_ENTEROCOCCACEAE}"
+run_busco "canu_pacbio"                              "${CANU_PACBIO_FA}"                                  "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "canu_nanopore"                            "${CANU_NANOPORE_FA}"                                "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "spades_scaffolds_pacbio_illumina"         "${SPADES_HYBRID_PACBIO_ILLUMINA_SCAFFOLDS}"         "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_HYBRID_PACBIO_ILLUMINA_ISOLATE_SCAFFOLDS}" "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "spades_scaffolds_illumina"                "${SPADES_ILLUMINA_SCAFFOLDS}"                       "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "spades_scaffolds_nanopore_illumina"       "${SPADES_HYBRID_NANOPORE_SCAFFOLDS}"                "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "flye_pacbio"                              "${FLYE_PACBIO_FA}"                                  "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
+run_busco "flye_nanopore"                            "${FLYE_NANOPORE_FA}"                                "${BUSCO_LINEAGE_ENTEROCOCCACEAE}" "${BUSCO_DIR_ENTEROCOCCACEAE}"
 
 echo "[$(current_time)] all BUSCO runs complete (total: $(elapsed_time $total_start))"

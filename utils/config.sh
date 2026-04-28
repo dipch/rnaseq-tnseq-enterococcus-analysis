@@ -18,8 +18,9 @@ ORGANISM="efaecium_e745"
 GENOME_SIZE="3.3m"
 GENOME_SIZE_BP=3300000
 
-# BUSCO lineage dataset for the manual lineage run.
-BUSCO_LINEAGE="enterococcus_odb12"
+# BUSCO lineage datasets.
+BUSCO_LINEAGE_ENTEROCOCCUS="enterococcus_odb12"
+BUSCO_LINEAGE_ENTEROCOCCACEAE="enterococcaceae_odb12"
 
 # Input file names / globs relative to RAW_DIR.
 ILLUMINA_R1_FILENAME="dna_illumina_R1.fq.gz"
@@ -133,8 +134,8 @@ PROKKA_TSV="${PROKKA_DIR}/${ORGANISM}.tsv"
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
 QUAST_DIR="${EVAL_DIR}/quast"
 QUAST_WITH_REFERENCE_DIR="${EVAL_DIR}/quast_with_reference"
-BUSCO_DIR_AUTO_LINEAGE="${EVAL_DIR}/busco_auto_lineage"
-BUSCO_DIR_MANUAL_LINEAGE="${EVAL_DIR}/busco_manual_lineage"
+BUSCO_DIR_ENTEROCOCCUS="${EVAL_DIR}/busco_enterococcus_odb12"
+BUSCO_DIR_ENTEROCOCCACEAE="${EVAL_DIR}/busco_enterococcaceae_odb12"
 MUMMER_DIR="${EVAL_DIR}/mummer"
 
 # NCBI download commands for each accession:
