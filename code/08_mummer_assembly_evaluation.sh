@@ -79,20 +79,20 @@ total_start=$(date +%s)
 
 echo "[$(current_time)]  nucmer alignment"
 #todo: uncomment run_nucmer "canu_pacbio"             "${CANU_PACBIO_FA}"
-#todo: uncomment run_nucmer "spades_scaffolds"        "${SPADES_SCAFFOLDS}"
+#todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}"
 run_nucmer "pilon_polish"            "${PILON_FA}"
-#todo: uncomment run_nucmer "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
+#todo: uncomment run_nucmer "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
 
 echo "[$(current_time)]  filter: -r -q "
 #todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "rq"
-#todo: uncomment run_filter_and_plot "spades_scaffolds"        "${SPADES_SCAFFOLDS}" "rq"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "rq"
 run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "rq"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
 
 echo "[$(current_time)]  filter: -1 "
 #todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "1"
-#todo: uncomment run_filter_and_plot "spades_scaffolds"        "${SPADES_SCAFFOLDS}" "1"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina"        "${SPADES_SCAFFOLDS}" "1"
 run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "1"
-#todo: uncomment run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"

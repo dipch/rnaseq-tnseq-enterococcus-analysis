@@ -3,14 +3,13 @@
 #SBATCH -p pelle
 #SBATCH -c 1
 #SBATCH -t 06:00:00
-#SBATCH -J spades_hybrid_assembly_2
+#SBATCH -J spades_hybrid_pacbio_illumina_assembly
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_spades_hybrid.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/04_assembly_spades_hybrid_pacbio_illumina.%x.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-SPADES_HYBRID_ISOLATE_OUT_DIR="${ASSEMBLY_DIR}/spades_hybrid_isolate"
-NOBACKUP_SPADES_HYBRID_ISOLATE="${NOBACKUP_BASE}/spades_hybrid_isolate"
+NOBACKUP_SPADES_HYBRID_ISOLATE="${NOBACKUP_BASE}/spades_hybrid_pacbio_illumina_isolate"
 
 # symlink output dir to nobackup
 mkdir -p "${ASSEMBLY_DIR}" "${NOBACKUP_SPADES_HYBRID_ISOLATE}"

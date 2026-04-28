@@ -44,8 +44,8 @@ run_quast() {
 
 # temp
 #todo: uncomment run_quast "canu_pacbio"              "${CANU_PACBIO_FA}"
-#todo: uncomment run_quast "spades_scaffolds"         "${SPADES_SCAFFOLDS}"
-#todo: uncomment run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
+#todo: uncomment run_quast "spades_scaffolds_pacbio_illumina"         "${SPADES_SCAFFOLDS}"
+#todo: uncomment run_quast "spades_scaffolds_pacbio_illumina_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
 run_quast "pilon_polish"             "${PILON_FA}"
 
 
