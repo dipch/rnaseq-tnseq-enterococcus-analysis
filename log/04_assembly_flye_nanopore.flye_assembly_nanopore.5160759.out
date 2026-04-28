@@ -1,0 +1,19 @@
+[2026-04-28 18:49:05] Flye Nanopore assembly started
+[2026-04-28 18:49:05] input: 1 Nanopore files
+[2026-04-28 18:49:05] output dir: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore
+[2026-04-28 18:49:07] INFO: Starting Flye 2.9.6-b1802
+[2026-04-28 18:49:07] INFO: >>>STAGE: configure
+[2026-04-28 18:49:07] INFO: Configuring run
+[2026-04-28 18:49:07] INFO: Total read length: 123682072
+[2026-04-28 18:49:07] INFO: Input genome size: 3300000
+[2026-04-28 18:49:07] INFO: Estimated coverage: 37
+[2026-04-28 18:49:07] INFO: Reads N50/N90: 6283 / 2013
+[2026-04-28 18:49:07] INFO: Minimum overlap set to 2000
+[2026-04-28 18:49:08] INFO: >>>STAGE: assembly
+[2026-04-28 18:49:08] INFO: Assembling disjointigs
+[2026-04-28 18:49:08] INFO: Reading sequences
+[2026-04-28 18:49:08] ERROR: The input contain reads with duplicated IDs. Make sure all reads have unique IDs and restart. The first problematic ID was: channel_100_read_5_template
+[2026-04-28 18:49:08] ERROR: Command '['flye-modules', 'assemble', '--reads', '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/raw_data/dna_nanopore_all.fasta.gz', '--out-asm', '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore/00-assembly/draft_assembly.fasta', '--config', '/sw/arch/eb/software/Flye/2.9.6-GCC-13.3.0/lib/python3.12/site-packages/flye/config/bin_cfg/asm_raw_reads.cfg', '--log', '/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_nanopore/flye.log', '--threads', '2', '--genome-size', '3300000', '--min-ovlp', '2000']' returned non-zero exit status 1.
+[2026-04-28 18:49:08] ERROR: Pipeline aborted
+[2026-04-28 18:49:08] ERROR: script exited unexpectedly (exit code 0, line 28)
+[2026-04-28 18:49:08] script finished (exit code 0)
