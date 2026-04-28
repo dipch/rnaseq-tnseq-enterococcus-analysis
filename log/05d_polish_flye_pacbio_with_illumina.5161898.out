@@ -1,0 +1,166 @@
+To execute Pilon run: java -Xmx8G -jar $EBROOTPILON/pilon.jar
+Adjust the memory value according to the size of your input files
+[2026-04-29 00:21:50] running Pilon on Flye PacBio assembly
+Pilon version 1.24 Thu Jan 28 13:00:45 2021 -0500
+--threads argument no longer supported; ignoring!
+Genome: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/02_genome_assembly/flye_pacbio/assembly.fasta
+Fixing snps, indels, gaps, local
+Input genome size: 3142598
+Scanning BAMs
+/proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: 3334436 reads, 0 filtered, 3211912 mapped, 3157559 proper, 40440 stray, FR 100% 466+/-15, max 510
+Processing contig_1:1-1362975
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 60
+Total Reads: 1255732, Coverage: 60, minDepth: 6
+Confirmed 1303382 of 1362975 bases (95.63%)
+Corrected 0 snps; 0 ambiguous bases; corrected 4 small insertions totaling 4 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_1:120599-126653 0 -0 +0 NoSolution TandemRepeat 4202
+# fix break: contig_1:373086-384508 0 -0 +0 NoSolution TandemRepeat 3479
+# fix break: contig_1:428435-430863 0 -0 +0 NoSolution TandemRepeat 2483
+contig_1:1-1362975 log:
+Finished processing contig_1:1-1362975
+Processing contig_10:1-32424
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 235
+Total Reads: 130118, Coverage: 235, minDepth: 24
+Confirmed 32289 of 32424 bases (99.58%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_10:19342-19529 0 -0 +0 NoSolution
+# fix break: contig_10:20671-21952 0 -0 +0 NoSolution
+contig_10:1-32424 log:
+Finished processing contig_10:1-32424
+Processing contig_11:1-202266
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 56
+Total Reads: 204770, Coverage: 56, minDepth: 6
+Confirmed 174650 of 202266 bases (86.35%)
+Corrected 0 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 1 small deletions totaling 1 bases
+Large collapsed region: contig_11:104906-115249 size 10344
+# Attempting to fix local continuity breaks
+fix break: contig_11:10573-16167 11491 -2880 +0 BreakFix
+# fix break: contig_11:21565-22956 0 -0 +0 NoSolution TandemRepeat 1564
+contig_11:1-202266 log:
+Finished processing contig_11:1-202266
+Processing contig_12:1-19196
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 65
+Total Reads: 43949, Coverage: 65, minDepth: 7
+Confirmed 5907 of 19196 bases (30.77%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_12:9378-9444 0 -0 +0 NoSolution TandemRepeat 22
+contig_12:1-19196 log:
+Finished processing contig_12:1-19196
+Processing contig_2:1-1415035
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 64
+Total Reads: 1381831, Coverage: 64, minDepth: 6
+Confirmed 1357985 of 1415035 bases (95.97%)
+Corrected 0 snps; 0 ambiguous bases; corrected 7 small insertions totaling 7 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_2:25663-26336 0 -0 +0 NoSolution TandemRepeat 246
+# fix break: contig_2:107865-113818 0 -0 +0 NoSolution TandemRepeat 226
+# fix break: contig_2:914479-920677 0 -0 +0 NoSolution TandemRepeat 3479
+contig_2:1-1415035 log:
+Finished processing contig_2:1-1415035
+Processing contig_3:1-38669
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 153
+Total Reads: 97644, Coverage: 153, minDepth: 15
+Confirmed 30468 of 38669 bases (78.79%)
+Corrected 26 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 11 small deletions totaling 31 bases
+Large collapsed region: contig_3:12842-27971 size 15130
+# Attempting to fix local continuity breaks
+# fix break: contig_3:5724-5742 0 -0 +0 NoSolution
+# fix break: contig_3:5959-7383 0 -0 +0 NoSolution
+# fix break: contig_3:7901-7905 0 -0 +0 NoSolution
+# fix break: contig_3:8382-8389 0 -0 +0 NoSolution
+fix break: contig_3:9068-9069 8899 -415 +412 BreakFix
+fix break: contig_3:9630-10085 9349 -767 +763 BreakFix
+# fix break: contig_3:10370-10959 0 -0 +0 NoSolution
+# fix break: contig_3:12313-12584 0 -0 +0 NoSolution
+fix break: contig_3:20527-21325 20379 -1205 +1205 BreakFix
+fix break: contig_3:21616-21625 21448 -136 +136 BreakFix
+fix break: contig_3:24397-24418 24718 -113 +112 BreakFix
+# fix break: contig_3:24866-25148 0 -0 +0 NoSolution
+# fix break: contig_3:25674-25704 0 -0 +0 NoSolution
+fix break: contig_3:25942-26042 25835 -208 +203 BreakFix
+# fix break: contig_3:26585-26591 0 -0 +0 NoSolution
+# fix break: contig_3:28087-28366 0 -0 +0 NoSolution
+fix break: contig_3:29005-29009 29005 -62 +62 BreakFix
+contig_3:1-38669 log:
+Finished processing contig_3:1-38669
+Processing contig_4:1-16003
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 137
+Total Reads: 33351, Coverage: 137, minDepth: 14
+Confirmed 15940 of 16003 bases (99.61%)
+Corrected 0 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 2 small deletions totaling 4 bases
+contig_4:1-16003 log:
+Finished processing contig_4:1-16003
+Processing contig_5:1-3642
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 67
+Total Reads: 3891, Coverage: 67, minDepth: 7
+Confirmed 3642 of 3642 bases (100.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+contig_5:1-3642 log:
+Finished processing contig_5:1-3642
+Processing contig_7:1-27181
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 123
+Total Reads: 49694, Coverage: 123, minDepth: 12
+Confirmed 24412 of 27181 bases (89.81%)
+Corrected 0 snps; 0 ambiguous bases; corrected 4 small insertions totaling 4 bases, 8 small deletions totaling 9 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_7:23857-23974 0 -0 +0 NoSolution
+contig_7:1-27181 log:
+Finished processing contig_7:1-27181
+Processing contig_8:1-10762
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 92
+Total Reads: 15636, Coverage: 92, minDepth: 9
+Confirmed 10746 of 10762 bases (99.85%)
+Corrected 0 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+contig_8:1-10762 log:
+Finished processing contig_8:1-10762
+Processing contig_9:1-14445
+frags /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_align/efaecium_e745_illumina_sorted.bam: coverage 13
+Total Reads: 8394, Coverage: 13, minDepth: 5
+Confirmed 4989 of 14445 bases (34.54%)
+Corrected 3 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+contig_9:1-14445 log:
+Finished processing contig_9:1-14445
+Writing contig_1:1-1362975 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_1:1-1362975 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_1_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_10:1-32424 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_10:1-32424 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_10_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_11:1-202266 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_11:1-202266 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_11_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_12:1-19196 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_12:1-19196 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_12_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_2:1-1415035 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_2:1-1415035 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_2_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_3:1-38669 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_3:1-38669 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_3_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_4:1-16003 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_4:1-16003 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_4_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_5:1-3642 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_5:1-3642 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_5_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_7:1-27181 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_7:1-27181 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_7_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_8:1-10762 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_8:1-10762 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_8_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Writing contig_9:1-14445 VCF to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.vcf
+Writing contig_9:1-14445 changes to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+Writing updated contig_9_pilon to /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+Mean frags coverage: 65
+Mean total coverage: 65
+[2026-04-29 00:22:32] Pilon complete (0h 0m 42s)
+[2026-04-29 00:22:32] polished FASTA: /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.fasta
+[2026-04-29 00:22:32] changes file:   /proj/uppmax2026-1-61/nobackup/work/dich3309/flye_pacbio_pilon/efaecium_e745_flye_pacbio_pilon.changes
+[2026-04-29 00:22:32] script finished (exit code 0)
