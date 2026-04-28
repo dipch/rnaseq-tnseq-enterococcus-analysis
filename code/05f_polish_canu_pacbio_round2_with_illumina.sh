@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 4
+#SBATCH -c 2
 #SBATCH -t 12:00:00
 #SBATCH -J 05f_polish_canu_pacbio_round2_with_illumina
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05f_polish_canu_pacbio_round2_with_illumina.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05f_polish_canu_pacbio_round2_with_illumina.%j.out
 
 # Round 2: input genome is the Pilon R1 polished FASTA.
 # Check the R2 .changes file after completion — if near-zero changes, polishing has converged.
@@ -33,7 +33,7 @@ pilon \
     --changes \
     --vcf \
     --minmq   20 \
-    --threads 4
+    --threads 2
 
 echo "[$(current_time)] Pilon R2 complete ($(elapsed_time $total_start))"
 echo "[$(current_time)] polished FASTA: ${PILON_CANU_PACBIO_R2_FA}"

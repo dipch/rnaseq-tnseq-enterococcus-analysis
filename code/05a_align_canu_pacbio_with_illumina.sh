@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 4
-#SBATCH -t 04:00:00
+#SBATCH -c 2
+#SBATCH -t 06:00:00
 #SBATCH -J 05a_align_canu_pacbio_with_illumina
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05a_align_canu_pacbio_with_illumina.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05a_align_canu_pacbio_with_illumina.%j.out
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
@@ -26,8 +26,8 @@ echo "[$(current_time)] indexing Canu PacBio assembly with BWA"
 bwa index "${CANU_PACBIO_FA}"
 
 echo "[$(current_time)] aligning Illumina reads to Canu PacBio assembly"
-bwa mem -t 4 "${CANU_PACBIO_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
-    | samtools sort -@ 4 -o "${CANU_PACBIO_SORTED_BAM_R1}"
+bwa mem -t 2 "${CANU_PACBIO_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
+    | samtools sort -@ 2 -o "${CANU_PACBIO_SORTED_BAM_R1}"
 
 echo "[$(current_time)] indexing BAM"
 samtools index "${CANU_PACBIO_SORTED_BAM_R1}"

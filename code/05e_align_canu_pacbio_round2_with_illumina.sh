@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
-#SBATCH -c 4
-#SBATCH -t 04:00:00
+#SBATCH -c 2
+#SBATCH -t 06:00:00
 #SBATCH -J 05e_align_canu_pacbio_round2_with_illumina
 #SBATCH --mail-type=ALL
-#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05e_align_canu_pacbio_round2_with_illumina.%x.%j.out
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/05e_align_canu_pacbio_round2_with_illumina.%j.out
 
 # Round 2: input genome is the Pilon R1 polished FASTA, not the original Canu assembly.
 # Illumina reads must be re-aligned to the R1 output since coordinates changed.
@@ -29,8 +29,8 @@ echo "[$(current_time)] indexing Canu PacBio Pilon R1 assembly with BWA"
 bwa index "${PILON_CANU_PACBIO_R1_FA}"
 
 echo "[$(current_time)] aligning Illumina reads to Pilon R1 assembly"
-bwa mem -t 4 "${PILON_CANU_PACBIO_R1_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
-    | samtools sort -@ 4 -o "${CANU_PACBIO_SORTED_BAM_R2}"
+bwa mem -t 2 "${PILON_CANU_PACBIO_R1_FA}" "${ILLUMINA_R1}" "${ILLUMINA_R2}" \
+    | samtools sort -@ 2 -o "${CANU_PACBIO_SORTED_BAM_R2}"
 
 echo "[$(current_time)] indexing BAM"
 samtools index "${CANU_PACBIO_SORTED_BAM_R2}"
