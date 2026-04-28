@@ -33,10 +33,19 @@ RAW_DIR="${BASE_DIR}/data/raw_data"
 TRIMMED_DIR="${BASE_DIR}/data/trimmed_data"
 REFERENCE_DIR="${BASE_DIR}/data/reference_genome"
 
+# Reference genome accession numbers (NCBI RefSeq)
+EFAECIUM_CLINICAL_E745="GCF_001750885.1"
+EFAECIUM_COMMUNITY_E980="GCF_000172615.1"
+EFAECIUM_COMMUNITY_COM12="GCF_000157635.1"
+EFACIUM_CLINICAL_1141733="GCF_000157575.1"
+EFACIUM_CLINICAL_TX0133A="GCF_000148285.1"
+EFAECALIS_CLINICAL_V583="GCF_000007785.1"
+EFAECALIS_COMMUNITY_62="GCF_000211255.2"
+
 # reference genome paths relative to REFERENCE_DIR.
 NCBI_DATASET_REFSEQ_DIR="${REFERENCE_DIR}/ncbi_dataset_refseq"
-REFERENCE_FASTA_REL="ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna"
-REFERENCE_GFF_REL="ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/genomic.gff"
+EFAECIUM_CLINICAL_E745_FASTA_REL="ncbi_dataset_refseq/ncbi_dataset/data/${EFAECIUM_CLINICAL_E745}/${EFAECIUM_CLINICAL_E745}_ASM175088v1_genomic.fna"
+EFAECIUM_CLINICAL_E745_GFF_REL="ncbi_dataset_refseq/ncbi_dataset/data/${EFAECIUM_CLINICAL_E745}/genomic.gff"
 
 # nobackup (HPC-specific)
 NOBACKUP_BASE="/proj/uppmax2026-1-61/nobackup/work/dich3309"
@@ -78,9 +87,9 @@ FLYE_NANOPORE_FA="${FLYE_NANOPORE_OUT_DIR}/assembly.fasta"
 ILLUMINA_R1="${RAW_DIR}/${ILLUMINA_R1_FILENAME}"
 ILLUMINA_R2="${RAW_DIR}/${ILLUMINA_R2_FILENAME}"
 
-# reference genome
-REFERENCE_FASTA="${REFERENCE_DIR}/${REFERENCE_FASTA_REL}"
-REFERENCE_GFF="${REFERENCE_DIR}/${REFERENCE_GFF_REL}"
+# reference genome — E. faecium clinical isolate E745 (primary assembly target)
+EFAECIUM_CLINICAL_E745_FASTA="${REFERENCE_DIR}/${EFAECIUM_CLINICAL_E745_FASTA_REL}"
+EFAECIUM_CLINICAL_E745_GFF="${REFERENCE_DIR}/${EFAECIUM_CLINICAL_E745_GFF_REL}"
 
 # nobackup assembly dirs
 NOBACKUP_CANU_PACBIO="${NOBACKUP_BASE}/canu_pacbio"
@@ -128,27 +137,11 @@ BUSCO_DIR_AUTO_LINEAGE="${EVAL_DIR}/busco_auto_lineage"
 BUSCO_DIR_MANUAL_LINEAGE="${EVAL_DIR}/busco_manual_lineage"
 MUMMER_DIR="${EVAL_DIR}/mummer"
 
-# Reference genome Accession number 
-EFAECIUM_CLINICAL_E745="GCF_001750885.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001750885.1/
-# datasets download genome accession GCF_001750885.1 --include gff3,rna,cds,protein,genome,seq-report
-EFAECIUM_COMMUNITY_E980="GCF_000172615.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000172615.1/
-# datasets download genome accession GCF_000172615.1 --include gff3,rna,cds,protein,genome,seq-report
-EFAECIUM_COMMUNITY_COM12="GCF_000157635.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000157635.1/
-# datasets download genome accession GCF_000157635.1 --include gff3,rna,cds,protein,genome,seq-report
-EFACIUM_CLINICAL_1141733="GCF_000157575.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000157575.1/
-# datasets download genome accession GCF_000157575.1 --include gff3,rna,cds,protein,genome,seq-report
-EFACIUM_CLINICAL_TX0133A="GCF_000148285.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000148285.1/
-# datasets download genome accession GCF_000148285.1 --include gff3,rna,cds,protein,genome,seq-report
-
-
-EFAECALIS_CLINICAL_V583="GCF_000007785.1"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007785.1/
-# datasets download genome accession GCF_000007785.1 --include gff3,rna,cds,protein,genome,seq-report
-EFAECALIS_COMMUNITY_62="GCF_000211255.2"
-# https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000211255.2/
-# datasets download genome accession GCF_000211255.2 --include gff3,rna,cds,protein,genome,seq-report
+# NCBI download commands for each accession:
+# datasets download genome accession GCF_001750885.1 --include gff3,rna,cds,protein,genome,seq-report  # EFAECIUM_CLINICAL_E745
+# datasets download genome accession GCF_000172615.1 --include gff3,rna,cds,protein,genome,seq-report  # EFAECIUM_COMMUNITY_E980
+# datasets download genome accession GCF_000157635.1 --include gff3,rna,cds,protein,genome,seq-report  # EFAECIUM_COMMUNITY_COM12
+# datasets download genome accession GCF_000157575.1 --include gff3,rna,cds,protein,genome,seq-report  # EFACIUM_CLINICAL_1141733
+# datasets download genome accession GCF_000148285.1 --include gff3,rna,cds,protein,genome,seq-report  # EFACIUM_CLINICAL_TX0133A
+# datasets download genome accession GCF_000007785.1 --include gff3,rna,cds,protein,genome,seq-report  # EFAECALIS_CLINICAL_V583
+# datasets download genome accession GCF_000211255.2 --include gff3,rna,cds,protein,genome,seq-report  # EFAECALIS_COMMUNITY_62

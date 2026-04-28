@@ -15,7 +15,7 @@ mkdir -p "${MUMMER_DIR}/nucmer" "${MUMMER_DIR}/filter_rq" "${MUMMER_DIR}/filter_
 module purge
 module load MUMmer/4.0.1-GCCcore-13.3.0
 
-require_file "${REFERENCE_FASTA}"         "reference genome FASTA"
+require_file "${EFAECIUM_CLINICAL_E745_FASTA}"         "reference genome FASTA"
 #todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
 #todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
 require_file "${PILON_PACBIO_FA}"               "Pilon polished FASTA"
@@ -33,7 +33,7 @@ run_nucmer() {
     nucmer \
         --threads 1 \
         --prefix "${prefix}" \
-        "${REFERENCE_FASTA}" \
+        "${EFAECIUM_CLINICAL_E745_FASTA}" \
         "${query_fasta}"
     echo "[$(current_time)] nucmer ${label} complete ($(elapsed_time $step_start))"
 }
@@ -67,7 +67,7 @@ run_filter_and_plot() {
     mummerplot \
         --png \
 	--large
-        -R "${REFERENCE_FASTA}" \
+        -R "${EFAECIUM_CLINICAL_E745_FASTA}" \
         -Q "${query_fasta}" \
         --prefix "${prefix}_plot" \
         "${prefix}.filter.delta"

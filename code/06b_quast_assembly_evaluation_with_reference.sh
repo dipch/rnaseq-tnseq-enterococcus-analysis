@@ -15,8 +15,8 @@ mkdir -p "${QUAST_WITH_REFERENCE_DIR}"
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-require_file "${REFERENCE_FASTA}"     "reference genome FASTA"
-require_file "${REFERENCE_GFF}"    "reference GFF"
+require_file "${EFAECIUM_CLINICAL_E745_FASTA}"     "reference genome FASTA"
+require_file "${EFAECIUM_CLINICAL_E745_GFF}"    "reference GFF"
 require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
 require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
 #temp
@@ -32,8 +32,8 @@ run_quast() {
     quast.py \
         --threads 2 \
         --min-contig 500 \
-        -r "${REFERENCE_FASTA}" \
-        --features "${REFERENCE_GFF}" \
+        -r "${EFAECIUM_CLINICAL_E745_FASTA}" \
+        --features "${EFAECIUM_CLINICAL_E745_GFF}" \
         --output-dir "${outdir}" \
         "${query_fasta}"
     echo "[$(current_time)] ${label} complete ($(elapsed_time $step_start))"
