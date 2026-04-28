@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Download all reference genomes from NCBI using ncbi-datasets-cli.
-# Run from the repo root with: bash utils/reference_genome_download.sh
-# Requires: datasets (ncbi-datasets-cli) — available via `pixi shell` or `pixi run`.
+# Requires: datasets (ncbi-datasets-cli)
 
 set -euo pipefail
 

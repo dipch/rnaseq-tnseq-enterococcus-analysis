@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-BASE_DIR="${HOME}/rnaseq-tnseq-enterococcus-analysis"
+BASE_DIR="${BASE_DIR:-${HOME}/rnaseq-tnseq-enterococcus-analysis}"
 source "${BASE_DIR}/utils/time_check.sh"
 source "${BASE_DIR}/utils/fs_check.sh"
 
