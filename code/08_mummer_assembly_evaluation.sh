@@ -9,18 +9,19 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-rm -rf "${MUMMER_DIR:?}"
+#todo: uncomment rm -rf "${MUMMER_DIR:?}"
 mkdir -p "${MUMMER_DIR}/nucmer" "${MUMMER_DIR}/filter_rq" "${MUMMER_DIR}/filter_1"
 
 module purge
 module load MUMmer/4.0.1-GCCcore-13.3.0
 
-require_file "${REFERENCE_FASTA}"      "reference genome FASTA"
-require_file "${CANU_PACBIO_FA}"    "Canu PacBio assembly FASTA"
-require_file "${SPADES_SCAFFOLDS}"  "SPAdes scaffolds FASTA"
+require_file "${REFERENCE_FASTA}"         "reference genome FASTA"
+#todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
+#todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
+require_file "${PILON_FA}"               "Pilon polished FASTA"
 
 #temp
-require_file "${SPADES_SCAFFOLDS_ISOLATE}"  "SPAdes scaffolds FASTA (isolate)"
+#todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}"  "SPAdes scaffolds FASTA (isolate)"
 
 run_nucmer() {
     local label="$1"
@@ -77,18 +78,21 @@ run_filter_and_plot() {
 total_start=$(date +%s)
 
 echo "[$(current_time)]  nucmer alignment"
-run_nucmer "canu_pacbio"      "${CANU_PACBIO_FA}"
-run_nucmer "spades_scaffolds" "${SPADES_SCAFFOLDS}" 
-run_nucmer "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
+#todo: uncomment run_nucmer "canu_pacbio"             "${CANU_PACBIO_FA}"
+#todo: uncomment run_nucmer "spades_scaffolds"        "${SPADES_SCAFFOLDS}"
+run_nucmer "pilon_polish"            "${PILON_FA}"
+#todo: uncomment run_nucmer "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"  # temp
 
 echo "[$(current_time)]  filter: -r -q "
-run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "rq"
-run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "rq"
-run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
+#todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "rq"
+#todo: uncomment run_filter_and_plot "spades_scaffolds"        "${SPADES_SCAFFOLDS}" "rq"
+run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "rq"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "rq"
 
 echo "[$(current_time)]  filter: -1 "
-run_filter_and_plot "canu_pacbio"      "${CANU_PACBIO_FA}"  "1"
-run_filter_and_plot "spades_scaffolds" "${SPADES_SCAFFOLDS}" "1"
-run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
+#todo: uncomment run_filter_and_plot "canu_pacbio"             "${CANU_PACBIO_FA}"  "1"
+#todo: uncomment run_filter_and_plot "spades_scaffolds"        "${SPADES_SCAFFOLDS}" "1"
+run_filter_and_plot "pilon_polish"            "${PILON_FA}"         "1"
+#todo: uncomment run_filter_and_plot "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}" "1"
 
 echo "[$(current_time)] all MUMmer runs complete (total: $(elapsed_time $total_start))"

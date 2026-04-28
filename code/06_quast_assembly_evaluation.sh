@@ -9,17 +9,18 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-rm -rf "${QUAST_DIR:?}"
+#todo: uncomment rm -rf "${QUAST_DIR:?}"
 mkdir -p "${QUAST_DIR}"
 
 module purge
 module load QUAST/5.3.0-gfbf-2024a
 
-require_file "${CANU_PACBIO_FA}"   "Canu PacBio assembly FASTA"
-require_file "${SPADES_SCAFFOLDS}" "SPAdes scaffolds FASTA"
+#todo: uncomment require_file "${CANU_PACBIO_FA}"          "Canu PacBio assembly FASTA"
+#todo: uncomment require_file "${SPADES_SCAFFOLDS}"        "SPAdes scaffolds FASTA"
+require_file "${PILON_FA}"               "Pilon polished FASTA"
 
 #temp
-require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
+#todo: uncomment require_file "${SPADES_SCAFFOLDS_ISOLATE}" "SPAdes scaffolds FASTA (isolate)"
 
 run_quast() {
     local label="$1"
@@ -42,9 +43,10 @@ run_quast() {
 }
 
 # temp
-run_quast "canu_pacbio"       "${CANU_PACBIO_FA}"
-run_quast "spades_scaffolds"  "${SPADES_SCAFFOLDS}"
-run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
+#todo: uncomment run_quast "canu_pacbio"              "${CANU_PACBIO_FA}"
+#todo: uncomment run_quast "spades_scaffolds"         "${SPADES_SCAFFOLDS}"
+#todo: uncomment run_quast "spades_scaffolds_isolate" "${SPADES_SCAFFOLDS_ISOLATE}"
+run_quast "pilon_polish"             "${PILON_FA}"
 
 
 # no need this
