@@ -1,0 +1,21 @@
+#                                                                                       --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                   accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#           ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_CP014529.1:702601-703404|+   -            268 10086                -            267  3.1e-161  532.3  31.3   1   1  8.9e-164  3.4e-161  532.2  31.3     1   267     1   267     1   267 1.00 NZ_CP014529.1_673 # 702601 # 703404 # 1 # ID=1_673;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.427
+NZ_CP014530.1:178133-178906|-   -            258 10086                -            267   2.7e-43  145.7  13.3   1   1   8.3e-46   3.2e-43  145.4  13.3    20   263    20   257     2   257 0.91 NZ_CP014530.1_175 # 178133 # 178906 # -1 # ID=2_175;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.370
+NZ_CP014529.1:1312610-1313383|+ -            258 10086                -            267   1.4e-31  107.2   7.0   1   1   4.2e-34   1.6e-31  107.0   7.0     3   247     3   245     1   256 0.88 NZ_CP014529.1_1271 # 1312610 # 1313383 # 1 # ID=1_1271;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.370
+NZ_CP014529.1:900104-900883|+   -            260 10086                -            267   7.9e-29   98.2  22.3   1   1   2.4e-31   9.3e-29   98.0  22.3     3   243     2   240     1   254 0.94 NZ_CP014529.1_885 # 900104 # 900883 # 1 # ID=1_885;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.414
+NZ_CP014529.1:280245-281033|+   -            263 10086                -            267   1.5e-28   97.3  15.6   1   1   4.8e-31   1.9e-28   97.0  15.6     2   257     4   256     3   260 0.89 NZ_CP014529.1_280 # 280245 # 281033 # 1 # ID=1_280;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.378
+NZ_CP014530.1:165387-166133|-   -            249 10086                -            267   6.9e-26   88.6  17.9   1   1   2.1e-28   8.2e-26   88.3  17.9     3   239     1   237     1   245 0.86 NZ_CP014530.1_162 # 165387 # 166133 # -1 # ID=2_162;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.411
+NZ_CP014529.1:632527-633336|+   -            270 10086                -            267     3e-22   76.6  24.8   1   1     1e-24   3.9e-22   76.3  24.8     9   239     6   236     3   261 0.84 NZ_CP014529.1_607 # 632527 # 633336 # 1 # ID=1_607;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.431
+NZ_CP014529.1:1632916-1633749|+ -            278 10086                -            267   1.6e-12   44.7  15.5   1   1   5.2e-15     2e-12   44.4  15.5    28   255    34   263     4   275 0.82 NZ_CP014529.1_1595 # 1632916 # 1633749 # 1 # ID=1_1595;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.412
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10086at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/10086at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/10086at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 12:21:48 2026
+# [ok]

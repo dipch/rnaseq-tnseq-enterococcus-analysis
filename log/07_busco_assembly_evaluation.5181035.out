@@ -1,0 +1,121 @@
+AUGUSTUS/3.5.0: A read-only config directory is at $AUGUSTUS_CONFIG_PATH. See 'module help AUGUSTUS/3.5.0' for guidance to create your own writable copy.
+BBMap/39.19: For improved speed, add 'usejni=t' to the command line of BBMap tools which support the use of the compiled jni C code.
+BUSCO/5.8.2: see 'module help BUSCO/5.8.2' for availability of lineage sets
+[2026-04-29 12:21:21] running BUSCO with lineage enterococcus_odb12
+[2026-04-29 12:21:21] running BUSCO for reference_e745 (lineage: enterococcus_odb12)
+2026-04-29 12:21:41 INFO:	***** Start a BUSCO v5.8.2 analysis, current time: 04/29/2026 12:21:41 *****
+2026-04-29 12:21:41 INFO:	Configuring BUSCO with /sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/config/config.ini
+2026-04-29 12:21:41 INFO:	Running genome mode
+2026-04-29 12:21:41 INFO:	Downloading information on latest versions of BUSCO data...
+2026-04-29 12:21:41 INFO:	Input file is /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna
+2026-04-29 12:21:43 INFO:	Running BUSCO using lineage dataset enterococcus_odb12 (prokaryota, 2025-05-14)
+2026-04-29 12:21:43 INFO:	Running 1 job(s) on bbtools, starting at 04/29/2026 12:21:43
+2026-04-29 12:21:44 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:21:44 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:21:44 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:21:45 INFO:	[bbtools]	1 of 1 task(s) completed
+2026-04-29 12:21:45 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2026-04-29 12:21:45 INFO:	Running Prodigal with genetic code 11 in single mode
+2026-04-29 12:21:45 INFO:	Running 1 job(s) on prodigal, starting at 04/29/2026 12:21:45
+2026-04-29 12:21:45 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:21:45 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:21:45 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:21:47 INFO:	[prodigal]	1 of 1 task(s) completed
+2026-04-29 12:21:47 INFO:	Genetic code 11 selected as optimal
+2026-04-29 12:21:47 INFO:	***** Run HMMER on gene sequences *****
+2026-04-29 12:21:48 INFO:	Running 983 job(s) on hmmsearch, starting at 04/29/2026 12:21:48
+2026-04-29 12:21:48 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:21:48 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:21:48 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:21:55 INFO:	[hmmsearch]	99 of 983 task(s) completed
+2026-04-29 12:22:03 INFO:	[hmmsearch]	197 of 983 task(s) completed
+2026-04-29 12:22:11 INFO:	[hmmsearch]	295 of 983 task(s) completed
+2026-04-29 12:22:18 INFO:	[hmmsearch]	394 of 983 task(s) completed
+2026-04-29 12:22:25 INFO:	[hmmsearch]	492 of 983 task(s) completed
+2026-04-29 12:22:33 INFO:	[hmmsearch]	590 of 983 task(s) completed
+2026-04-29 12:22:41 INFO:	[hmmsearch]	689 of 983 task(s) completed
+2026-04-29 12:22:48 INFO:	[hmmsearch]	787 of 983 task(s) completed
+2026-04-29 12:22:56 INFO:	[hmmsearch]	885 of 983 task(s) completed
+2026-04-29 12:23:04 INFO:	[hmmsearch]	983 of 983 task(s) completed
+2026-04-29 12:23:04 INFO:	Results:	C:99.0%[S:98.8%,D:0.2%],F:0.4%,M:0.6%,n:983	   
+
+2026-04-29 12:23:04 INFO:	
+
+    ---------------------------------------------------
+    |Results from dataset enterococcus_odb12           |
+    ---------------------------------------------------
+    |C:99.0%[S:98.8%,D:0.2%],F:0.4%,M:0.6%,n:983       |
+    |973    Complete BUSCOs (C)                        |
+    |971    Complete and single-copy BUSCOs (S)        |
+    |2    Complete and duplicated BUSCOs (D)           |
+    |4    Fragmented BUSCOs (F)                        |
+    |6    Missing BUSCOs (M)                           |
+    |983    Total BUSCO groups searched                |
+    ---------------------------------------------------
+2026-04-29 12:23:04 INFO:	BUSCO analysis done. Total running time: 83 seconds
+2026-04-29 12:23:04 INFO:	Results written in /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12
+2026-04-29 12:23:04 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+2026-04-29 12:23:04 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
+[2026-04-29 12:23:05] reference_e745_enterococcus_odb12 complete (0h 1m 44s)
+[2026-04-29 12:23:05] results: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12
+[2026-04-29 12:23:05] running BUSCO with lineage enterococcaceae_odb12
+[2026-04-29 12:23:05] running BUSCO for reference_e745 (lineage: enterococcaceae_odb12)
+2026-04-29 12:23:06 INFO:	***** Start a BUSCO v5.8.2 analysis, current time: 04/29/2026 12:23:06 *****
+2026-04-29 12:23:06 INFO:	Configuring BUSCO with /sw/arch/eb/software/BUSCO/5.8.2-gfbf-2024a/config/config.ini
+2026-04-29 12:23:06 INFO:	Running genome mode
+2026-04-29 12:23:06 INFO:	Downloading information on latest versions of BUSCO data...
+2026-04-29 12:23:06 INFO:	Input file is /home/dich3309/rnaseq-tnseq-enterococcus-analysis/data/reference_genome/ncbi_dataset_refseq/ncbi_dataset/data/GCF_001750885.1/GCF_001750885.1_ASM175088v1_genomic.fna
+2026-04-29 12:23:06 INFO:	Running BUSCO using lineage dataset enterococcaceae_odb12 (prokaryota, 2025-05-14)
+2026-04-29 12:23:06 INFO:	Running 1 job(s) on bbtools, starting at 04/29/2026 12:23:06
+2026-04-29 12:23:06 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:23:06 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:23:06 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:23:07 INFO:	[bbtools]	1 of 1 task(s) completed
+2026-04-29 12:23:07 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2026-04-29 12:23:07 INFO:	Running Prodigal with genetic code 11 in single mode
+2026-04-29 12:23:07 INFO:	Running 1 job(s) on prodigal, starting at 04/29/2026 12:23:07
+2026-04-29 12:23:07 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:23:07 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:23:07 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:23:09 INFO:	[prodigal]	1 of 1 task(s) completed
+2026-04-29 12:23:10 INFO:	Genetic code 11 selected as optimal
+2026-04-29 12:23:10 INFO:	***** Run HMMER on gene sequences *****
+2026-04-29 12:23:10 INFO:	Running 714 job(s) on hmmsearch, starting at 04/29/2026 12:23:10
+2026-04-29 12:23:10 INFO:	Note: detected 96 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2026-04-29 12:23:10 INFO:	Note: NumExpr detected 96 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-04-29 12:23:10 INFO:	NumExpr defaulting to 8 threads.
+2026-04-29 12:23:15 INFO:	[hmmsearch]	72 of 714 task(s) completed
+2026-04-29 12:23:21 INFO:	[hmmsearch]	143 of 714 task(s) completed
+2026-04-29 12:23:27 INFO:	[hmmsearch]	215 of 714 task(s) completed
+2026-04-29 12:23:32 INFO:	[hmmsearch]	286 of 714 task(s) completed
+2026-04-29 12:23:38 INFO:	[hmmsearch]	358 of 714 task(s) completed
+2026-04-29 12:23:44 INFO:	[hmmsearch]	429 of 714 task(s) completed
+2026-04-29 12:23:50 INFO:	[hmmsearch]	500 of 714 task(s) completed
+2026-04-29 12:23:56 INFO:	[hmmsearch]	572 of 714 task(s) completed
+2026-04-29 12:24:00 INFO:	[hmmsearch]	643 of 714 task(s) completed
+2026-04-29 12:24:06 INFO:	[hmmsearch]	714 of 714 task(s) completed
+2026-04-29 12:24:06 INFO:	Results:	C:99.6%[S:99.2%,D:0.4%],F:0.1%,M:0.3%,n:714	   
+
+2026-04-29 12:24:06 INFO:	
+
+    ---------------------------------------------------
+    |Results from dataset enterococcaceae_odb12        |
+    ---------------------------------------------------
+    |C:99.6%[S:99.2%,D:0.4%],F:0.1%,M:0.3%,n:714       |
+    |711    Complete BUSCOs (C)                        |
+    |708    Complete and single-copy BUSCOs (S)        |
+    |3    Complete and duplicated BUSCOs (D)           |
+    |1    Fragmented BUSCOs (F)                        |
+    |2    Missing BUSCOs (M)                           |
+    |714    Total BUSCO groups searched                |
+    ---------------------------------------------------
+2026-04-29 12:24:06 INFO:	BUSCO analysis done. Total running time: 61 seconds
+2026-04-29 12:24:06 INFO:	Results written in /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/reference_e745_enterococcaceae_odb12
+2026-04-29 12:24:06 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+2026-04-29 12:24:06 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
+[2026-04-29 12:24:07] reference_e745_enterococcaceae_odb12 complete (0h 1m 2s)
+[2026-04-29 12:24:07] results: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/reference_e745_enterococcaceae_odb12
+[2026-04-29 12:24:07] all BUSCO runs complete (total: 0h 2m 46s)
+[2026-04-29 12:24:07] script finished (exit code 0)

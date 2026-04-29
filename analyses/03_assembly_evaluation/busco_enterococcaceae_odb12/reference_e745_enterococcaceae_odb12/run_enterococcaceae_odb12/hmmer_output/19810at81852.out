@@ -1,0 +1,19 @@
+#                                                                                       --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                   accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#           ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_CP014529.1:2177715-2178155|- -            147 19810                -            146   3.4e-81  267.9   6.4   1   1   7.3e-84   3.8e-81  267.7   6.4     1   146     1   146     1   146 0.99 NZ_CP014529.1_2114 # 2177715 # 2178155 # -1 # ID=1_2114;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.397
+NZ_CP014529.1:1302380-1302859|+ -            160 19810                -            146   4.2e-12   43.7   1.9   1   1   9.5e-15   4.9e-12   43.5   1.9     4   144     6   149     3   151 0.87 NZ_CP014529.1_1262 # 1302380 # 1302859 # 1 # ID=1_1262;partial=00;start_type=GTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.304
+NZ_CP014529.1:1812788-1813231|- -            148 19810                -            146   2.3e-10   38.1   0.4   1   1   4.7e-13   2.4e-10   38.0   0.4    11   144    11   145     1   147 0.90 NZ_CP014529.1_1773 # 1812788 # 1813231 # -1 # ID=1_1773;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.338
+NZ_CP014529.1:1684041-1684481|- -            147 19810                -            146   1.8e-09   35.2   0.1   1   1   4.3e-12   2.2e-09   34.9   0.1    46   133    43   130    23   144 0.75 NZ_CP014529.1_1653 # 1684041 # 1684481 # -1 # ID=1_1653;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.376
+NZ_CP014529.1:293789-294241|+   -            151 19810                -            146   6.9e-05   20.3   0.1   1   1   1.6e-07   8.4e-05   20.0   0.1    56   139    49   132     4   139 0.84 NZ_CP014529.1_296 # 293789 # 294241 # 1 # ID=1_296;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.355
+NZ_CP014529.1:2600751-2601215|- -            155 19810                -            146   0.00039   17.9   0.3   1   1   1.2e-06   0.00064   17.2   0.2    55   142    50   137    30   141 0.83 NZ_CP014529.1_2514 # 2600751 # 2601215 # -1 # ID=1_2514;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.363
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19810at81852.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/reference_e745_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/reference_e745_enterococcaceae_odb12/run_enterococcaceae_odb12/hmmer_output/19810at81852.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcaceae_odb12/hmms/19810at81852.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcaceae_odb12/reference_e745_enterococcaceae_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 12:23:31 2026
+# [ok]

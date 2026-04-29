@@ -1,0 +1,17 @@
+#                                                                                       --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                   accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#           ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NZ_CP014529.1:2446771-2448942|- -            724 21264                -            720         0 1381.0  16.1   1   1         0         0 1380.8  16.1     1   719     1   722     1   723 0.99 NZ_CP014529.1_2393 # 2446771 # 2448942 # -1 # ID=1_2393;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.416
+NZ_CP014529.1:1805089-1807470|+ -            794 21264                -            720  1.2e-107  358.4  19.4   1   1  2.1e-110  1.7e-107  357.9  19.4    42   669    42   685    33   699 0.88 NZ_CP014529.1_1767 # 1805089 # 1807470 # 1 # ID=1_1767;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.421
+NZ_CP014529.1:1134503-1136848|- -            782 21264                -            720   3.1e-73  244.7  22.8   1   1   6.5e-75     5e-72  240.6  22.7    41   616    35   660    17   698 0.78 NZ_CP014529.1_1113 # 1134503 # 1136848 # -1 # ID=1_1113;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.403
+NZ_CP014529.1:717749-719941|+   -            731 21264                -            720   6.1e-13   45.3   5.0   1   1   1.4e-15   1.1e-12   44.5   5.0   321   589   254   546   246   640 0.74 NZ_CP014529.1_693 # 717749 # 719941 # 1 # ID=1_693;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.388
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/21264at1350.hmm
+# Target file:     /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/run_enterococcus_odb12/hmmer_output/21264at1350.out --cpu 1 /sw/data/local/BUSCO_Data/v5/lineages/enterococcus_odb12/hmms/21264at1350.hmm /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/busco_enterococcus_odb12/reference_e745_enterococcus_odb12/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/code
+# Date:            Wed Apr 29 12:22:36 2026
+# [ok]
