@@ -1,0 +1,4 @@
+##gff-version 3
+contig_12	QUAST	possible_assembly_error	3700	3701	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -9310 [linear representation of circular genome]
+contig_12	QUAST	possible_assembly_error	13018	13019	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -9310
+contig_3	QUAST	possible_assembly_error	6812	6813	.	.	.	Name=Extensive misassembly;type=translocation

@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\begin{table}[ht]
+\begin{center}
+\caption{All statistics are based on contigs of size $\geq$ 500 bp, unless otherwise noted (e.g., "\# contigs ($\geq$ 0 bp)" and "Total length ($\geq$ 0 bp)" include all contigs).}
+\begin{tabular}{|l*{11}{|r}|}
+\hline
+Assembly & canu\_pacbio & canu\_nanopore & spades\_pacbio\_illumina & spades\_pacbio\_illumina\_isolate & spades\_illumina & spades\_nanopore\_illumina & flye\_pacbio & flye\_nanopore & canu\_pacbio\_pilon\_r1 & flye\_pacbio\_pilon & canu\_pacbio\_pilon\_r2 \\ \hline
+\# misassemblies & 7 & 2 & 4 & {\bf 0} & {\bf 0} & 4 & 3 & {\bf 0} & 8 & 4 & 8 \\ \hline
+\hspace{2mm}\# contig misassemblies & 7 & 2 & 4 & 0 & 0 & 4 & 3 & 0 & 8 & 4 & 8 \\ \hline
+\hspace{5mm}\# c. relocations & 4 & 2 & 1 & 0 & 0 & 1 & 2 & 0 & 3 & 3 & 3 \\ \hline
+\hspace{5mm}\# c. translocations & 3 & 0 & 3 & 0 & 0 & 3 & 1 & 0 & 3 & 1 & 3 \\ \hline
+\hspace{5mm}\# c. inversions & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 \\ \hline
+\hspace{2mm}\# scaffold misassemblies & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. relocations & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. translocations & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. inversions & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\# misassembled contigs & 5 & 2 & 3 & {\bf 0} & {\bf 0} & 2 & 2 & {\bf 0} & 5 & 3 & 5 \\ \hline
+Misassembled contigs length & 3063909 & 29384 & 307283 & {\bf 0} & {\bf 0} & 109519 & 57865 & {\bf 0} & 3064010 & 257216 & 3063994 \\ \hline
+\# local misassemblies & {\bf 0} & {\bf 0} & {\bf 0} & {\bf 0} & 1 & 1 & {\bf 0} & {\bf 0} & {\bf 0} & {\bf 0} & {\bf 0} \\ \hline
+\# scaffold gap ext. mis. & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap loc. mis. & {\bf 0} & {\bf 0} & {\bf 0} & 5 & {\bf 0} & 4 & {\bf 0} & {\bf 0} & {\bf 0} & {\bf 0} & {\bf 0} \\ \hline
+\# unaligned mis. contigs & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\# mismatches & 324 & 950 & 1585 & 495 & {\bf 73} & 1128 & 818 & 3677 & 335 & 795 & 335 \\ \hline
+\# indels & 481 & 8291 & 228 & 91 & {\bf 85} & 196 & 1649 & 9385 & 270 & 1598 & 262 \\ \hline
+\hspace{5mm}\# indels ($\leq$ 5 bp) & 469 & 8265 & 212 & 82 & {\bf 76} & 179 & 1634 & 9380 & 258 & 1582 & 250 \\ \hline
+\hspace{5mm}\# indels ($>$ 5 bp) & 12 & 26 & 16 & 9 & 9 & 17 & 15 & {\bf 5} & 12 & 16 & 12 \\ \hline
+Indels length & 665 & 12475 & 950 & 717 & 470 & 1661 & 2143 & 12247 & 447 & 2083 & {\bf 439} \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

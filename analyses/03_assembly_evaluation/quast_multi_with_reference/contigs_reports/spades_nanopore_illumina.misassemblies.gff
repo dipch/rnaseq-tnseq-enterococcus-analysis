@@ -1,0 +1,5 @@
+##gff-version 3
+NODE_5_length_73637_cov_93.923133	QUAST	possible_assembly_error	9652	9653	.	.	.	Name=Extensive misassembly;type=translocation
+NODE_5_length_73637_cov_93.923133	QUAST	possible_assembly_error	45831	45832	.	.	.	Name=Extensive misassembly;type=translocation
+NODE_5_length_73637_cov_93.923133	QUAST	possible_assembly_error	50244	50245	.	.	.	Name=Extensive misassembly;type=translocation
+NODE_7_length_35882_cov_232.232618	QUAST	possible_assembly_error	18065	18066	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -1141 [linear representation of circular genome]

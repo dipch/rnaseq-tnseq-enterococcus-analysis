@@ -1,0 +1,35 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1274692	2637394	1362979	1	NZ_CP014529.1	contig_1_pilon	99.97		True
+CONTIG	contig_1_pilon	1362979	correct
+30308	32423	1	2117	NZ_CP014531.1	contig_10_pilon	99.86		True
+fake: not a misassembly [linear representation of circular genome]
+1	30307	2118	32424	NZ_CP014531.1	contig_10_pilon	100.0		True
+CONTIG	contig_10_pilon	32424	correct
+198693	209205	10513	1	NZ_CP014530.1	contig_11_pilon	99.99		True
+relocation, inconsistency = 2880
+7465	195812	199159	10514	NZ_CP014530.1	contig_11_pilon	99.67		True
+CONTIG	contig_11_pilon	199386	misassembled
+1	3700	3700	1	NZ_CP014532.1	contig_12_pilon	100.0		True
+relocation, inconsistency = -9310 [linear representation of circular genome]
+1	9310	13018	3701	NZ_CP014532.1	contig_12_pilon	99.85		True
+relocation, inconsistency = -9310
+6661	9310	15700	13019	NZ_CP014532.1	contig_12_pilon	97.96		True
+CONTIG	contig_12_pilon	19196	misassembled
+2633213	2765010	1	131798	NZ_CP014529.1	contig_2_pilon	100.0		True
+fake: not a misassembly [linear representation of circular genome]
+1	1282717	131799	1415042	NZ_CP014529.1	contig_2_pilon	99.94		True
+CONTIG	contig_2_pilon	1415042	correct
+10441	17252	6812	1	NZ_CP014530.1	contig_3_pilon	97.94		True
+translocation
+23343	55167	38634	6813	NZ_CP014534.1	contig_3_pilon	98.34		True
+CONTIG	contig_3_pilon	38634	misassembled
+32745	48686	1	15942	NZ_CP014535.1	contig_4_pilon	100.0		True
+CONTIG	contig_4_pilon	16000	correct
+209217	212858	3642	1	NZ_CP014530.1	contig_5_pilon	100.0		True
+CONTIG	contig_5_pilon	3642	correct
+136	26416	26472	1	NZ_CP014534.1	contig_7_pilon	99.14		True
+CONTIG	contig_7_pilon	27176	correct
+6888	17254	1	10545	NZ_CP014533.1	contig_8_pilon	97.93		True
+CONTIG	contig_8_pilon	10764	correct
+1270960	1285405	1	14445	NZ_CP014529.1	contig_9_pilon	99.81		True
+CONTIG	contig_9_pilon	14445	correct

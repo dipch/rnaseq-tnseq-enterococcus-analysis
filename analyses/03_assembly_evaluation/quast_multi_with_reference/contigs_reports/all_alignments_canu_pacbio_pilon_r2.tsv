@@ -1,0 +1,41 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+2116611	2765010	1	648397	NZ_CP014529.1	tig00000001_pilon_pilon	100.0		True
+fake: not a misassembly [linear representation of circular genome]
+1	1239963	648398	1888356	NZ_CP014529.1	tig00000001_pilon_pilon	100.0		True
+inversion
+1239964	1241314	1889707	1888357	NZ_CP014529.1	tig00000001_pilon_pilon	100.0		True
+inversion
+1241315	2126820	1889708	2775212	NZ_CP014529.1	tig00000001_pilon_pilon	100.0		True
+CONTIG	tig00000001_pilon_pilon	2775212	misassembled
+196527	223688	1	27168	NZ_CP014530.1	tig00000002_pilon_pilon	99.97		True
+translocation
+43608	51169	27169	34737	NZ_CP014534.1	tig00000002_pilon_pilon	97.91		True
+translocation
+6445	190281	34738	218577	NZ_CP014530.1	tig00000002_pilon_pilon	99.84		True
+CONTIG	tig00000002_pilon_pilon	218577	misassembled
+13	28903	28887	1	NZ_CP014534.1	tig00000003_pilon_pilon	99.84		True
+CONTIG	tig00000003_pilon_pilon	28887	correct
+1	12913	12918	1	NZ_CP014530.1	tig00000004_pilon_pilon	99.36		True
+translocation
+41783	43607	14737	12919	NZ_CP014534.1	tig00000004_pilon_pilon	98.41		True
+CONTIG	tig00000004_pilon_pilon	14737	misassembled
+1	13281	13284	1	NZ_CP014531.1	tig00000005_pilon_pilon	99.94		True
+relocation, inconsistency = -7589 [linear representation of circular genome]
+5693	32423	40013	13285	NZ_CP014531.1	tig00000005_pilon_pilon	99.98		True
+CONTIG	tig00000005_pilon_pilon	40013	misassembled
+33149	48165	15021	1	NZ_CP014534.1	tig00000006_pilon_pilon	99.87		True
+CONTIG	tig00000006_pilon_pilon	15021	correct
+740	16703	1	16127	NZ_CP014533.1	tig00000007_pilon_pilon	98.63		True
+CONTIG	tig00000007_pilon_pilon	16127	correct
+18141	42992	1	24852	NZ_CP014535.1	tig00000009_pilon_pilon	100.0		True
+CONTIG	tig00000009_pilon_pilon	24852	correct
+1	5872	5871	1	NZ_CP014532.1	tig00000010_pilon_pilon	99.95		True
+relocation, inconsistency = -9310 [linear representation of circular genome]
+1	9310	15189	5872	NZ_CP014532.1	tig00000010_pilon_pilon	99.74		True
+relocation, inconsistency = -9309
+9047	9309	15455	15190	NZ_CP014532.1	tig00000010_pilon_pilon	98.13		True
+CONTIG	tig00000010_pilon_pilon	15455	misassembled
+1	6189	6191	1	NZ_CP014532.1	tig00000011_pilon_pilon	99.9		True
+fake: not a misassembly [linear representation of circular genome]
+8462	9310	7042	6192	NZ_CP014532.1	tig00000011_pilon_pilon	98.6		True
+CONTIG	tig00000011_pilon_pilon	7042	correct

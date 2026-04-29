@@ -1,0 +1,132 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [NZ_CP014529.1]
+	Loaded [NZ_CP014530.1]
+	Loaded [NZ_CP014531.1]
+	Loaded [NZ_CP014532.1]
+	Loaded [NZ_CP014533.1]
+	Loaded [NZ_CP014534.1]
+	Loaded [NZ_CP014535.1]
+	Total Regions: 7
+	Total Region Length: 3168410
+Analyzing contigs...
+CONTIG: contig_1_pilon (1362979bp)
+Best alignment score: 1362570.1 (LEN: 1362979, IDY: 99.97), Total number of alignments: 1
+		One align captures most of this contig: 1274692 2637394 | 1362979 1 | 1362703 1362979 | 99.97 | NZ_CP014529.1 contig_1_pilon
+
+CONTIG: contig_10_pilon (32424bp)
+Best alignment score: 30307.0 (LEN: 30307, IDY: 100.00), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			Skipping redundant alignments after choosing the best set of alignments
+		Skipping redundant alignment 185254 185696 | 2173 1730 | 443 444 | 98.42 | NZ_CP014530.1 contig_10_pilon
+			The best set is below. Score: 32421.0, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 30308 32423 | 1 2117 | 2116 2117 | 99.86 | NZ_CP014531.1 contig_10_pilon
+			  Not a misassembly [linear representation of circular genome] between these two alignments
+			Real Alignment 2: 1 30307 | 2118 32424 | 30307 30307 | 100.0 | NZ_CP014531.1 contig_10_pilon
+
+CONTIG: contig_11_pilon (199386bp)
+Best alignment score: 188023.5 (LEN: 188646, IDY: 99.67), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 198036.4, number of alignments: 2, unaligned bases: 227
+		This contig is misassembled.
+			Excluding internal overlap of size 1441 between Alignment 1 and 2: 197252 209205 | 11954 1 | 11954 11954 --> 198693 209205 | 10513 1 | 10513 10513
+			Real Alignment 1: 198693 209205 | 10513 1 | 10513 10513 | 99.99 | NZ_CP014530.1 contig_11_pilon
+			  Extensive misassembly (relocation, inconsistency = 2880) between these two alignments
+			Real Alignment 2: 7465 195812 | 199159 10514 | 188348 188646 | 99.67 | NZ_CP014530.1 contig_11_pilon
+
+CONTIG: contig_12_pilon (19196bp)
+Best alignment score: 9304.0 (LEN: 9318, IDY: 99.85), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 15129.3, number of alignments: 3, unaligned bases: 3496
+		This contig is misassembled.
+		This contig is partially unaligned. (Aligned 15700 out of 19196 non-N bases (81.79%))
+			Real Alignment 1: 1 3700 | 3700 1 | 3700 3700 | 100.0 | NZ_CP014532.1 contig_12_pilon
+			  Extensive misassembly (relocation, inconsistency = -9310 [linear representation of circular genome]) between these two alignments
+			Real Alignment 2: 1 9310 | 13018 3701 | 9310 9318 | 99.85 | NZ_CP014532.1 contig_12_pilon
+			  Extensive misassembly (relocation, inconsistency = -9310) between these two alignments
+			Real Alignment 3: 6661 9310 | 15700 13019 | 2650 2682 | 97.96 | NZ_CP014532.1 contig_12_pilon
+		Unaligned bases: 3496
+
+CONTIG: contig_2_pilon (1415042bp)
+Best alignment score: 1282474.1 (LEN: 1283244, IDY: 99.94), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 1414272.1, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Real Alignment 1: 2633213 2765010 | 1 131798 | 131798 131798 | 100.0 | NZ_CP014529.1 contig_2_pilon
+			  Not a misassembly [linear representation of circular genome] between these two alignments
+			Real Alignment 2: 1 1282717 | 131799 1415042 | 1282717 1283244 | 99.94 | NZ_CP014529.1 contig_2_pilon
+
+CONTIG: contig_3_pilon (38634bp)
+Best alignment score: 31293.8 (LEN: 31822, IDY: 98.34), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 37465.4, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 3981 between Alignment 1 and 2: 6445 17252 | 10793 1 | 10808 10793 --> 10441 17252 | 6812 1 | 6812 6812
+			Real Alignment 1: 10441 17252 | 6812 1 | 6812 6812 | 97.94 | NZ_CP014530.1 contig_3_pilon
+			  Extensive misassembly (translocation) between these two alignments
+			Real Alignment 2: 23343 55167 | 38634 6813 | 31825 31822 | 98.34 | NZ_CP014534.1 contig_3_pilon
+
+CONTIG: contig_4_pilon (16000bp)
+Best alignment score: 15942.0 (LEN: 15942, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 32745 48686 | 1 15942 | 15942 15942 | 100.0 | NZ_CP014535.1 contig_4_pilon
+
+CONTIG: contig_5_pilon (3642bp)
+Best alignment score: 3642.0 (LEN: 3642, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 209217 212858 | 3642 1 | 3642 3642 | 100.0 | NZ_CP014530.1 contig_5_pilon
+
+CONTIG: contig_7_pilon (27176bp)
+Best alignment score: 26244.3 (LEN: 26472, IDY: 99.14), Total number of alignments: 1
+			Looking for the best set of alignments (out of 1 total alignments)
+			The best set is below. Score: 26244.3, number of alignments: 1, unaligned bases: 704
+		This contig is partially unaligned. (Aligned 26472 out of 27176 non-N bases (97.41%))
+		Alignment: 136 26416 | 26472 1 | 26281 26472 | 99.14 | NZ_CP014534.1 contig_7_pilon
+		Unaligned bases: 26473 to 27176 (704)
+
+CONTIG: contig_8_pilon (10764bp)
+Best alignment score: 10326.7 (LEN: 10545, IDY: 97.93), Total number of alignments: 1
+			Looking for the best set of alignments (out of 1 total alignments)
+			The best set is below. Score: 10326.7, number of alignments: 1, unaligned bases: 219
+		Alignment: 6888 17254 | 1 10545 | 10367 10545 | 97.93 | NZ_CP014533.1 contig_8_pilon
+
+CONTIG: contig_9_pilon (14445bp)
+Best alignment score: 14417.6 (LEN: 14445, IDY: 99.81), Total number of alignments: 1
+		One align captures most of this contig: 1270960 1285405 | 1 14445 | 14446 14445 | 99.81 | NZ_CP014529.1 contig_9_pilon
+
+Analyzing coverage...
+Writing SNPs into /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_multi_with_reference/contigs_reports/minimap_output/flye_pacbio_pilon.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_multi_with_reference/contigs_reports/minimap_output/flye_pacbio_pilon.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 4
+		Relocations: 3
+		Translocations: 1
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 3
+	Misassembled Contig Bases: 257216
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 2 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 4200
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 3090587
+	Raw Aligned Bases in Assembly: 3134984
+	Total Aligned Bases in Assembly (with "Extras"): 3134984
+
+	SNPs: 795
+	Insertions: 1795
+	Deletions: 288
+

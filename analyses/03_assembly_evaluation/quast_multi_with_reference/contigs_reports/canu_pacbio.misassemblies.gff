@@ -1,0 +1,8 @@
+##gff-version 3
+tig00000001	QUAST	possible_assembly_error	648376	648377	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -10210 [linear representation of circular genome]
+tig00000002	QUAST	possible_assembly_error	27164	27165	.	.	.	Name=Extensive misassembly;type=translocation
+tig00000002	QUAST	possible_assembly_error	34733	34734	.	.	.	Name=Extensive misassembly;type=translocation
+tig00000004	QUAST	possible_assembly_error	12915	12916	.	.	.	Name=Extensive misassembly;type=translocation
+tig00000005	QUAST	possible_assembly_error	13284	13285	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -7589 [linear representation of circular genome]
+tig00000010	QUAST	possible_assembly_error	5871	5872	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -9310 [linear representation of circular genome]
+tig00000010	QUAST	possible_assembly_error	15189	15190	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -9309

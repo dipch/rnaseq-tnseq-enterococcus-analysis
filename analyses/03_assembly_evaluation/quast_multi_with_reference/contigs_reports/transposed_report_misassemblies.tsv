@@ -1,0 +1,12 @@
+Assembly	# misassemblies	  # contig misassemblies	    # c. relocations	    # c. translocations	    # c. inversions	  # scaffold misassemblies	    # s. relocations	    # s. translocations	    # s. inversions	# misassembled contigs	Misassembled contigs length	# local misassemblies	# scaffold gap ext. mis.	# scaffold gap loc. mis.	# unaligned mis. contigs	# mismatches	# indels	    # indels (<= 5 bp)	    # indels (> 5 bp)	Indels length
+canu_pacbio	7	7	4	3	0	0	0	0	0	5	3063909	0	0	0	0	324	481	469	12	665
+canu_nanopore	2	2	2	0	0	0	0	0	0	2	29384	0	0	0	0	950	8291	8265	26	12475
+spades_pacbio_illumina	4	4	1	3	0	0	0	0	0	3	307283	0	0	0	0	1585	228	212	16	950
+spades_pacbio_illumina_isolate	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	495	91	82	9	717
+spades_illumina	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	73	85	76	9	470
+spades_nanopore_illumina	4	4	1	3	0	0	0	0	0	2	109519	1	0	4	0	1128	196	179	17	1661
+flye_pacbio	3	3	2	1	0	0	0	0	0	2	57865	0	0	0	0	818	1649	1634	15	2143
+flye_nanopore	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3677	9385	9380	5	12247
+canu_pacbio_pilon_r1	8	8	3	3	2	0	0	0	0	5	3064010	0	0	0	0	335	270	258	12	447
+flye_pacbio_pilon	4	4	3	1	0	0	0	0	0	3	257216	0	0	0	0	795	1598	1582	16	2083
+canu_pacbio_pilon_r2	8	8	3	3	2	0	0	0	0	5	3063994	0	0	0	0	335	262	250	12	439
