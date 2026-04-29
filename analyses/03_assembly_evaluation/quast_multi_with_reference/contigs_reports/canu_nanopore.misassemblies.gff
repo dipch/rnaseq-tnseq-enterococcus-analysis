@@ -1,3 +1,0 @@
-##gff-version 3
-tig00000005	QUAST	possible_assembly_error	10446	10447	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is 2329278
-tig00000037	QUAST	possible_assembly_error	12714	12715	.	.	.	Name=Extensive misassembly;type=relocation;Note=inconsistency is -141675

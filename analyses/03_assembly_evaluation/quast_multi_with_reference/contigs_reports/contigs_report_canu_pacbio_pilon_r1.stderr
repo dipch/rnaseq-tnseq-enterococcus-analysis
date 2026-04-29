@@ -1,10 +1,10 @@
-[M::mm_idx_gen::0.080*1.07] collected minimizers
-[M::mm_idx_gen::0.103*1.05] sorted minimizers
-[M::main::0.103*1.05] loaded/built the index for 7 target sequence(s)
-[M::mm_mapopt_update::0.107*1.05] mid_occ = 200
+[M::mm_idx_gen::0.090*1.04] collected minimizers
+[M::mm_idx_gen::0.113*1.03] sorted minimizers
+[M::main::0.113*1.03] loaded/built the index for 7 target sequence(s)
+[M::mm_mapopt_update::0.117*1.03] mid_occ = 200
 [M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 7
-[M::mm_idx_stat::0.110*1.04] distinct minimizers: 290961 (96.67% are singletons); average occurrences: 1.089; average spacing: 10.002; total length: 3168410
-[M::worker_pipeline::1.148*0.98] mapped 10 sequences
+[M::mm_idx_stat::0.120*1.03] distinct minimizers: 290961 (96.67% are singletons); average occurrences: 1.089; average spacing: 10.002; total length: 3168410
+[M::worker_pipeline::1.190*1.00] mapped 10 sequences
 [M::main] Version: 2.28-r1209
 [M::main] CMD: /sw/arch/eb/software/QUAST/5.3.0-gfbf-2024a/lib/python3.12/site-packages/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 1 /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_multi_with_reference/quast_corrected_input/GCF_001750885.1_ASM175088v1_genomic.fna /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/03_assembly_evaluation/quast_multi_with_reference/quast_corrected_input/canu_pacbio_pilon_r1.fasta
-[M::main] Real time: 1.154 sec; CPU: 1.136 sec; Peak RSS: 0.167 GB
+[M::main] Real time: 1.194 sec; CPU: 1.192 sec; Peak RSS: 0.132 GB

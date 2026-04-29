@@ -1,6 +1,6 @@
-Assembly	canu_pacbio	canu_nanopore	spades_pacbio_illumina	spades_pacbio_illumina_isolate	spades_illumina	spades_nanopore_illumina	flye_pacbio	flye_nanopore	canu_pacbio_pilon_r1	flye_pacbio_pilon	canu_pacbio_pilon_r2
-# fully unaligned contigs	0	15	2	2	2	1	0	78	0	0	0
-Fully unaligned length	0	86803	4989	8122	6560	3276	0	2860207	0	0	0
-# partially unaligned contigs	0	2	0	0	0	1	2	6	0	2	0
-Partially unaligned length	0	3802	0	0	0	2326	4200	748921	0	4200	0
-# N's	0	0	201	3572	300	6769	0	0	0	0	0
+Assembly	canu_pacbio	canu_pacbio_pilon_r1	canu_pacbio_pilon_r2	flye_pacbio	flye_pacbio_pilon	spades_pacbio_illumina	spades_pacbio_illumina_isolate
+# fully unaligned contigs	0	0	0	0	0	2	2
+Fully unaligned length	0	0	0	0	0	4989	8122
+# partially unaligned contigs	0	0	0	2	2	0	0
+Partially unaligned length	0	0	0	4200	4200	0	0
+# N's	0	0	0	0	0	201	3572

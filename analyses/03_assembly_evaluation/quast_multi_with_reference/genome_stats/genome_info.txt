@@ -19,13 +19,9 @@ assembly                 | genome    | duplication | gaps      | genes     | par
                          | fraction  | ratio       | number    |           | genes     |           | operons   |
 ========================================================================================================================
 canu_pacbio              | 98.217    | 1.013       | 7         | 3328      | 13        | -         | -         |
-canu_nanopore            | 9.080     | 0.961       | 37        | 254       | 43        | -         | -         |
+canu_pacbio_pilon_r1     | 98.217    | 1.013       | 7         | 3328      | 13        | -         | -         |
+canu_pacbio_pilon_r2     | 98.217    | 1.013       | 7         | 3328      | 13        | -         | -         |
+flye_pacbio              | 97.635    | 1.014       | 6         | 3310      | 15        | -         | -         |
+flye_pacbio_pilon        | 97.544    | 1.014       | 7         | 3308      | 15        | -         | -         |
 spades_pacbio_illumina   | 98.157    | 1.003       | 43        | 3336      | 16        | -         | -         |
 spades_pacbio_illumina_i | 96.934    | 1.000       | 59        | 3204      | 26        | -         | -         |
-spades_illumina          | 92.209    | 1.001       | 157       | 3010      | 68        | -         | -         |
-spades_nanopore_illumina | 98.226    | 1.003       | 14        | 3283      | 18        | -         | -         |
-flye_pacbio              | 97.635    | 1.014       | 6         | 3310      | 15        | -         | -         |
-flye_nanopore            | 8.929     | 0.974       | 12        | 253       | 10        | -         | -         |
-canu_pacbio_pilon_r1     | 98.217    | 1.013       | 7         | 3328      | 13        | -         | -         |
-flye_pacbio_pilon        | 97.544    | 1.014       | 7         | 3308      | 15        | -         | -         |
-canu_pacbio_pilon_r2     | 98.217    | 1.013       | 7         | 3328      | 13        | -         | -         |

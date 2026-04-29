@@ -1,21 +1,21 @@
-Assembly	canu_pacbio	canu_nanopore	spades_pacbio_illumina	spades_pacbio_illumina_isolate	spades_illumina	spades_nanopore_illumina	flye_pacbio	flye_nanopore	canu_pacbio_pilon_r1	flye_pacbio_pilon	canu_pacbio_pilon_r2
-# misassemblies	7	2	4	0	0	4	3	0	8	4	8
-  # contig misassemblies	7	2	4	0	0	4	3	0	8	4	8
-    # c. relocations	4	2	1	0	0	1	2	0	3	3	3
-    # c. translocations	3	0	3	0	0	3	1	0	3	1	3
-    # c. inversions	0	0	0	0	0	0	0	0	2	0	2
-  # scaffold misassemblies	0	0	0	0	0	0	0	0	0	0	0
-    # s. relocations	0	0	0	0	0	0	0	0	0	0	0
-    # s. translocations	0	0	0	0	0	0	0	0	0	0	0
-    # s. inversions	0	0	0	0	0	0	0	0	0	0	0
-# misassembled contigs	5	2	3	0	0	2	2	0	5	3	5
-Misassembled contigs length	3063909	29384	307283	0	0	109519	57865	0	3064010	257216	3063994
-# local misassemblies	0	0	0	0	1	1	0	0	0	0	0
-# scaffold gap ext. mis.	0	0	0	0	0	0	0	0	0	0	0
-# scaffold gap loc. mis.	0	0	0	5	0	4	0	0	0	0	0
-# unaligned mis. contigs	0	0	0	0	0	0	0	0	0	0	0
-# mismatches	324	950	1585	495	73	1128	818	3677	335	795	335
-# indels	481	8291	228	91	85	196	1649	9385	270	1598	262
-    # indels (<= 5 bp)	469	8265	212	82	76	179	1634	9380	258	1582	250
-    # indels (> 5 bp)	12	26	16	9	9	17	15	5	12	16	12
-Indels length	665	12475	950	717	470	1661	2143	12247	447	2083	439
+Assembly	canu_pacbio	canu_pacbio_pilon_r1	canu_pacbio_pilon_r2	flye_pacbio	flye_pacbio_pilon	spades_pacbio_illumina	spades_pacbio_illumina_isolate
+# misassemblies	7	8	8	3	4	4	0
+  # contig misassemblies	7	8	8	3	4	4	0
+    # c. relocations	4	3	3	2	3	1	0
+    # c. translocations	3	3	3	1	1	3	0
+    # c. inversions	0	2	2	0	0	0	0
+  # scaffold misassemblies	0	0	0	0	0	0	0
+    # s. relocations	0	0	0	0	0	0	0
+    # s. translocations	0	0	0	0	0	0	0
+    # s. inversions	0	0	0	0	0	0	0
+# misassembled contigs	5	5	5	2	3	3	0
+Misassembled contigs length	3063909	3064010	3063994	57865	257216	307283	0
+# local misassemblies	0	0	0	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0	0	0	0
+# scaffold gap loc. mis.	0	0	0	0	0	0	5
+# unaligned mis. contigs	0	0	0	0	0	0	0
+# mismatches	324	335	335	818	795	1585	495
+# indels	481	270	262	1649	1598	228	91
+    # indels (<= 5 bp)	469	258	250	1634	1582	212	82
+    # indels (> 5 bp)	12	12	12	15	16	16	9
+Indels length	665	447	439	2143	2083	950	717
