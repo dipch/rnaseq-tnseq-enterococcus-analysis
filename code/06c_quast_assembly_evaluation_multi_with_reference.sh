@@ -9,8 +9,6 @@
 
 source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
-QUAST_MULTI_WITH_REFERENCE_DIR="${EVAL_DIR}/quast_multi_with_reference"
-
 rm -rf "${QUAST_MULTI_WITH_REFERENCE_DIR:?}"
 mkdir -p "${QUAST_MULTI_WITH_REFERENCE_DIR}"
 
