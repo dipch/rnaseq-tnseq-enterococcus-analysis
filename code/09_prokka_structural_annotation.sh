@@ -38,6 +38,9 @@ run_prokka() {
         --genus "${PROKKA_GENUS}" \
         --species "${PROKKA_SPECIES}" \
         --strain "${PROKKA_STRAIN}" \
+        --gcode 11 \
+        --rfam \
+        --compliant \
         --cpus 2 \
         --force \
         "${query_fasta}"
