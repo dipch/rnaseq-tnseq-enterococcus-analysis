@@ -1,5 +1,6 @@
 # Custom project directories
 course-material/
+report/
 
 # macOS
 .DS_Store
