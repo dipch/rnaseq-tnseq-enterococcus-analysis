@@ -141,12 +141,27 @@ PROKKA_FFN="${PROKKA_DIR}/${PROKKA_PREFIX}.ffn"
 PROKKA_GBK="${PROKKA_DIR}/${PROKKA_PREFIX}.gbk"
 PROKKA_TSV="${PROKKA_DIR}/${PROKKA_PREFIX}.tsv"
 
-# functional annotation — eggNOG-mapper
+# structural annotation — Bakta (local, macOS)
+BAKTA_DIR="${ANNOTATION_DIR}/structural/bakta"
+BAKTA_PREFIX="${ORGANISM}"
+BAKTA_LOCUS_TAG="EFM745"
+BAKTA_GFF="${BAKTA_DIR}/${BAKTA_PREFIX}.gff3"
+BAKTA_FAA="${BAKTA_DIR}/${BAKTA_PREFIX}.faa"
+BAKTA_FFN="${BAKTA_DIR}/${BAKTA_PREFIX}.ffn"
+BAKTA_GBFF="${BAKTA_DIR}/${BAKTA_PREFIX}.gbff"
+BAKTA_TSV="${BAKTA_DIR}/${BAKTA_PREFIX}.tsv"
+BAKTA_JSON="${BAKTA_DIR}/${BAKTA_PREFIX}.json"
+
+# functional annotation — eggNOG-mapper (Prokka input, UPPMAX)
 EGGNOG_DIR="${ANNOTATION_DIR}/functional/eggnog"
 EGGNOG_PREFIX="${ORGANISM}"
 EGGNOG_ANNOTATIONS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.annotations"
 EGGNOG_HITS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.hits"
 EGGNOG_SEED_ORTHOLOGS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.seed_orthologs"
+
+# functional annotation — eggNOG-mapper (Bakta input, local)
+EGGNOG_BAKTA_DIR="${ANNOTATION_DIR}/functional/eggnog_bakta"
+EGGNOG_BAKTA_PREFIX="${ORGANISM}"
 
 # assembly evaluation
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
