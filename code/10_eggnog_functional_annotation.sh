@@ -16,10 +16,6 @@ module purge
 module load eggnog-mapper/2.1.13-gfbf-2024a
 
 require_file "${PROKKA_FAA}" "Prokka protein FASTA (.faa)"
-
-# UPPMAX exposes the eggNOG database root via $EGGNOG_DATA_ROOT once the module
-# is loaded. Fall back to a sane default if the variable is unset.
-EGGNOG_DATA_DIR="${EGGNOG_DATA_ROOT:-/sw/data/eggNOG-mapper_data/5.0.2}"
 require_dir "${EGGNOG_DATA_DIR}" "eggNOG-mapper data dir"
 
 run_emapper() {
@@ -30,11 +26,7 @@ run_emapper() {
     echo "[$(current_time)] running eggNOG-mapper for ${label}"
     local step_start=$(date +%s)
 
-    # -m diamond       : sequence search backend (Diamond — fast, works locally)
-    # --itype proteins : input is protein sequences (Prokka .faa)
-    # --tax_scope ...  : restrict ortholog assignment to Bacteria
-    # --go_evidence    : also report non-electronic GO terms
-    # --cpu 2          : matches SBATCH -c 2
+
     emapper.py \
         -i "${query_faa}" \
         --itype proteins \

@@ -155,6 +155,7 @@ BAKTA_JSON="${BAKTA_DIR}/${BAKTA_PREFIX}.json"
 # functional annotation — eggNOG-mapper (Prokka input, UPPMAX)
 EGGNOG_DIR="${ANNOTATION_DIR}/functional/eggnog"
 EGGNOG_PREFIX="${ORGANISM}"
+EGGNOG_DATA_DIR="/sw/data/eggNOG_data/5.0.0/rackham"
 EGGNOG_ANNOTATIONS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.annotations"
 EGGNOG_HITS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.hits"
 EGGNOG_SEED_ORTHOLOGS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.seed_orthologs"
