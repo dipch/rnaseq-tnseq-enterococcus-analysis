@@ -14,7 +14,7 @@ source "${BASE_DIR}/utils/config.sh"
 
 # Path to the Bakta database directory (the folder containing version.json).
 # Override by exporting BAKTA_DB before running.
-BAKTA_DB="${BAKTA_DB:-${HOME}/bakta_db/db}"
+BAKTA_DB="${BAKTA_DB:-/Users/dipc/Developer/bakta_db_download/db}"
 
 require_file "${PILON_CANU_PACBIO_R2_FA}" "Canu PacBio Pilon R2 FASTA (best assembly)"
 require_dir "${BAKTA_DB}" "Bakta database directory (set BAKTA_DB env var if not at default)"
