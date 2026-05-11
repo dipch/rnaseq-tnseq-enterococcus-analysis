@@ -141,6 +141,13 @@ PROKKA_FFN="${PROKKA_DIR}/${PROKKA_PREFIX}.ffn"
 PROKKA_GBK="${PROKKA_DIR}/${PROKKA_PREFIX}.gbk"
 PROKKA_TSV="${PROKKA_DIR}/${PROKKA_PREFIX}.tsv"
 
+# structural annotation — Prokka (non-polished Canu PacBio input)
+PROKKA_NP_DIR="${ANNOTATION_DIR}/structural/prokka_np"
+PROKKA_NP_PREFIX="${ORGANISM}"
+PROKKA_NP_GFF="${PROKKA_NP_DIR}/${PROKKA_NP_PREFIX}.gff"
+PROKKA_NP_FAA="${PROKKA_NP_DIR}/${PROKKA_NP_PREFIX}.faa"
+PROKKA_NP_TSV="${PROKKA_NP_DIR}/${PROKKA_NP_PREFIX}.tsv"
+
 # structural annotation — Bakta (local, macOS)
 PILON_CANU_PACBIO_R2_FA_LOCAL="${BASE_DIR}/data/fasta/efaecium_e745_canu_pacbio_pilon_r2.fasta"
 BAKTA_DIR="${ANNOTATION_DIR}/structural/bakta"
@@ -164,6 +171,14 @@ EGGNOG_SEED_ORTHOLOGS="${EGGNOG_DIR}/${EGGNOG_PREFIX}.emapper.seed_orthologs"
 # functional annotation — eggNOG-mapper (Bakta input, local)
 EGGNOG_BAKTA_DIR="${ANNOTATION_DIR}/functional/eggnog_bakta"
 EGGNOG_BAKTA_PREFIX="${ORGANISM}"
+
+# RNA-seq read mapping
+RNA_MAPPING_DIR="${BASE_DIR}/analyses/06_rna_mapping"
+NOBACKUP_RNA_MAPPING="${NOBACKUP_BASE}/rna_mapping"
+
+# read counting — HTSeq
+HTSEQ_DIR="${BASE_DIR}/analyses/07_read_counting/htseq"
+HTSEQ_COUNT_MATRIX="${HTSEQ_DIR}/counts_matrix.tsv"
 
 # assembly evaluation
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
