@@ -1,0 +1,8 @@
+organism: Enterococcus faecium E745 
+contigs: 10
+bases: 3155801
+CDS: 3125
+gene: 3275
+misc_RNA: 64
+tRNA: 85
+tmRNA: 1
