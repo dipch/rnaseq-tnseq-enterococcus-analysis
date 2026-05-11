@@ -12,11 +12,17 @@ set -euo pipefail
 BASE_DIR="${BASE_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 source "${BASE_DIR}/utils/config.sh"
 
+LOG_DIR="${BASE_DIR}/log"
+mkdir -p "${LOG_DIR}"
+LOG_FILE="${LOG_DIR}/09b_bakta_structural_annotation_local.$(date +%Y%m%d_%H%M%S).log"
+exec > >(tee -a "${LOG_FILE}") 2>&1
+echo "[$(current_time)] logging to ${LOG_FILE}"
+
 # Path to the Bakta database directory (the folder containing version.json).
 # Override by exporting BAKTA_DB before running.
-BAKTA_DB="${BAKTA_DB:-/Users/dipc/Developer/bakta_db_download/db}"
+BAKTA_DB="${BAKTA_DB:-/Volumes/exfat_730GB/bakta_out/db}"
 
-require_file "${PILON_CANU_PACBIO_R2_FA}" "Canu PacBio Pilon R2 FASTA (best assembly)"
+require_file "${PILON_CANU_PACBIO_R2_FA_LOCAL}" "Canu PacBio Pilon R2 FASTA (local copy)"
 require_dir "${BAKTA_DB}" "Bakta database directory (set BAKTA_DB env var if not at default)"
 
 rm -rf "${BAKTA_DIR:?}"
@@ -62,6 +68,6 @@ run_bakta() {
 
 total_start=$(date +%s)
 
-run_bakta "canu_pacbio_pilon_r2" "${PILON_CANU_PACBIO_R2_FA}"
+run_bakta "canu_pacbio_pilon_r2" "${PILON_CANU_PACBIO_R2_FA_LOCAL}"
 
 echo "[$(current_time)] Bakta structural annotation complete (total: $(elapsed_time $total_start))"

@@ -142,6 +142,7 @@ PROKKA_GBK="${PROKKA_DIR}/${PROKKA_PREFIX}.gbk"
 PROKKA_TSV="${PROKKA_DIR}/${PROKKA_PREFIX}.tsv"
 
 # structural annotation — Bakta (local, macOS)
+PILON_CANU_PACBIO_R2_FA_LOCAL="${BASE_DIR}/data/fasta/efaecium_e745_canu_pacbio_pilon_r2.fasta"
 BAKTA_DIR="${ANNOTATION_DIR}/structural/bakta"
 BAKTA_PREFIX="${ORGANISM}"
 BAKTA_LOCUS_TAG="EFM745"
