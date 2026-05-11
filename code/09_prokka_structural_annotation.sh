@@ -14,6 +14,7 @@ mkdir -p "${PROKKA_DIR}"
 
 module purge
 module load prokka/1.14.5-gompi-2024a
+module load barrnap/0.9-gompi-2024a
 
 require_file "${PILON_CANU_PACBIO_R2_FA}" "Canu PacBio Pilon R2 FASTA (best assembly)"
 

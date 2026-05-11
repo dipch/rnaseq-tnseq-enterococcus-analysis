@@ -14,6 +14,7 @@ mkdir -p "${PROKKA_NP_DIR}"
 
 module purge
 module load prokka/1.14.5-gompi-2024a
+module load barrnap/0.9-gompi-2024a
 
 require_file "${CANU_PACBIO_FA}" "Canu PacBio assembly (non-polished)"
 

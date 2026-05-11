@@ -2,7 +2,7 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 2
-#SBATCH -t 06:00:00
+#SBATCH -t 18:00:00
 #SBATCH -J eggnog_functional_annotation
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/10_eggnog_functional_annotation.%j.out
