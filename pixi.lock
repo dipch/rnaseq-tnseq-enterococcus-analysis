@@ -124,7 +124,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pthread-stubs-0.4-hd74edd7_1002.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycirclize-1.10.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
-      - conda: https://conda.anaconda.org/bioconda/osx-arm64/pyhmmer-0.12.0-py311hd78823b_1.conda
+      - conda: https://conda.anaconda.org/bioconda/osx-arm64/pyhmmer-0.10.15-py311h9bd965f_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.3.2-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/bioconda/osx-arm64/pyrodigal-3.7.1-py311hd78823b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha55dd90_7.conda
@@ -1472,17 +1472,17 @@ packages:
   license_family: BSD
   size: 110100
   timestamp: 1733195786147
-- conda: https://conda.anaconda.org/bioconda/osx-arm64/pyhmmer-0.12.0-py311hd78823b_1.conda
-  sha256: 3437c1d988dac2d881e0b54f9af7227fcdcff4ec66ebb73ce47d933f1c31860c
-  md5: 2a6e8a748441c09183f4303db3b8cd9f
+- conda: https://conda.anaconda.org/bioconda/osx-arm64/pyhmmer-0.10.15-py311h9bd965f_1.tar.bz2
+  sha256: 9e257508e2d50158190f2339f07edc208c56e7dd357141bd930a655c83e9b4e0
+  md5: 5b86be51750324a79726ff1d3dd2e13e
   depends:
-  - psutil >=6.0,<8.0
+  - psutil >=5.8
   - python >=3.11,<3.12.0a0
   - python_abi 3.11.* *_cp311
   license: MIT
   license_family: MIT
-  size: 2950800
-  timestamp: 1772011659423
+  size: 4498193
+  timestamp: 1733804649228
 - conda: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.3.2-pyhcf101f3_0.conda
   sha256: 417fba4783e528ee732afa82999300859b065dc59927344b4859c64aae7182de
   md5: 3687cc0b82a8b4c17e1f0eb7e47163d5
