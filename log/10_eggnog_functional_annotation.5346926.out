@@ -1,0 +1,50 @@
+[2026-05-11 15:40:55] running eggNOG-mapper for canu_pacbio_pilon_r2
+[1;32mFunctional annotation of hits...[0m
+#  emapper-2.1.13-5c3b93e9
+# emapper.py  -i /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa --itype proteins -m diamond --tax_scope Bacteria --go_evidence non-electronic --data_dir /sw/data/eggNOG_data/5.0.0/rackham --output efaecium_e745 --output_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --temp_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --cpu 2 --override
+[1;33m  /sw/arch/eb/software/DIAMOND/2.1.11-GCC-13.3.0/bin/diamond blastp -d '/gorilla/dataset/eggNOG_data/5.0.0/rackham/eggnog_proteins.dmnd' -q '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa' --threads 2 -o '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.hits' --tmpdir '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/emappertmp_dmdn_yjeu2ntg' --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+500 92.1721396446228 5.42 q/s (% mem usage: 25.20, % mem avail: 74.78)
+1000 205.86848759651184 4.86 q/s (% mem usage: 25.20, % mem avail: 74.80)
+1500 279.6826310157776 5.36 q/s (% mem usage: 25.20, % mem avail: 74.78)
+2000 363.23085355758667 5.51 q/s (% mem usage: 25.20, % mem avail: 74.83)
+2500 451.5095286369324 5.54 q/s (% mem usage: 25.30, % mem avail: 74.73)
+2961 485.3330864906311 6.10 q/s (% mem usage: 25.20, % mem avail: 74.76)
+[32mDone[0m
+[1;33mResult files:[0m
+   /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.hits
+   /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.seed_orthologs
+   /gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using eggNOG-mapper (version emapper-2.1.13-5c3b93e9) [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+================================================================================
+
+Total hits processed: 2961
+Total time: 23196 secs
+FINISHED
+[2026-05-11 22:07:36] eggNOG-mapper canu_pacbio_pilon_r2 complete (6h 26m 41s)
+[2026-05-11 22:07:36] outputs: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog
+[2026-05-11 22:07:36] eggNOG-mapper functional annotation complete (total: 6h 26m 41s)
+[2026-05-11 22:07:36] script finished (exit code 0)
