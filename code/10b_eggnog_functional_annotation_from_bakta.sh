@@ -1,34 +1,31 @@
 #!/bin/bash
-# Local (macOS) eggNOG-mapper annotation on Bakta proteins.
-#   pixi run bash code/10b_eggnog_functional_annotation_from_bakta_local.sh
-#
-# Prereqs (one-time):
-#   pixi add eggnog-mapper                              # bioconda
-#   mkdir -p ${HOME}/eggnog_db
-#   pixi run download_eggnog_data.py --data_dir ${HOME}/eggnog_db -y
-# Override EGGNOG_DATA_DIR if you put the DB elsewhere.
+#SBATCH -A uppmax2026-1-61
+#SBATCH -p pelle
+#SBATCH -c 2
+#SBATCH -t 17:00:00
+#SBATCH -J eggnog_functional_annotation_from_bakta
+#SBATCH --mail-type=ALL
+#SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/10b_eggnog_functional_annotation_from_bakta.%j.out
 
 set -euo pipefail
 
-BASE_DIR="${BASE_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
-source "${BASE_DIR}/utils/config.sh"
-
-EGGNOG_DATA_DIR="${EGGNOG_DATA_DIR:-${HOME}/eggnog_db}"
-
-require_file "${BAKTA_FAA}" "Bakta protein FASTA (.faa)"
-require_dir "${EGGNOG_DATA_DIR}" "eggNOG-mapper data dir (set EGGNOG_DATA_DIR if not at default)"
+source "${HOME}/rnaseq-tnseq-enterococcus-analysis/utils/config.sh"
 
 rm -rf "${EGGNOG_BAKTA_DIR:?}"
 mkdir -p "${EGGNOG_BAKTA_DIR}"
 
-CPUS="${CPUS:-$(sysctl -n hw.ncpu 2>/dev/null || echo 4)}"
+module purge
+module load eggnog-mapper/2.1.13-gfbf-2024a
+
+require_file "${BAKTA_FAA}" "Bakta protein FASTA (.faa)"
+require_dir "${EGGNOG_DATA_DIR}" "eggNOG-mapper data dir"
 
 run_emapper() {
     local label="$1"
     local query_faa="$2"
     local outdir="${EGGNOG_BAKTA_DIR}"
 
-    echo "[$(current_time)] running eggNOG-mapper for ${label} (threads=${CPUS})"
+    echo "[$(current_time)] running eggNOG-mapper for ${label}"
     local step_start=$(date +%s)
 
     emapper.py \
@@ -41,7 +38,7 @@ run_emapper() {
         --output "${EGGNOG_BAKTA_PREFIX}" \
         --output_dir "${outdir}" \
         --temp_dir "${outdir}" \
-        --cpu "${CPUS}" \
+        --cpu 2 \
         --override
 
     echo "[$(current_time)] eggNOG-mapper ${label} complete ($(elapsed_time $step_start))"
