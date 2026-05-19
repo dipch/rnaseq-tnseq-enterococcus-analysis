@@ -29,8 +29,11 @@ run_prokka() {
     # --kingdom Bacteria : bacterial gene models / databases
     # --gcode 11         : bacterial codon table (translation table 11)
     # --rfam             : also annotate ncRNAs via Rfam
-    # --compliant        : produce GenBank/ENA/DDJB-compliant output
     # --force            : overwrite existing output directory
+    # NOTE: --compliant is intentionally omitted so Prokka preserves the
+    # original assembly contig names. Renamed contigs caused a chromosome
+    # mismatch between the BAMs (mapped to the assembly) and the GFF in
+    # htseq-count, producing zero feature counts.
     prokka \
         --outdir "${outdir}" \
         --prefix "${PROKKA_PREFIX}" \
@@ -41,7 +44,6 @@ run_prokka() {
         --strain "${PROKKA_STRAIN}" \
         --gcode 11 \
         --rfam \
-        --compliant \
         --cpus 2 \
         --force \
         "${query_fasta}"
