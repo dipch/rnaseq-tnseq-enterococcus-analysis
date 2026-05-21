@@ -1,5 +1,5 @@
-## Mon May 11 21:59:30 2026
-## emapper-2.1.13-5c3b93e9
+## Tue May 19 20:40:47 2026
+## emapper-2.1.13-0bf4663e
 ## /sw/arch/eb/software/eggnog-mapper/2.1.13-gfbf-2024a/bin/emapper.py -i /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa --itype proteins -m diamond --tax_scope Bacteria --go_evidence non-electronic --data_dir /sw/data/eggNOG_data/5.0.0/rackham --output efaecium_e745 --output_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --temp_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --cpu 2 --override
 ##
 #query	seed_ortholog	evalue	score	eggNOG_OGs	max_annot_lvl	COG_category	Description	Preferred_name	GOs	EC	KEGG_ko	KEGG_Pathway	KEGG_Module	KEGG_Reaction	KEGG_rclass	BRITE	KEGG_TC	CAZy	BiGG_Reaction	PFAMs
@@ -2962,5 +2962,5 @@ EFM745_03246	1140001.I571_03086	3.97e-202	561.0	COG3843@1|root,COG3843@2|Bacteri
 EFM745_03247	1140001.I571_03085	3.85e-76	228.0	2E4NU@1|root,32ZHN@2|Bacteria,1VF06@1239|Firmicutes,4HPMK@91061|Bacilli,4B5CJ@81852|Enterococcaceae	2|Bacteria	S	Bacterial mobilisation protein (MobC)	-	-	-	-	-	-	-	-	-	-	-	-	MobC
 EFM745_03249	1069534.LRC_06370	4.75e-18	81.6	COG1136@1|root,COG1136@2|Bacteria,1V3NN@1239|Firmicutes,4HI0Q@91061|Bacilli,3F64C@33958|Lactobacillaceae	2|Bacteria	V	ABC transporter	-	-	-	ko:K02003,ko:K02004,ko:K09810	ko02010,map02010	M00255,M00258	-	-	ko00000,ko00001,ko00002,ko01000,ko02000	3.A.1,3.A.1.125	-	-	ABC_tran
 ## 2961 queries scanned
-## Total time (seconds): 485.3058385848999
-## Rate: 6.10 q/s
+## Total time (seconds): 1080.1121921539307
+## Rate: 2.74 q/s

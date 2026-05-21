@@ -2,7 +2,7 @@
 #SBATCH -A uppmax2026-1-61
 #SBATCH -p pelle
 #SBATCH -c 2
-#SBATCH -t 24:00:00
+#SBATCH -t 12:00:00
 #SBATCH -J 12_htseq_read_counting
 #SBATCH --mail-type=ALL
 #SBATCH --output=/home/dich3309/rnaseq-tnseq-enterococcus-analysis/log/12_htseq_read_counting.%j.out

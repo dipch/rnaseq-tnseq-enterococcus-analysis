@@ -1,8 +1,8 @@
-## Mon May 11 21:59:30 2026
-## emapper-2.1.13-5c3b93e9
+## Tue May 19 20:40:48 2026
+## emapper-2.1.13-0bf4663e
 ## /sw/arch/eb/software/eggnog-mapper/2.1.13-gfbf-2024a/bin/emapper.py -i /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa --itype proteins -m diamond --tax_scope Bacteria --go_evidence non-electronic --data_dir /sw/data/eggNOG_data/5.0.0/rackham --output efaecium_e745 --output_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --temp_dir /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog --cpu 2 --override
 ##
-##/sw/arch/eb/software/DIAMOND/2.1.11-GCC-13.3.0/bin/diamond blastp -d '/gorilla/dataset/eggNOG_data/5.0.0/rackham/eggnog_proteins.dmnd' -q '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa' --threads 2 -o '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.hits' --tmpdir '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/emappertmp_dmdn_yjeu2ntg' --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp
+##/sw/arch/eb/software/DIAMOND/2.1.11-GCC-13.3.0/bin/diamond blastp -d '/gorilla/dataset/eggNOG_data/5.0.0/rackham/eggnog_proteins.dmnd' -q '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/structural/prokka/efaecium_e745.faa' --threads 2 -o '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/efaecium_e745.emapper.hits' --tmpdir '/gorilla/home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/04_annotation/functional/eggnog/emappertmp_dmdn_whg1z0o4' --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp
 #qseqid	sseqid	evalue	bitscore	qstart	qend	sstart	send	pident	qcov	scov
 EFM745_00001	565664.EFXG_00391	1.62e-126	370.0	1	188	1	188	100.0	94.0	43.4
 EFM745_00002	1104325.M7W_1488	2.33e-103	299.0	1	152	1	152	100.0	100.0	100.0
@@ -2966,5 +2966,5 @@ EFM745_03246	1140001.I571_03086	3.97e-202	561.0	1	304	1	304	94.1	100.0	100.0
 EFM745_03247	1140001.I571_03085	3.85e-76	228.0	1	126	1	126	97.6	100.0	100.0
 EFM745_03249	1069534.LRC_06370	4.75e-18	81.6	4	72	121	188	53.6	81.2	32.5
 ## 2961 queries scanned
-## Total time (seconds): 474.3486030101776
-## Rate: 6.24 q/s
+## Total time (seconds): 1064.3114817142487
+## Rate: 2.78 q/s
