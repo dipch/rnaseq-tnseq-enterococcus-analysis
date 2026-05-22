@@ -1,0 +1,7 @@
+gene_id	gene	Preferred_name	product	direction	log2FoldChange	padj
+EFM745_02602	purH	purH	Bifunctional purine biosynthesis protein PurH	up_in_serum	8.29390981771007	3.51818020606569e-171
+EFM745_02601	purD	purD	Phosphoribosylamine--glycine ligase	up_in_serum	8.2624110212865	2.62417724417193e-196
+EFM745_02457	pyrK_2	pyrK	Dihydroorotate dehydrogenase B (NAD(+)), electron transfer subunit	up_in_serum	1.74198125877361	4.47550013231519e-57
+EFM745_02456	pyrK_1	pyrK	Dihydroorotate dehydrogenase B (NAD(+)), electron transfer subunit	up_in_serum	1.363532119087	3.582380435423e-21
+EFM745_02454	pyrF	pyrF	Orotidine 5'-phosphate decarboxylase	ns	0.959853738455203	2.36357906827019e-21
+EFM745_01357	sorA_1	manY	PTS system sorbose-specific EIIC component	ns	0.789687790046653	2.70429349400747e-46

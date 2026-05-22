@@ -1,0 +1,20 @@
+gene_id	gene	Preferred_name	product	direction	log2FoldChange	padj
+EFM745_02607	purQ	purQ	Phosphoribosylformylglycinamidine synthase subunit PurQ	up_in_serum	9.11475672300144	2.71704890236335e-67
+EFM745_02609	purC	purC	Phosphoribosylaminoimidazole-succinocarboxamide synthase	up_in_serum	8.95534501274812	3.82798717501345e-113
+EFM745_02606	purL	purL	Phosphoribosylformylglycinamidine synthase subunit PurL	up_in_serum	8.87038870961749	3.4453815835856e-98
+EFM745_02602	purH	purH	Bifunctional purine biosynthesis protein PurH	up_in_serum	8.29390981771007	3.51818020606569e-171
+EFM745_02601	purD	purD	Phosphoribosylamine--glycine ligase	up_in_serum	8.2624110212865	2.62417724417193e-196
+EFM745_03024	manZ_8		PTS system mannose-specific EIID component	up_in_serum	2.71791125491959	7.3224138175415e-116
+EFM745_02457	pyrK_2	pyrK	Dihydroorotate dehydrogenase B (NAD(+)), electron transfer subunit	up_in_serum	1.74198125877361	4.47550013231519e-57
+EFM745_00680	purA	purA	Adenylosuccinate synthetase	up_in_serum	1.69451279353898	4.86147449526117e-220
+EFM745_01289	manZ_2		PTS system mannose-specific EIID component	up_in_serum	1.37042964809006	2.62964139748831e-22
+EFM745_02456	pyrK_1	pyrK	Dihydroorotate dehydrogenase B (NAD(+)), electron transfer subunit	up_in_serum	1.363532119087	3.582380435423e-21
+EFM745_00654	guaB	guaB	Inosine-5'-monophosphate dehydrogenase	up_in_serum	1.19444466949274	6.75766011659599e-101
+EFM745_02454	pyrF	pyrF	Orotidine 5'-phosphate decarboxylase	ns	0.959853738455203	2.36357906827019e-21
+EFM745_01984	manZ_5		PTS system mannose-specific EIID component	ns	0.886571974749358	0.0174734936051349
+EFM745_01357	sorA_1	manY	PTS system sorbose-specific EIIC component	ns	0.789687790046653	2.70429349400747e-46
+EFM745_01358	manZ_3	manN	PTS system mannose-specific EIID component	ns	0.491484879071972	1.33031157825435e-14
+EFM745_00954	manZ_1		PTS system mannose-specific EIID component	ns	-0.265751010592903	0.435766153629096
+EFM745_02315	manZ_6		PTS system mannose-specific EIID component	ns	-0.260803894231072	0.649151904258254
+EFM745_01577	manZ_4		PTS system mannose-specific EIID component	ns	-0.152090237384515	0.746408842405481
+EFM745_03011	manZ_7		PTS system mannose-specific EIID component	ns	0.0630225677096209	0.8150608841959
