@@ -64,7 +64,7 @@ xargs samtools faidx "${ASSEMBLY}" \
 
 # ── 2. BLAST against ref_prok_rep_genomes ─────────────────────────────
 echo "[$(current_time)] verifying BLAST database"
-blastdbcmd -db "${BLASTDB}" -info | head -5
+blastdbcmd -db "${BLASTDB}" -info | awk 'NR<=5'
 
 echo "[$(current_time)] running blastn (this is the slow step)"
 blast_start=$(date +%s)
