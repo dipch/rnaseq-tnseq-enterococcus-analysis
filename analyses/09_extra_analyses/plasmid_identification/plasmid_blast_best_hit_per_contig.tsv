@@ -1,0 +1,10 @@
+contig	subject	pident	aln_len	contig_len	ref_len	evalue	bitscore	description
+tig00000002_pilon_pilon	gi|1332906111|ref|NZ_NBSL01000002.1|	98.939	8105	218577	3127954	0.0	14456	Enterococcus avium strain FDAARGOS_182 scf7180000000006_trim_quiver_pilon, whole genome shotgun sequence
+tig00000003_pilon_pilon	gi|1806538187|ref|NZ_CP038996.1|	98.968	9494	28887	2796178	0.0	16990	Enterococcus faecium strain SRR24 chromosome, complete genome
+tig00000004_pilon_pilon	gi|2073829839|ref|NZ_CP079881.1|	95.719	5046	14737	168866	0.0	8100	Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000005_pilon_pilon	gi|1850439835|ref|NZ_AP022823.1|	99.919	4924	40013	76008	0.0	9071	Enterococcus saigonensis strain VE80 plasmid pVE80-1, complete sequence
+tig00000006_pilon_pilon	gi|2073829839|ref|NZ_CP079881.1|	96.501	3515	15021	168866	0.0	5805	Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000007_pilon_pilon	gi|1806538187|ref|NZ_CP038996.1|	95.323	1283	16127	2796178	0.0	2036	Enterococcus faecium strain SRR24 chromosome, complete genome
+tig00000009_pilon_pilon	gi|2180283487|ref|NZ_CP050816.1|	95.241	1702	24852	3433237	0.0	2687	Enterococcus gallinarum strain EG81 chromosome, complete genome
+tig00000010_pilon_pilon	gi|2073829839|ref|NZ_CP079881.1|	95.847	1517	15455	168866	0.0	2442	Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000011_pilon_pilon	gi|2073829839|ref|NZ_CP079881.1|	95.847	1517	7042	168866	0.0	2442	Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
