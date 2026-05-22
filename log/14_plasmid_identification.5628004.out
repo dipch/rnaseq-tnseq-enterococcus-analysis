@@ -1,0 +1,70 @@
+[2026-05-22 15:15:11] indexing assembly with samtools faidx
+[2026-05-22 15:15:12] selecting contigs in [5000, 500000] bp
+[2026-05-22 15:15:12] 9 plasmid-candidate contigs:
+tig00000011_pilon_pilon	7042
+tig00000004_pilon_pilon	14737
+tig00000006_pilon_pilon	15021
+tig00000010_pilon_pilon	15455
+tig00000007_pilon_pilon	16127
+tig00000009_pilon_pilon	24852
+tig00000003_pilon_pilon	28887
+tig00000005_pilon_pilon	40013
+tig00000002_pilon_pilon	218577
+[2026-05-22 15:15:12] verifying BLAST database
+Database: Refseq prokaryote reference genomes (contains refseq assembly)
+	1,138,372 sequences; 102,599,094,003 total bases
+
+Date: Mar 21, 2026  12:55 PM	Longest sequence: 13,758,192 bases
+
+[2026-05-22 15:15:20] running blastn (this is the slow step)
+[2026-05-22 15:18:33] blastn done (0h 3m 13s)
+[2026-05-22 15:18:33] best BLAST hit per contig:
+contig                   subject                               pident  aln_len  contig_len  ref_len  evalue  bitscore  description
+tig00000002_pilon_pilon  gi|1332906111|ref|NZ_NBSL01000002.1|  98.939  8105     218577      3127954  0.0     14456     Enterococcus avium strain FDAARGOS_182 scf7180000000006_trim_quiver_pilon, whole genome shotgun sequence
+tig00000003_pilon_pilon  gi|1806538187|ref|NZ_CP038996.1|      98.968  9494     28887       2796178  0.0     16990     Enterococcus faecium strain SRR24 chromosome, complete genome
+tig00000004_pilon_pilon  gi|2073829839|ref|NZ_CP079881.1|      95.719  5046     14737       168866   0.0     8100      Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000005_pilon_pilon  gi|1850439835|ref|NZ_AP022823.1|      99.919  4924     40013       76008    0.0     9071      Enterococcus saigonensis strain VE80 plasmid pVE80-1, complete sequence
+tig00000006_pilon_pilon  gi|2073829839|ref|NZ_CP079881.1|      96.501  3515     15021       168866   0.0     5805      Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000007_pilon_pilon  gi|1806538187|ref|NZ_CP038996.1|      95.323  1283     16127       2796178  0.0     2036      Enterococcus faecium strain SRR24 chromosome, complete genome
+tig00000009_pilon_pilon  gi|2180283487|ref|NZ_CP050816.1|      95.241  1702     24852       3433237  0.0     2687      Enterococcus gallinarum strain EG81 chromosome, complete genome
+tig00000010_pilon_pilon  gi|2073829839|ref|NZ_CP079881.1|      95.847  1517     15455       168866   0.0     2442      Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+tig00000011_pilon_pilon  gi|2073829839|ref|NZ_CP079881.1|      95.847  1517     7042        168866   0.0     2442      Enterococcus lactis strain CX 2-6_2 plasmid pXC, complete sequence
+[2026-05-22 15:18:33] running sequence-based circularity check on candidate contigs
+[2026-05-22 15:19:29] circularity summary:
+contig                   length  circular  end_match_pident  end_match_len  end_match_sstart
+tig00000011_pilon_pilon  7042    no        -                 -              -
+tig00000004_pilon_pilon  14737   no        -                 -              -
+tig00000006_pilon_pilon  15021   no        -                 -              -
+tig00000010_pilon_pilon  15455   yes       99.871            1547           9317
+tig00000007_pilon_pilon  16127   yes       99.690            1611           10763
+tig00000009_pilon_pilon  24852   no        -                 -              -
+tig00000003_pilon_pilon  28887   no        -                 -              -
+tig00000005_pilon_pilon  40013   yes       99.775            4003           32428
+tig00000002_pilon_pilon  218577  yes       99.868            1515           115972
+[2026-05-22 15:19:29] chosen circular plasmid for focused BLAST: tig00000002_pilon_pilon
+[2026-05-22 15:19:29] BLASTing tig00000002_pilon_pilon against ref_prok_rep_genomes
+[2026-05-22 15:22:53] top 10 E. faecium hits for tig00000002_pilon_pilon:
+qcontig                  subject                           accession    pident  aln_len  qlen    slen     evalue  bitscore  description
+tig00000002_pilon_pilon  gi|1806538187|ref|NZ_CP038996.1|  NZ_CP038996  99.825  2286     218577  2796178  0.0     4198      Enterococcus faecium strain SRR24 chromosome, complete genome
+tig00000002_pilon_pilon  gi|1806538188|ref|NZ_CP038997.1|  NZ_CP038997  99.947  1896     218577  123020   0.0     3496      Enterococcus faecium strain SRR24 plasmid pSRR24
+[2026-05-22 15:22:53] checking for E745 in the hits:
+qcontig  subject  accession  pident  aln_len  qlen  slen  evalue  bitscore  description
+[2026-05-22 15:22:53] running nucmer vs NCBI RefSeq E745 reference
+[2026-05-22 15:22:55] per-contig reference assignment:
+tig00000001_pilon_pilon <- NZ_CP014529.1 (1886942 bp aln, 4183% id)
+tig00000001_pilon_pilon <- NZ_CP014529.1 (1888356 bp aln, 1239963% id)
+tig00000001_pilon_pilon <- NZ_CP014529.1 (2775212 bp aln, 885506% id)
+tig00000001_pilon_pilon <- NZ_CP014529.1 (648397 bp aln, 648400% id)
+tig00000002_pilon_pilon <- NZ_CP014530.1 (218577 bp aln, 183044% id)
+tig00000002_pilon_pilon <- NZ_CP014530.1 (27168 bp aln, 27162% id)
+tig00000002_pilon_pilon <- NZ_CP014534.1 (38736 bp aln, 22424% id)
+tig00000003_pilon_pilon <- NZ_CP014534.1 (1 bp aln, 28891% id)
+tig00000004_pilon_pilon <- NZ_CP014530.1 (1 bp aln, 12913% id)
+tig00000005_pilon_pilon <- NZ_CP014531.1 (13285 bp aln, 26731% id)
+tig00000005_pilon_pilon <- NZ_CP014531.1 (1 bp aln, 13281% id)
+tig00000007_pilon_pilon <- NZ_CP014533.1 (16127 bp aln, 15964% id)
+tig00000009_pilon_pilon <- NZ_CP014535.1 (24852 bp aln, 24852% id)
+tig00000010_pilon_pilon <- NZ_CP014532.1 (5872 bp aln, 9310% id)
+[2026-05-22 15:22:55] plasmid identification complete (total: 0h 7m 44s)
+[2026-05-22 15:22:55] outputs in: /home/dich3309/rnaseq-tnseq-enterococcus-analysis/analyses/09_extra_analyses/plasmid_identification
+[2026-05-22 15:22:55] script finished (exit code 0)

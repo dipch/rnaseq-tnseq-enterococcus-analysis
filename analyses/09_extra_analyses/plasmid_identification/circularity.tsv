@@ -1,0 +1,10 @@
+contig	length	circular	end_match_pident	end_match_len	end_match_sstart
+tig00000011_pilon_pilon	7042	no	-	-	-
+tig00000004_pilon_pilon	14737	no	-	-	-
+tig00000006_pilon_pilon	15021	no	-	-	-
+tig00000010_pilon_pilon	15455	yes	99.871	1547	9317
+tig00000007_pilon_pilon	16127	yes	99.690	1611	10763
+tig00000009_pilon_pilon	24852	no	-	-	-
+tig00000003_pilon_pilon	28887	no	-	-	-
+tig00000005_pilon_pilon	40013	yes	99.775	4003	32428
+tig00000002_pilon_pilon	218577	yes	99.868	1515	115972
