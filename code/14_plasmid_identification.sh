@@ -13,10 +13,9 @@ rm -rf "${PLASMID_DIR:?}"
 mkdir -p "${PLASMID_DIR}"
 
 module purge
-module load bioinfo-tools
 module load BLAST+/2.17.0-gompi-2024a
-module load samtools/1.20
-module load MUMmer/4.0.0rc1
+module load SAMtools/1.22.1-GCC-13.3.0
+module load MUMmer/4.0.1-GCCcore-13.3.0
 
 # Use the polished (Pilon r2) Canu PacBio assembly — same one used downstream
 # for Bakta/Prokka annotation. Falls back to the non-polished Canu FASTA if
