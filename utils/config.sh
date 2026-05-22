@@ -180,6 +180,14 @@ NOBACKUP_RNA_MAPPING="${NOBACKUP_BASE}/rna_mapping"
 HTSEQ_DIR="${BASE_DIR}/analyses/07_read_counting/htseq"
 HTSEQ_COUNT_MATRIX="${HTSEQ_DIR}/counts_matrix.tsv"
 
+# differential expression — DESeq2
+DESEQ2_DIR="${BASE_DIR}/analyses/08_diff_expression/deseq2"
+
+# plasmid identification (extra analysis D)
+PLASMID_DIR="${BASE_DIR}/analyses/09_extra_analyses/plasmid_identification"
+PLASMID_MIN_SIZE=5000
+PLASMID_MAX_SIZE=500000
+
 # assembly evaluation
 EVAL_DIR="${BASE_DIR}/analyses/03_assembly_evaluation"
 QUAST_DIR="${EVAL_DIR}/quast"
