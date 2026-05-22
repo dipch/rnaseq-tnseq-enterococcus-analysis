@@ -87,6 +87,97 @@ sort -k1,1 -k8,8gr "${BLAST_OUT}" \
 echo "[$(current_time)] best BLAST hit per contig:"
 column -t -s $'\t' "${BLAST_BEST}" | head -20
 
+# ── 2b. Circularity detection (sequence-based, on polished assembly) ──
+# Canu assembles circular molecules linearly with the start sequence repeated
+# near the end. For each candidate contig we BLAST its head (~5 kb) against
+# the full contig; a high-identity hit landing in the contig's second half
+# implies head-tail overlap = circular.
+CIRC_TSV="${PLASMID_DIR}/circularity.tsv"
+CIRC_WORK="${PLASMID_DIR}/_circ_work"
+mkdir -p "${CIRC_WORK}"
+echo -e "contig\tlength\tcircular\tend_match_pident\tend_match_len\tend_match_sstart" \
+    > "${CIRC_TSV}"
+
+echo "[$(current_time)] running sequence-based circularity check on candidate contigs"
+while IFS=$'\t' read -r contig len; do
+    head_len=$(( len < 50000 ? len / 10 : 5000 ))
+    (( head_len < 500 )) && head_len=500
+
+    head_fa="${CIRC_WORK}/${contig}.head.fa"
+    full_fa="${CIRC_WORK}/${contig}.full.fa"
+    blast_out="${CIRC_WORK}/${contig}.self.tsv"
+
+    samtools faidx "${ASSEMBLY}" "${contig}:1-${head_len}" > "${head_fa}"
+    samtools faidx "${ASSEMBLY}" "${contig}"              > "${full_fa}"
+
+    blastn -query "${head_fa}" -subject "${full_fa}" \
+        -evalue 1e-20 \
+        -outfmt "6 qseqid sseqid pident length sstart send" \
+        > "${blast_out}"
+
+    # Keep hits with ≥95% identity, ≥500 bp, sstart in second half of contig.
+    # The trivial self-hit at sstart≈1 is filtered out by the sstart threshold.
+    end_hit=$(awk -v len="${len}" \
+        '$3>=95 && $4>=500 && $5 > len*0.5 {print $3"\t"$4"\t"$5; exit}' \
+        "${blast_out}")
+
+    if [[ -n "${end_hit}" ]]; then
+        echo -e "${contig}\t${len}\tyes\t${end_hit}" >> "${CIRC_TSV}"
+    else
+        echo -e "${contig}\t${len}\tno\t-\t-\t-" >> "${CIRC_TSV}"
+    fi
+done < "${PLASMID_DIR}/contig_sizes.tsv"
+
+echo "[$(current_time)] circularity summary:"
+column -t -s $'\t' "${CIRC_TSV}"
+
+# ── 2c. Focused E. faecium BLAST on the largest circular plasmid ──────
+# Answers report Q3 + Q4: pick a circular plasmid contig, BLAST against
+# ref_prok_rep_genomes, filter to E. faecium hits, list top 10 with
+# accession + % identity → check whether E745 is present.
+CHOSEN_TIG=$(awk -F'\t' 'NR>1 && $3=="yes" {print $2"\t"$1}' "${CIRC_TSV}" \
+             | sort -k1 -nr | head -1 | cut -f2)
+
+if [[ -n "${CHOSEN_TIG}" ]]; then
+    echo "[$(current_time)] chosen circular plasmid for focused BLAST: ${CHOSEN_TIG}"
+
+    CHOSEN_FA="${PLASMID_DIR}/${CHOSEN_TIG}.fasta"
+    samtools faidx "${ASSEMBLY}" "${CHOSEN_TIG}" > "${CHOSEN_FA}"
+
+    EFAECIUM_BLAST="${PLASMID_DIR}/${CHOSEN_TIG}_vs_efaecium.tsv"
+    EFAECIUM_TOP10="${PLASMID_DIR}/${CHOSEN_TIG}_vs_efaecium_top10.tsv"
+
+    echo "[$(current_time)] BLASTing ${CHOSEN_TIG} against ref_prok_rep_genomes"
+    blastn \
+        -query "${CHOSEN_FA}" \
+        -db "${BLASTDB}" \
+        -evalue 1e-10 \
+        -num_threads 4 \
+        -max_target_seqs 50 \
+        -outfmt "6 qseqid sseqid sacc pident length qlen slen evalue bitscore stitle" \
+        > "${EFAECIUM_BLAST}"
+
+    # Keep only hits whose description mentions Enterococcus faecium, sort by
+    # bitscore (col 9 desc), one row per subject accession, top 10.
+    echo -e "qcontig\tsubject\taccession\tpident\taln_len\tqlen\tslen\tevalue\tbitscore\tdescription" \
+        > "${EFAECIUM_TOP10}"
+    awk -F'\t' 'tolower($10) ~ /enterococcus faecium/' "${EFAECIUM_BLAST}" \
+        | sort -k9,9 -gr \
+        | awk -F'\t' '!seen[$3]++' \
+        | head -10 \
+        >> "${EFAECIUM_TOP10}"
+
+    echo "[$(current_time)] top 10 E. faecium hits for ${CHOSEN_TIG}:"
+    column -t -s $'\t' "${EFAECIUM_TOP10}"
+
+    echo "[$(current_time)] checking for E745 in the hits:"
+    awk -F'\t' 'NR==1 || tolower($10) ~ /e745/' "${EFAECIUM_TOP10}" \
+        | column -t -s $'\t' || true
+fi
+
+# Clean up per-contig work files (keep CIRC_TSV).
+rm -rf "${CIRC_WORK}"
+
 # ── 3. Whole-assembly nucmer vs NCBI RefSeq E745 reference ─────────────
 # Confirms which contig corresponds to which paper plasmid (the paper
 # deposited E745 to NCBI; the RefSeq assembly has chromosome + 6 plasmids
